@@ -1,7 +1,4 @@
-Group Name   :
-Website Title:
-Group Leader :
-Group Member1:
-Group Member2:
-Group Member3:
-Group Member4:
+# Dimopoulos-project
+For the CSS files you are going to create for your country copy paste the "nav"
+from my <a href="homepage.css">CSS file</a>
+so everypage will have the same navigation bar.

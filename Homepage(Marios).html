@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
         <nav>
@@ -112,7 +112,7 @@
                 var previousButtonAction = function(){
                     slideshowItem[showItem].style.display="none";
                     showItem--;
-                    if(showItem <= 0){
+                    if(showItem < 0){
                         showItem=4;
                     }
                     slideshowItem[showItem].style.display="block";

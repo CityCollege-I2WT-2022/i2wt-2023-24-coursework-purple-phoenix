@@ -2,6 +2,34 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        /* #timer{
+            color:darkgreen;
+            padding-right: 50px;
+            margin-left: auto;
+            position: relative;            
+        } */
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        &::before{
+            content: "";
+            background-image: url('/Photos/Nato/Natooffice.jpg');
+            background-size: auto;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0.58;
+        }
+        button{
+            padding: 0;
+            border: none;
+            background: none
+        }
+       
+    </style>
     </head>
     <body>
         <nav>
@@ -42,6 +70,7 @@
                     </ul>
                 </li>
                 <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a></li>
+                <li class="popup" id="timer"><p class="time"></p></li> 
             </ul>
             
         </nav>
@@ -49,45 +78,46 @@
        <section> 
             <h1 width="100%"><strong>Militaries around the world</strong></h1>
             <div>
-            <a class="button" id="previous">&lt;</a>
+             <button class="button" id="previous">&lt;</button>
             <ul class="slideshow">  
                 <li class="slideshowItem">
                     <a href="Greece(Abraham)/Greek%20Homepage.html">
-                        <img src="Photos/Greek%20Flag.png" alt="greek flag" width="250px" name="img">
+                        <img src="Photos/Greek%20Flag.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Greece</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Bulgaria(Katrin)/Bulgarian%20Homepage.html">
-                        <img src="Photos/Bulgarian.png" alt="greek flag" width="250px" name="img">
+                        <img src="Photos/Bulgarian.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Bulgaria</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Romania(Iulia)/Romanian%20Homepage.html">
-                        <img src="Photos/Romanian.png" alt="greek flag" width="250px" name="img">
+                        <img src="Photos/Romanian.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Romania</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Spain(Ada)/Spain%20Homepage.html">
-                    <img src="Photos/spanish%20flag.png" alt="greek flag" width="250px" name="img">
+                    <img src="Photos/spanish%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
                     <p>Spain</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="/NATO(Marios)/NATO(Marios).html">
-                    <img src="Photos/NATO%20flag.png" alt="greek flag" width="250px" name="img">
+                    <img src="Photos/NATO%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
                     <p>NATO</p>
                     </a>
                 </li>
             </ul>
-            <a class="button" id="next">&gt;</a>
+            <button class="button" id="next">&gt;</button>
             </div>
+        </section>
             <script>
                 var slideshowItem = document.getElementsByClassName("slideshowItem");
                 var showItem = 0;
@@ -121,8 +151,21 @@
                 var previousButton= document.getElementById("previous");
                 previousButton.addEventListener("click", previousButtonAction);
 
+            
+            
+                // setInterval(myTimer, 1000);
+                // function myTimer() {
+                // const d = new Date();
+                // document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+                // }
+
+                setInterval(slides, 2000);
+                function slides(){
+                document.getElementById("next").click();
+                console.log();
+                }
             </script>
-        </section>
+        
         
         <footer>
         For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>

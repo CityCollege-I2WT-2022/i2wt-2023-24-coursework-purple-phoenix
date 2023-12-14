@@ -18,6 +18,12 @@ img{
     
 }
 
+section{
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
 nav{
     position: fixed;
     background-color: whitesmoke;
@@ -31,6 +37,7 @@ nav{
 nav>ul{
     list-style-type: none;
     display: flex;
+    justify-content: center;
         
 }
 
@@ -90,7 +97,7 @@ nav>ul>li>a{
 footer{
     text-align: center;
     padding: 20px;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;

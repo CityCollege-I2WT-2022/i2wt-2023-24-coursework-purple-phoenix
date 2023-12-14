@@ -3,13 +3,50 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../main.css">
         <style>
-            body{
+            
+            #backimg{
+                color:rgb(0, 0, 0);
+                position: relative;
+            
+            }
+            
+            /* &::before{
+                content: "";
+                background-image: url('../Photos/Nato/Natooffice.jpg');
+                background-size: auto;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                bottom: 0px;
+                opacity: 0.58;
+            } */
+
+            /* #timer{
+            color:darkgreen;
+            padding-right: 50px;
+            margin-left: auto;
+            position: relative;
+            }
+             */
+            section{
                 text-align: center;
-                background-image: url(/Photos/NATO\ flag.png);
+                position: relative;
+                margin: auto;
+            }
+            .footImg{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            padding: 0px;
             }
         </style>
     </head>
     <body>
+        <div id="backimg">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
@@ -48,28 +85,45 @@
                     </ul>
                 </li>
                 <li class="popup"><a href="../NATO(Marios)/NATO(Marios).html" class="nav">NATO</a></li>
+                <li class="popup" id="timer"><p class="time"></p></li>
             </ul>      
         </nav>
 
-        <section>
+        <section>            
             <h1>What is NATO</h1>
             <p>NATO stands for <strong id="NATO">North Atlantic Treaty Organization</strong><br>
-                All countries including <strong> <br>Greece (1952),<br> Romania (2004),<br>  Spain (1982),<br> Bulgaria (2004)<br> </strong>
+                    Countries including: <strong> <br>Greece (1952),<br> Romania (2004),<br>  Spain (1982),<br> Bulgaria (2004)<br> </strong>
             </p>
 
             <h3>
-                Nato's purpose serves both Political and Military conflits.
+                    Nato's purpose serves both Political and Military conflits.
             </h3>
             <p>
                 <em>NATO promotes democratic values and enables members to consult and cooperate on defence and security-related issues to solve problems, 
-                    build trust and, in the long run, prevent conflict.</em>
+                        build trust and, in the long run, prevent conflict.</em>
+
+                    
+            </p>
+        
+        </section>
+        </div>
+            <script>
+
+                // setInterval(myTimer, 1000);
+
+                // function myTimer() {
+                //     const d = new Date();
+                //     document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+                // }
 
                 
-            </p>
 
-        </section>
+            </script>
         <footer>
-            For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>
+            For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
+                <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
+                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
+                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
             </footer>
     </body>
 </html>

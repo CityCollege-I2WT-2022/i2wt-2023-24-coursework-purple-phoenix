@@ -9,17 +9,25 @@
                 position: relative;
             
             }
-            
-            &::before{
-                content: "";
-                background-image: url('../Photos/Nato/Natooffice.jpg');
+
+            .imm{
+            z-index: 2;
+            display: inline;
+            position: absolute;
+            top: -150px;
+            left: -10px;
+            }
+
+            body::before{
+                content: " ";
+                background-image: url("../Photos/Nato/Natooffice.jpg");
                 background-size: auto;
                 position: absolute;
                 top: 0px;
                 right: 0px;
                 left: 0px;
                 bottom: 0px;
-                opacity: 0.58;
+                opacity: 0.5;
             }
 
             #timer{
@@ -46,6 +54,7 @@
         </style>
     </head>
     <body>
+        <img src="..\Photos\snowfall.gif" width="100%" height="1020px" class="imm">
         <div id="backimg">
         <nav>
             <ul class="nav.list">
@@ -115,7 +124,14 @@
                      const d = new Date();
                      document.getElementById("timer").innerHTML = d.toLocaleTimeString();
                  }
-
+                
+                 const coloR = document.querySelector('.imgg');
+                 coloR.style.setProperty('--colorr', 0)
+                
+                 setTimeout(changephoto,3000);
+                function changephoto(){
+                    coloR.style.setProperty('--colorr', 200)
+                }
                 
 
             </script>

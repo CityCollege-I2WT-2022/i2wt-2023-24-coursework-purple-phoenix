@@ -11,7 +11,7 @@
             }
 
             .imm{
-            z-index: 2;
+            z-index: 3;
             display: inline;
             position: absolute;
             top: -150px;
@@ -20,8 +20,10 @@
 
             body::before{
                 content: " ";
-                background-image: url("../Photos/Nato/Natooffice.jpg");
+                background-image: url("../Photos/NATO\ flag.png");
+                background-repeat: no-repeat;
                 background-size: auto;
+                background-size: cover;
                 position: absolute;
                 top: 0px;
                 right: 0px;
@@ -41,6 +43,14 @@
                 text-align: center;
                 position: relative;
                 margin: auto;
+            }
+            table{
+                margin: auto;
+                
+            }
+            table td{
+                font-weight: bold;
+                font-size: larger;
             }
             .footImg{
             width: 30px;
@@ -100,8 +110,118 @@
 
         <section>            
             <h1>What is NATO</h1>
-            <p>NATO stands for <strong id="NATO">North Atlantic Treaty Organization</strong><br>
-                    Countries including: <strong> <br>Greece (1952),<br> Romania (2004),<br>  Spain (1982),<br> Bulgaria (2004)<br> </strong>
+            <p>NATO stands for <strong id="NATO">North Atlantic Treaty Organization</strong></p>
+            <table>
+                <tr>
+                    <td>
+                        Albania <br> 2009                        
+                    </td>
+                    <td>
+                        Belgium <br> 1949
+                    </td>
+                    <td>
+                        Bulgaria <br> 2004
+                    </td>
+                    <td>
+                        Canada <br> 1949
+                    </td>
+                    <td>
+                        Croatia <br> 2009    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Czechia <br> 1999                        
+                    </td>
+                    <td>
+                        Denmark <br> 1949
+                    </td>
+                    <td>
+                        Estonia <br> 2004
+                    </td>
+                    <td>
+                        Finland <br> 2023
+                    </td>
+                    <td>
+                        France <br> 1949
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Germany <br> 1955
+                    </td>
+                    <td>
+                        Greece <br> 1952
+                    </td>
+                    <td>
+                        Hungary <br> 1999
+                    </td>
+                    <td>
+                        Iceland <br> 1949
+                    </td>
+                    <td>
+                        Italy <br> 1949
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Latvia <br> 2004
+                    </td>
+                    <td>
+                        Romania <br> 2004
+                    </td>
+                    <td>
+                        Lithuania <br> 2004
+                    </td>
+                    <td>
+                        Luxembourg <br> 1949
+                    </td>
+                    <td>
+                        Montenegro <br> 2017
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Netherlands <br> 1949
+                    </td>
+                    <td>
+                        North Macedonia <br> 2020
+                    </td>
+                    <td>
+                        Norway <br> 1949
+                    </td>
+                    <td>
+                        Poland <br> 1999
+                    </td>
+                    <td>
+                        Portugal <br> 1949
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Slovakia <br> 2004
+                    </td>
+                    <td>
+                        Slovenia <br> 2004
+                    </td>
+                    <td>
+                        Spain <br> 1982
+                    </td>
+                    <td>
+                        United Kingdom <br> 1949
+                    </td>
+                    <td>
+                        United States <br> 1949
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Turkey <br> 1952
+                    </td>
+                </tr>
+            </table>
+                
             </p>
 
             <h3>
@@ -124,15 +244,7 @@
                      const d = new Date();
                      document.getElementById("timer").innerHTML = d.toLocaleTimeString();
                  }
-                
-                 const coloR = document.querySelector('.imgg');
-                 coloR.style.setProperty('--colorr', 0)
-                
-                 setTimeout(changephoto,3000);
-                function changephoto(){
-                    coloR.style.setProperty('--colorr', 200)
-                }
-                
+                             
 
             </script>
         <footer>

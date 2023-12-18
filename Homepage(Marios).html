@@ -2,7 +2,7 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <style>
+    <style>        
          #timer{
             color:darkgreen;
             padding-right: 50px;
@@ -10,11 +10,10 @@
             position: relative;            
         }
         .main{
-            z-index: -1;
+            z-index: 1;
         }
        
-        .imm{
-            z-index: 2;
+        .snowfall{
             display: inline;
             position: absolute;
             top: -150px;
@@ -22,8 +21,7 @@
         }
 
         body::before{
-            /* "file:///C:/College/I2WT/i2wt-2023-24-coursework-purple-phoenix/Photos/Bulgarian.png" */
-            content: " ";
+            content: "";
             background-image: var(--foto);
             background-repeat: no-repeat;
             background-size: 100%;
@@ -31,18 +29,25 @@
             top: 0px;
             right: 0px;
             left: 0px;
-            bottom: 0px;  
+            bottom: 0px;
+            opacity: 0.6; 
+            
         }
-        button{
-            padding: 0;
-            border: none;
-            background: none
-        }
+        
+        .footImg{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            }
        
     </style>
     </head>
-    <body>
-        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="imm">
+    <body >
+        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="Homepage(Marios).html">Homepage</a></li>
@@ -160,9 +165,7 @@
                 }
 
                 var previousButton= document.getElementById("previous");
-                previousButton.addEventListener("click", previousButtonAction);
-
-            
+                previousButton.addEventListener("click", previousButtonAction);          
             
                 setInterval(myTimer, 1000);
                 function myTimer() {
@@ -175,19 +178,42 @@
                 document.getElementById("next").click();
                 console.log();
                 }
+                // const images = [
+                //     "Photos/Bulgarian.png",
+                //     "Photos/Greek%20Flag.png"
+                //     "Photos/Romanian.png",
+                //     "Photos/spanish%20flag.png",
+                //     "Photos/NATO%20flag.png",
+                // ];
 
-                function changefoto(){
-                    var style = document.querySelector('body').style;
-                    for(var i=0; i<5 ; i++){
-                        setTimeout()
-                        style.setProperty('--foto', 'url(file:///C:/College/I2WT/i2wt-2023-24-coursework-purple-phoenix/Photos/Bulgarian.png)');
-                    }
-                }
+                var bgFlag = "Photos/Bulgarian.png";
+                var grFlag = "Photos/Greek%20Flag.png"
+                var roFlag = "Photos/Romanian.png";
+                var esFlag = "Photos/spanish%20flag.png";
+                var natoFlag = "Photos/NATO%20flag.png";
+
+                const style = document.querySelector('body');
+                style.setProperty('--foto', 'grFlag');
+
+                // setInterval(changefoto, 2000);
+                // function changefoto(){
+                //     var style = document.querySelector('body').style;
+                //     for(var i=0; i<flagPhotos.lenght; i++){
+                //         style.setProperty(--foto, flagPhotos[i]);
+                //         if(i==4){
+                //             i=0;
+                //         }
+                //     }
+                // }
+            
             </script>
         
         
         <footer>
         For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>
+        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="Photos/Spain/mail.jpg"></a>
+                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="Photos/Spain/Insta.jpg"></a>   
+                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="Photos/Spain/facebook.jpg"></a>
         </footer>
     </body>
 </html>

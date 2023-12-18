@@ -35,7 +35,34 @@
             left: -10px;
         }
         .imagenMove{
-            animation: slide 5s infinite;
+            margin: 50 px auto 0;
+            overflow: hidden;
+            
+        }
+        .imagenMove ul{
+            display: flex;
+            padding: 0%;
+            width: 400%;
+
+            animation: slide 5s infinite alternate ease-in;
+        }
+        .imagenMove li{
+            list-style: none;
+            width: 100%;
+        }
+        .imagenMove img{
+            width: 100%;
+            height: 200px;
+        }
+        @keyframes slide {
+            0%{margin-left: 0%;}
+            35%{margin-left: 0%;}
+
+            40%{margin-left: -150%;}
+            75%{margin-left: -150%;}
+
+            80%{margin-left: -300%;}
+            95%{margin-left: -300%;}           
         }
          </style>
     </head>
@@ -95,9 +122,9 @@
                 <li>
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/ejercito_de_tierra.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/francotirador.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/bandera_espana.png+" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
                     </ul>
                     </div>
                          Ground army    
@@ -149,6 +176,9 @@
         <div id="map">
             <img src="../Photos/Spain/spainMap.jpg">
             <img src="../Photos/pin.png" id="pin">
+        </div>
+        <div id="frame">
+        <iframe href="" name="spainframe"></iframe> 
         </div> <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
         </article>
         
@@ -163,7 +193,15 @@
         </footer>
 
         <script>
- 
-        </script>
+           var pin= document.getElementById("pin");
+           var showPin = function(){
+            var x = parseInt(this.getElementByClassName("coordx")[0].innerHtml);
+            console.log(x);
+            var y = parenInt(this.getElementByClassName("coordy")[0].innerHtml);
+            console.log(y);
+            pin.style.top = (y - ) + "px";
+            pin.style.left = (x - ) + "px"; 
+           } 
+           </script> <!-- Tienes que terminar de rellenar lo de las x y las y tambien tienes que poner las cosas en el CSS coso-->
     </body>
 </html>

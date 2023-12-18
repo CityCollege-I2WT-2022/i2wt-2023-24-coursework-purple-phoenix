@@ -18,6 +18,13 @@ img{
     
 }
 
+section{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+}
+
 nav{
     position: fixed;
     background-color: whitesmoke;
@@ -25,12 +32,13 @@ nav{
     top: 0px;
     width: 100%;
     font-family:sans-serif;
-    
+    z-index: 5;
 }
 
 nav>ul{
     list-style-type: none;
     display: flex;
+    justify-content: center;
         
 }
 
@@ -59,6 +67,11 @@ div{
     font-size:100px;
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 5;
+    padding: 0;
+    border: none;
+    background: none;
+    
 }
 .slideshow a{
     text-decoration: none;
@@ -91,7 +104,7 @@ footer{
     
     text-align: center;
     padding: 20px;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;

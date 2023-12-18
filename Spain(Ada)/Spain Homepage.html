@@ -34,11 +34,14 @@
             top: -150px;
             left: -10px;
         }
+        .imagenMove{
+            animation: slide 5s infinite;
+        }
          </style>
     </head>
 
     <body>
-        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+           <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
@@ -81,21 +84,72 @@
             
         </nav>
         
-       <section>
+        <section>
             <h1 id="headText">Spanish Army</h1> 
         </section>
 
         <article>
-            <h2>How to enter in the spanish army</h2>
-            <h3>Where are the academys</h3>
+                <h3>Where are the academys</h3>
+            <div id="academys">    
             <ul>
-                <li>Ground army</li>
-                <li>Air force</li>
-                <li>Navy</li>
-                <li>Special forces</li>
+                <li>
+                    <div class="imagenMove">
+                    <ul>
+                        <li><img src="../Photos/Spain/ejercito_de_tierra.jpg" alt=""></li>
+                        <li><img src="../Photos/Spain/francotirador.jpg" alt=""></li>
+                        <li><img src="../Photos/Spain/bandera_espana.png+" alt=""></li>
+                    </ul>
+                    </div>
+                         Ground army    
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+                </li>
+
+                <li>
+                    <div class="imagenMove">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                    </div>
+                         Air forcy    
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+                </li>
+
+                <li>
+                    <div class="imagenMove">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                    </div>
+                         Navy    
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+                </li>
+
+                <li>
+                    <div class="imagenMove">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                    </div>
+                         Special forcey    
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+                </li>
             </ul>
+            </div>
             
-        <img id="spainMap" src="../Photos/Spain/spainMap.jpg">
+        <div id="map">
+            <img src="../Photos/Spain/spainMap.jpg">
+            <img src="../Photos/pin.png" id="pin">
+        </div> <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
         </article>
         
         <footer>
@@ -106,8 +160,10 @@
                <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
                <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
             </p>
-
-            
         </footer>
+
+        <script>
+ 
+        </script>
     </body>
 </html>

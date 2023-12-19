@@ -18,13 +18,14 @@
             position: absolute;
             top: -150px;
             left: -10px;
+            z-index: 1;
         }
 
         body::before{
             content: "";
-            background-image: var(--foto);
+            background-image: url(Photos/Greek%20Flag.png);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
             position: absolute;
             top: 0px;
             right: 0px;
@@ -42,12 +43,13 @@
             bottom: 0px;
             margin-top: 10px;
             padding: 0px;
+            z-index: 2;
             }
        
     </style>
     </head>
     <body >
-        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+        <img src="Photos\snowfall.gif" width="100%" height="115%" class="snowfall">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="Homepage(Marios).html">Homepage</a></li>
@@ -91,7 +93,7 @@
             
         </nav>
         
-       <section class="main"> 
+       <section class="main" id="editor"> 
             <h1 width="100%"><strong>Militaries around the world</strong></h1>
             <div>
              <button class="button" id="previous">&lt;</button>
@@ -135,6 +137,11 @@
             </div>
         </section>
             <script>
+
+                // document.body.style.backgroundImage = "url('Photos/Bulgarian.png')";
+
+
+
                 var slideshowItem = document.getElementsByClassName("slideshowItem");
                 var showItem = 0;
                 for(var i=0; i < slideshowItem.length; i++){
@@ -178,13 +185,13 @@
                 document.getElementById("next").click();
                 console.log();
                 }
-                // const images = [
-                //     "Photos/Bulgarian.png",
-                //     "Photos/Greek%20Flag.png"
-                //     "Photos/Romanian.png",
-                //     "Photos/spanish%20flag.png",
-                //     "Photos/NATO%20flag.png",
-                // ];
+                const images = [
+                    "Photos/Bulgarian.png",
+                    "Photos/Greek%20Flag.png",
+                    "Photos/Romanian.png",
+                    "Photos/spanish%20flag.png",
+                    "Photos/NATO%20flag.png",
+                ];
 
                 var bgFlag = "Photos/Bulgarian.png";
                 var grFlag = "Photos/Greek%20Flag.png"
@@ -192,8 +199,8 @@
                 var esFlag = "Photos/spanish%20flag.png";
                 var natoFlag = "Photos/NATO%20flag.png";
 
-                const style = document.querySelector('body');
-                style.setProperty('--foto', 'grFlag');
+                // const style = document.querySelector('body');
+                // style.setProperty('--foto', 'grFlag');
 
                 // setInterval(changefoto, 2000);
                 // function changefoto(){

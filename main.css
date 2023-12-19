@@ -104,7 +104,7 @@ footer{
     
     text-align: center;
     padding: 20px;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -117,4 +117,5 @@ footer{
     height: 30px;
     display: inline;
     padding: 0%;
+    z-index: 2;
 }

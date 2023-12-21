@@ -4,6 +4,29 @@
         <title>Spain</title>
      <link rel="stylesheet" type="text/css" href="../main.css"> 
      <style>
+         #map{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            #pin{
+                position: absolute;
+                left: ;
+                top: ;
+                visibility: hidden;
+                z-index: 1;
+            }
+
+            iframe{
+                width: auto;
+                height: auto;
+            }
+
+            .coordx, .coordy{
+                display: none;
+            }
+            
          section{
             background-image: url("../Photos/Spain/francotirador.jpg");  
             background-repeat: no-repeat;   
@@ -12,16 +35,15 @@
             text-align: center; 
             top:auto;
             position: relative;
-            margin: auto;
-                   
+            margin: auto;                
         }
         #headText{
             position: relative;
             top:125px;
             background-color: white blur(15px);    
-            backdrop-filter: blur(15px);
-            
+            backdrop-filter: blur(15px); 
         }
+
         .footImg{
             width: 30px;
             height: 30px;
@@ -34,26 +56,29 @@
             top: -150px;
             left: -10px;
         }
+
         .imagenMove{
             margin: 50 px auto 0;
             overflow: hidden;
-            
         }
+
         .imagenMove ul{
             display: flex;
             padding: 0%;
             width: 400%;
-
             animation: slide 5s infinite alternate ease-in;
         }
+
         .imagenMove li{
             list-style: none;
             width: 100%;
         }
+
         .imagenMove img{
             width: 100%;
             height: 200px;
         }
+
         @keyframes slide {
             0%{margin-left: 0%;}
             35%{margin-left: 0%;}
@@ -64,10 +89,10 @@
             80%{margin-left: -300%;}
             95%{margin-left: -300%;}           
         }
+
          </style>
     </head>
-
-    <body>
+ <body>
            <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
         <nav>
             <ul class="nav.list">
@@ -120,9 +145,12 @@
             <div id="academys">    
             <ul>
                 <li>
-                    <a href="" class="movePin" data-x="" data-y="">
+                    <a href="" class="academys">
                       Ground army
                     </a>
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+
                     <div class="imagenMove">
                     <ul>
                         <li><img src="../Photos/Spain/AGM1.jpg" alt=""></li>
@@ -133,9 +161,12 @@
                 </li>
 
                 <li>
-                    <a href="" class="movePin" data-x="" data-y="">
+                    <a href="" class="academys">
                       Air force
                     </a>
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+
                     <div class="imagenMove">
                     <ul>
                         <li><img src="../Photos/Spain/AGA1.jpg" alt=""></li>
@@ -146,9 +177,12 @@
                 </li>
 
                 <li>
-                    <a href="" class="movePin" data-x="" data-y="">
+                    <a href="" class="academys">
                       Navy
                     </a>
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+
                     <div class="imagenMove">
                     <ul>
                         <li><img src="../Photos/Spain/ENM1.jpg" alt=""></li>
@@ -159,9 +193,12 @@
                 </li>
 
                 <li>
-                    <a href="" class="movePin" data-x="" data-y="">
+                    <a href="" class="academys">
                       Special Forces (UME)
                     </a>
+                    <span class="coordx"></span>
+                    <span class="coordy"></span>
+
                     <div class="imagenMove">
                     <ul>
                         <li><img src="../Photos/Spain/" alt=""></li>
@@ -193,6 +230,21 @@
         </footer>
 
         <script>
+            var loc = document.getElementById("pin");
+            var academys = document.getElementsByClassName("academys");
+
+            var showLoc = function(){
+                var x = parseInt(this.getElementsByClassName("coordx")[0].innerHTML);
+                var y = parseInt(this.getElementsByClassName("coordy")[0].innerHTML);
+                console.log("x:", x, "y:", y);
+
+                pin.style.top =( y - ) + "px";
+                pin.style.left = (x- ) + "px";
+            }
+
+            for (var i = 0; i<academys.length; i++){
+                academys[i].addEventListener("click", showLoc);
+            }
         </script> <!-- Tienes que terminar de rellenar lo de las x y las y tambien tienes que poner las cosas en el CSS coso-->
     </body>
 </html>

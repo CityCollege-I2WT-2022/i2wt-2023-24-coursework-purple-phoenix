@@ -4,96 +4,117 @@
         <title>Spain</title>
      <link rel="stylesheet" type="text/css" href="../main.css"> 
      <style>
+        nav{
+            position:inherit;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+         section{
+            width:auto;
+            height:400px;  
+            position: inherit;   
+            text-align: center;               
+        }
+
+        article{
+            position: inherit ;
+            overflow: hidden;
+        }
+        footer{
+            position: inherit;
+        }
+
          #map{
-            position: absolute;
+            position: inherit;
             margin-left: auto;
             margin-right: auto;
-            }
-
-            #pin{
-                position: absolute;
-                left: ;
-                top: ;
-                visibility: hidden;
-                z-index: 1;
-            }
-
-            iframe{
-                width: auto;
-                height: auto;
-            }
-
-            .coordx, .coordy{
-                display: none;
-            }
-            
-         section{
-            background-image: url("../Photos/Spain/francotirador.jpg");  
-            background-repeat: no-repeat;   
-            width:100%;
-            height:700px; 
-            text-align: center; 
-            top:auto;
-            position: relative;
-            margin: auto;                
         }
-        #headText{
-            position: relative;
-            top:125px;
-            background-color: white blur(15px);    
-            backdrop-filter: blur(15px); 
+
+         #pin{
+                position: absolute;
+                visibility:visible;
+                z-index: 1;
+        }
+
+         #headText{
+            position: absolute;
+            color:white;
+            -webkit-text-stroke: 2px black;
+            background-color: white blur(20px);    
+            backdrop-filter: blur(20px); 
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+
+        }
+         .beginingImg{
+            position: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+        }
+         .coordx, .coordy{
+                display: none;
         }
 
         .footImg{
             width: 30px;
             height: 30px;
             display: inline;
-        }
+        } 
 
         .snowfall{
             display: inline;
             position: absolute;
             top: -150px;
             left: -10px;
+            z-index: -1;
         }
 
         .imagenMove{
-            margin: 50 px auto 0;
-            overflow: hidden;
+            width: 100%;
+            margin: auto;
+            overflow:visible;
         }
-
         .imagenMove ul{
             display: flex;
             padding: 0%;
-            width: 400%;
-            animation: slide 5s infinite alternate ease-in;
-        }
-
+            width: 1200px;
+            animation: cambio 6s infinite ;
+            animation-direction:alternate-reverse;
+                    }
         .imagenMove li{
+            width: 100%;
             list-style: none;
-            width: 100%;
-        }
+            align-content: center;
 
+        }
         .imagenMove img{
-            width: 100%;
+            margin-left: 400px;
+            margin-right: 400px;
+            width: 400px;
             height: 200px;
         }
+        @keyframes cambio {
+            0%{margin-left: 0px;}
+            35%{margin-left: 0px;}
 
-        @keyframes slide {
-            0%{margin-left: 0%;}
-            35%{margin-left: 0%;}
+            40%{margin-left: -1200px;}
+            75%{margin-left: -1200px;}
 
-            40%{margin-left: -150%;}
-            75%{margin-left: -150%;}
+            80%{margin-left: -2400px;}
+            100%{margin-left: -2400px;}
 
-            80%{margin-left: -300%;}
-            95%{margin-left: -300%;}           
+
         }
 
          </style>
     </head>
- <body>
-           <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
+    <body>
+        <img src="../Photos/snowfall.gif" width="100%" height="100%" class="snowfall">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
@@ -137,7 +158,10 @@
         </nav>
         
         <section>
-            <h1 id="headText">Spanish Army</h1> 
+            <div class="beginingImg">
+              <img src="../Photos/Spain/francotirador.jpg" >
+              <h1 id="headText">Spanish Army</h1> 
+            </div>
         </section>
 
         <article>
@@ -146,16 +170,16 @@
             <ul>
                 <li>
                     <a href="" class="academys">
-                      Ground army
+                      Army
                     </a>
-                    <span class="coordx"></span>
-                    <span class="coordy"></span>
+                    <span class="coordx">736</span>
+                    <span class="coordy">515</span>
 
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/AGM1.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/AGM2.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/AGM3.jpg" alt=""></li>
+                        <li><img src="../Photos/Spain/AGM1.jpg"></li>
+                        <li><img src="../Photos/Spain/AGM2.jpg"></li>
+                        <li><img src="../Photos/Spain/AGM3.jpg"></li>
                     </ul>
                     </div>
                 </li>
@@ -169,9 +193,9 @@
 
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/AGA1.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/AGA2.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/AGA3.jpg" alt=""></li>
+                        <li><img src="../Photos/Spain/AGA1.jpg"></li>
+                        <li><img src="../Photos/Spain/AGA2.jpg"></li>
+                        <li><img src="../Photos/Spain/AGA3.jpg"></li>
                     </ul>
                     </div>
                 </li>
@@ -185,9 +209,9 @@
 
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/ENM1.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/ENM2.jpg" alt=""></li>
-                        <li><img src="../Photos/Spain/ENM3.jpg" alt=""></li>
+                        <li><img src="../Photos/Spain/ENM1.jpg"></li>
+                        <li><img src="../Photos/Spain/ENM2.jpg"></li>
+                        <li><img src="../Photos/Spain/ENM3.jpg"></li>
                     </ul>
                     </div>
                 </li>
@@ -201,27 +225,26 @@
 
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/" alt=""></li>
-                        <li><img src="../Photos/Spain/" alt=""></li>
-                        <li><img src="../Photos/Spain/" alt=""></li>
+                        <li><img src="../Photos/Spain/"></li>
+                        <li><img src="../Photos/Spain/"></li>
+                        <li><img src="../Photos/Spain/"></li>
                     </ul>
                     </div>
                 </li>
             </ul>
             </div>
-            
+        
         <div id="map">
-            <img src="../Photos/Spain/spainMap.jpg">
-            <img src="../Photos/pin.png" id="pin">
-        </div>
-        <div id="frame">
-        <iframe href="" name="spainframe"></iframe> 
-        </div> <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
+                <img src="../Photos/Spain/spainMap.jpg">
+                <img src="../Photos/pin.png" id="pin">
+        </div> 
+         <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
         </article>
         
         <footer>
             <p>
-                 You can contact me:</p>
+                 You can contact me:
+            </p>
             <p>
                <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
                <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
@@ -235,16 +258,17 @@
 
             var showLoc = function(){
                 var x = parseInt(this.getElementsByClassName("coordx")[0].innerHTML);
+                console.log(x);
                 var y = parseInt(this.getElementsByClassName("coordy")[0].innerHTML);
-                console.log("x:", x, "y:", y);
-
-                pin.style.top =( y - ) + "px";
-                pin.style.left = (x- ) + "px";
+                console.log(y);
+                pin.style.top =( y-35 ) + "px";
+                pin.style.left = (x-10) + "px";
             }
 
-            for (var i = 0; i<academys.length; i++){
+            for (var i=0; i<academys.length; i++){
                 academys[i].addEventListener("click", showLoc);
             }
+
         </script> <!-- Tienes que terminar de rellenar lo de las x y las y tambien tienes que poner las cosas en el CSS coso-->
     </body>
 </html>

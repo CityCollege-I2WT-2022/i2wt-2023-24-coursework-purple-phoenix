@@ -29,11 +29,10 @@
             position: inherit;
             margin-left: auto;
             margin-right: auto;
-        }
+         }
 
          #pin{
                 position: absolute;
-                visibility:visible;
                 z-index: 1;
         }
 
@@ -172,8 +171,8 @@
                     <a href="" class="academys">
                       Army
                     </a>
-                    <span class="coordx">736</span>
-                    <span class="coordy">515</span>
+                    <span class="coordx">603</span>
+                    <span class="coordy">158</span>
 
                     <div class="imagenMove">
                     <ul>
@@ -188,8 +187,8 @@
                     <a href="" class="academys">
                       Air force
                     </a>
-                    <span class="coordx"></span>
-                    <span class="coordy"></span>
+                    <span class="coordx">590</span>
+                    <span class="coordy">430</span>
 
                     <div class="imagenMove">
                     <ul>
@@ -204,8 +203,8 @@
                     <a href="" class="academys">
                       Navy
                     </a>
-                    <span class="coordx"></span>
-                    <span class="coordy"></span>
+                    <span class="coordx">230</span>
+                    <span class="coordy">120</span>
 
                     <div class="imagenMove">
                     <ul>
@@ -263,6 +262,7 @@
                 console.log(y);
                 pin.style.top =( y-35 ) + "px";
                 pin.style.left = (x-10) + "px";
+                pin.style.visibility = "visible";
             }
 
             for (var i=0; i<academys.length; i++){

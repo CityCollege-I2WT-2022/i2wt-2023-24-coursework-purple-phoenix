@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../main.css">
+        <style>
+
+             #backimg{
+                color:rgb(0, 0, 0);
+                position: relative;
+            
+            }
+            h1{
+                margin-bottom: 0px;
+            }
+            h2{
+                margin-top: 0px;
+            }
+            .snowfall{
+            z-index: -0;
+            display: inline;
+            position: absolute;
+            top: -150px;
+            left: -10px;
+            }
+            body::before{
+                content: " ";
+                background-image: url("../Photos/NATO\ flag.png");
+                background-repeat:repeat;
+                background-size: cover;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                bottom: 0px;
+                opacity: 0.5;
+            }
+            #timer{
+            color:darkgreen;
+            padding-right: 50px;
+            margin-left: auto;
+            position: relative;
+            }
+            section{
+                text-align: center;
+                position: relative;
+                margin: auto;
+            }
+            table{
+                margin: auto;
+                
+                
+            }
+            table td{
+                font-weight: bold;
+                font-size: larger;
+            }
+            .footImg{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            }
+            .popupp{
+                display: none;
+                z-index: 2;
+                margin: 0px;
+                padding: 0px;
+            }
+            .hovver:hover>.popupp{
+                display: block;
+
+            }
+
+        </style>
+    </head>
+        <body>
+            <img src="../Photos/snowfall.gif" width="100%" height="115%" class="snowfall">
+            <nav>
+                <ul class="nav.list">
+                    <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
+                    <li class="popup"><a href="../Greece(Abraham)/Greek%20Homepage.html" class="nav">Greece</a>
+                        <ul class="dropdown">
+                            <li><a href="../Greece(Abraham)/Greek%20AirForces.html">Airforce</a></li>
+                            <li><a href="../Greece(Abraham)/Greek%20Army.html">Army</a></li>
+                            <li><a href="../Greece(Abraham)/Greek%20Navy.html">Navy</a></li>
+                            <li><a href="../Greece(Abraham)/Greek%20Special%20Forces.html">Special Forces</a></li>
+                        </ul>
+                        </li>
+                    <li class="popup"><a href="../Bulgaria(Katrin)/Bulgarian%20Homepage.html" class="nav">Bulgaria</a>
+                        <ul class="dropdown">
+                            <li><a href="../Bulgaria(Katrin)/Bulgarian%20Airforce.html">Airforce</a></li>
+                            <li><a href="../Bulgaria(Katrin)/Bulgarian%20Army.html">Army</a></li>
+                            <li><a href="../Bulgaria(Katrin)/Bulgarian%20Navy.html">Navy</a></li>
+                            <li><a href="../Bulgaria(Katrin)/Bulgarian%20Special%20Forces.html">Special Forces</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li class="popup"><a href="../Romania(Iulia)/Romanian%20Homepage.html" class="nav">Romania</a>
+                        <ul class="dropdown">
+                            <li><a href="../Romania(Iulia)/Romanian%20Airforce.html">Airforce</a></li>
+                            <li><a href="../Romania(Iulia)/Romanian%20Army.html">Army</a></li>
+                            <li><a href="../Romania(Iulia)/Romanian%20Navy.html">Navy</a></li>
+                            <li><a href="../Romania(Iulia)/Romanian%20Special%20Forces.html">Special Forces</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup"><a href="../Spain(Ada)/Spain%20Homepage.html" class="nav">Spain</a>
+                        <ul class="dropdown">
+                            <li><a href="../Spain(Ada)/Spain%20AirForce.html">Airforce</a></li>
+                            <li><a href="../Spain(Ada)/Spain%20Army.html">Army</a></li>
+                            <li><a href="../Spain(Ada)/Spain%20Navy.html">Navy</a></li>
+                            <li><a href="../Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup"><a href="NATO(Marios).html" class="nav">NATO</a>
+                        <ul class="dropdown">
+                            <li><a href="NatoMembers.html">Nato Members</a></li>
+                        </ul>
+                        <li class="popup" id="timer"><p class="time"></p></li>
+                </ul>      
+            </nav>
+    
+            <section>
+                <h1>The Members of the NATO</h1>
+                <h2> as of the end of 2023 are:</h2>
+                <table>
+                    <tr>
+                        <td class="hovver" id="Albania">
+                            Albania <br> 2009 
+                            <p class="popupp"><img src="../Photos/Nato/Albania.png" width="80px" height="60"></p>                     
+                        </td>
+                        <td class="hovver" id="">
+                            Belgium <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/Belgium.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Bulgaria <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/Bulgaria.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Canada <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/Canada.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Croatia <br> 2009  
+                            <p class="popupp"><img src="../Photos/Nato/Croatia.svg" width="80px" height="60"></p>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Czechia <br> 1999 
+                            <p class="popupp"><img src="../Photos/Nato/Czechia.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Denmark <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/Denmark.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Estonia <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/Estonia.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Finland <br> 2023
+                            <p class="popupp"><img src="../Photos/Nato/finland.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            France <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/france.png" width="80px" height="60"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Germany <br> 1955
+                            <p class="popupp"><img src="../Photos/Nato/Germany.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Greece <br> 1952
+                            <p class="popupp"><img src="../Photos/Nato/greece.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Hungary <br> 1999
+                            <p class="popupp"><img src="../Photos/Nato/Hungary.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Iceland <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/Iceland.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Italy <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/italy.png" width="80px" height="60"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Latvia <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/latvia.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Romania <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/Romanian.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Lithuania <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/lithuania.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Luxembourg <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/luxembourg.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Montenegro <br> 2017
+                            <p class="popupp"><img src="../Photos/Nato/montenegro.png" width="80px" height="60"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Netherlands <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/netherlands.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            North Macedonia <br> 2020
+                            <p class="popupp"><img src="../Photos/Nato/northMacedonia.jpg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Norway <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/norway.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Poland <br> 1999
+                            <p class="popupp"><img src="../Photos/Nato/poland.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Portugal <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/portugal.svg" width="80px" height="60"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Slovakia <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/slovakia.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Slovenia <br> 2004
+                            <p class="popupp"><img src="../Photos/Nato/slovenia.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            Spain <br> 1982
+                            <p class="popupp"><img src="../Photos/Nato/spain.png" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            United Kingdom <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/uk.svg" width="80px" height="60"></p>
+                        </td>
+                        <td class="hovver" id="">
+                            United States <br> 1949
+                            <p class="popupp"><img src="../Photos/Nato/usa.svg" width="80px" height="60"></p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="hovver" id="">
+                            Turkey <br> 1952
+                            <p class="popupp"><img src="../Photos/Nato/turkey.png" width="80px" height="60"></p>
+                        </td>
+                    </tr>
+                </table>
+            
+            </section>
+            <script>
+
+                setInterval(myTimer, 1000);
+
+                function myTimer() {
+                    const d = new Date();
+                    document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+                }
+                            
+
+           </script>
+       <footer>
+           For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
+               <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
+               <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
+               <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
+           </footer>
+        </body>
+</html>

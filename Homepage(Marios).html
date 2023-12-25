@@ -12,7 +12,6 @@
         .main{
             z-index: 1;
         }
-       
         .snowfall{
             display: inline;
             position: absolute;
@@ -20,10 +19,9 @@
             left: -10px;
             z-index: 1;
         }
-
         body::before{
+            background-image: var(--foto);
             content: "";
-            background-image: url(Photos/Greek%20Flag.png);
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
@@ -31,10 +29,8 @@
             right: 0px;
             left: 0px;
             bottom: 0px;
-            opacity: 0.6; 
-            
+            opacity: 0.6;    
         }
-        
         .footImg{
             width: 30px;
             height: 30px;
@@ -87,7 +83,10 @@
                         <li><a href="Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
                     </ul>
                 </li>
-                <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a></li>
+                <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="NATO(Marios)/NatoMembers.html">Nato Members</a></li>
+                    </ul>
                 <li class="popup" id="timer"><p class="time"></p></li> 
             </ul>
             
@@ -195,8 +194,11 @@
                 var esFlag = "Photos/spanish%20flag.png";
                 var natoFlag = "Photos/NATO%20flag.png";
 
-                // const style = document.querySelector('body');
-                // style.setProperty('--foto', 'grFlag');
+                // const style =
+                 document.querySelector('body').style.setProperty("--foto", "bgFlag");
+                console.log(style);
+                style.setProperty("--foto", "bgFlag");
+
 
                 // setInterval(changefoto, 2000);
                 // function changefoto(){

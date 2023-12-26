@@ -12,7 +12,6 @@
         .main{
             z-index: 1;
         }
-       
         .snowfall{
             display: inline;
             position: absolute;
@@ -20,10 +19,9 @@
             left: -10px;
             z-index: 1;
         }
-
-        body::before{
+        #bef:before{
+            background-image: var(--foto);
             content: "";
-            background-image: url(Photos/Greek%20Flag.png);
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
@@ -31,10 +29,8 @@
             right: 0px;
             left: 0px;
             bottom: 0px;
-            opacity: 0.6; 
-            
+            opacity: 0.6;    
         }
-        
         .footImg{
             width: 30px;
             height: 30px;
@@ -49,6 +45,7 @@
     </style>
     </head>
     <body >
+        <div id="bef">
         <img src="Photos\snowfall.gif" width="100%" height="115%" class="snowfall">
         <nav>
             <ul class="nav.list">
@@ -87,7 +84,10 @@
                         <li><a href="Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
                     </ul>
                 </li>
-                <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a></li>
+                <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="NATO(Marios)/NatoMembers.html">Nato Members</a></li>
+                    </ul>
                 <li class="popup" id="timer"><p class="time"></p></li> 
             </ul>
             
@@ -136,6 +136,7 @@
             <button class="button" id="next">&gt;</button>
             </div>
         </section>
+        </div>
             <script>
 
                 var slideshowItem = document.getElementsByClassName("slideshowItem");
@@ -181,6 +182,7 @@
                 document.getElementById("next").click();
                 console.log();
                 }
+                
                 const images = [
                     "Photos/Bulgarian.png",
                     "Photos/Greek%20Flag.png",
@@ -190,19 +192,21 @@
                 ];
 
                 var bgFlag = "Photos/Bulgarian.png";
-                var grFlag = "Photos/Greek%20Flag.png"
+                var grFlag = "Photos/Greek%20Flag.png";
                 var roFlag = "Photos/Romanian.png";
                 var esFlag = "Photos/spanish%20flag.png";
                 var natoFlag = "Photos/NATO%20flag.png";
 
-                // const style = document.querySelector('body');
-                // style.setProperty('--foto', 'grFlag');
+                // const row = document.querySelector('body');
+                // document.documentElement.style.setProperty('--foto', 'bgFlag');
+                // console.log(row)
 
                 // setInterval(changefoto, 2000);
                 // function changefoto(){
                 //     var style = document.querySelector('body').style;
-                //     for(var i=0; i<flagPhotos.lenght; i++){
-                //         style.setProperty(--foto, flagPhotos[i]);
+                //     for(var i=0; i<images.lenght; i++){
+                //         i++;
+                //         fla.style.setProperty(--foto, images[i]);
                 //         if(i==4){
                 //             i=0;
                 //         }

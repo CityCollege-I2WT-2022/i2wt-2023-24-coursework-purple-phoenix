@@ -9,19 +9,29 @@
                 position: relative;
             
             }
-
             .snowfall{
             z-index: -0;
             display: inline;
             position: absolute;
+            height: 1200px;
             top: -150px;
             left: -10px;
             }
-
-            body::before{
+            body{
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+            section{
+                z-index: -3;
+            }
+           p{
+                margin-left: 8px;
+                margin-right: 8px;
+           }
+            section::before{
                 content: " ";
                 background-image: url("../Photos/NATO\ flag.png");
-                background-repeat:repeat;
                 background-size: cover;
                 position: absolute;
                 top: 0px;
@@ -29,53 +39,55 @@
                 left: 0px;
                 bottom: 0px;
                 opacity: 0.5;
+                z-index: -3;
             }
-
+            .main{
+                text-align: justify;
+                font-size: large;
+                line-height: 22px;
+            }
             #timer{
             color:darkgreen;
             padding-right: 50px;
             margin-left: auto;
             position: relative;
             }
-            
+            #aspects{
+                text-align: center;
+            }
             section{
                 text-align: center;
                 position: relative;
                 margin: auto;
             }
-            table{
-                margin: auto;
-                
-            }
-            table td{
-                font-weight: bold;
-                font-size: larger;
-            }
             .footImg{
             width: 30px;
             height: 30px;
             display: inline;
-            position: relative;
+            position:static;
             bottom: 0px;
             margin-top: 10px;
             padding: 0px;
             }
-
+            footer{
+                display: block;
+            }
             .popupp{
                 display: none;
                 z-index: 2;
                 margin: 0px;
                 padding: 0px;
             }
-
             .hovver:hover>.popupp{
                 display: block;
-
+            }
+            footer{
+                position: relative;
             }
         </style>
     </head>
     <body>
-        <img src="..\Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+        <img src="..\Photos\snowfall.gif" width="100%" height="110%" class="snowfall">
         <div id="backimg">
         <nav>
             <ul class="nav.list">
@@ -123,164 +135,73 @@
         </nav>
 
         <section>            
-            <h1>What is NATO</h1>
+            <!-- <h1>What is NATO</h1>
             <p>NATO stands for <strong id="NATO">North Atlantic Treaty Organization</strong></p>
-            <table>
-                <tr>
-                    <td class="hovver" id="Albania">
-                        Albania <br> 2009 
-                        <p class="popupp"><img src="../Photos/Nato/Albania.png" width="80px" height="60"></p>                     
-                    </td>
-                    <td class="hovver" id="">
-                        Belgium <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/Belgium.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Bulgaria <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/Bulgaria.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Canada <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/Canada.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Croatia <br> 2009  
-                        <p class="popupp"><img src="../Photos/Nato/Croatia.svg" width="80px" height="60"></p>  
-                    </td>
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Czechia <br> 1999 
-                        <p class="popupp"><img src="../Photos/Nato/Czechia.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Denmark <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/Denmark.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Estonia <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/Estonia.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Finland <br> 2023
-                        <p class="popupp"><img src="../Photos/Nato/finland.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        France <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/france.png" width="80px" height="60"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Germany <br> 1955
-                        <p class="popupp"><img src="../Photos/Nato/Germany.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Greece <br> 1952
-                        <p class="popupp"><img src="../Photos/Nato/greece.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Hungary <br> 1999
-                        <p class="popupp"><img src="../Photos/Nato/Hungary.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Iceland <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/Iceland.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Italy <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/italy.png" width="80px" height="60"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Latvia <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/latvia.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Romania <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/Romanian.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Lithuania <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/lithuania.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Luxembourg <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/luxembourg.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Montenegro <br> 2017
-                        <p class="popupp"><img src="../Photos/Nato/montenegro.png" width="80px" height="60"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Netherlands <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/netherlands.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        North Macedonia <br> 2020
-                        <p class="popupp"><img src="../Photos/Nato/northMacedonia.jpg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Norway <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/norway.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Poland <br> 1999
-                        <p class="popupp"><img src="../Photos/Nato/poland.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Portugal <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/portugal.svg" width="80px" height="60"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Slovakia <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/slovakia.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Slovenia <br> 2004
-                        <p class="popupp"><img src="../Photos/Nato/slovenia.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        Spain <br> 1982
-                        <p class="popupp"><img src="../Photos/Nato/spain.png" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        United Kingdom <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/uk.svg" width="80px" height="60"></p>
-                    </td>
-                    <td class="hovver" id="">
-                        United States <br> 1949
-                        <p class="popupp"><img src="../Photos/Nato/usa.svg" width="80px" height="60"></p>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="hovver" id="">
-                        Turkey <br> 1952
-                        <p class="popupp"><img src="../Photos/Nato/turkey.png" width="80px" height="60"></p>
-                    </td>
-                </tr>
-            </table>
-                
-            </p>
 
-            <h3>
-                    Nato's purpose serves both Political and Military conflits.
-            </h3>
+            <h3>Nato's purpose serves both Political and Military conflits.</h3>
             <p>
                 <em>NATO promotes democratic values and enables members to consult and cooperate on defence and security-related issues to solve problems, 
                         build trust and, in the long run, prevent conflict.</em>
+            </p> -->
+            
+            <h1>What's the purpose of NATO?</h1>
 
-                    
+            <p class="main">The North Atlantic Treaty Organization (NATO) is a political and military alliance 
+                established to promote the security and defense of its member countries. 
+                NATO was founded on April 4, 1949, with the signing of the North Atlantic Treaty. 
+                The primary purpose of NATO is outlined in Article 5 of the treaty, 
+                which states that an armed attack against one or more of its members
+                is considered an attack against all members, and each member agrees 
+                to take action to restore and maintain the security of the North Atlantic area.
             </p>
-        
+
+           <h2>The history of NATO</h2>
+
+            <p class="main">
+                The North Atlantic Treaty Organization, commonly known as NATO, is a military and political alliance of countries that was established on April 4, 1949.
+                <br> The organization was founded with the primary goal of ensuring the collective defense and security of its member states. 
+                <br> The key principle of NATO is mutual defense: an attack against one or more members is considered an attack against all members,
+                <br> and each member agrees to come to the aid of any other member if attacked.</p>
+
+                <p class="main"><strong id="aspects"> Here are some key aspects of NATO:</strong></p> <br><br>
+
+                <p class="main"><strong>Founding Members:</strong> NATO was initially formed by 12 founding member countries, including the United States, Canada, the United Kingdom, France, Italy, Belgium, the Netherlands, Luxembourg, Denmark, Norway, Iceland, and Portugal.
+
+                <br><strong>Collective Defense:</strong>
+                The cornerstone of NATO is Article 5 of the North Atlantic Treaty, which states that an armed attack against one or more members shall be considered an attack against them all. This commitment to collective defense is central to NATO's mission.
+
+                <br><strong>Political and Military Alliance:</strong> 
+                NATO is both a political and military alliance. In addition to its military functions, NATO provides a forum for member countries to consult and cooperate on defense and security-related issues.
+
+                <br><strong>Expansion:</strong> 
+                NATO has expanded over the years to include new member countries. Greece and Turkey joined in 1952, West Germany joined in 1955, and subsequent rounds of expansion included countries from Central and Eastern Europe, as well as the Baltic states.
+
+                <br><strong>Post-Cold War Adaptation:</strong> 
+                With the end of the Cold War, NATO adapted its mission to address new security challenges. It engaged in peacekeeping operations in the Balkans and played a significant role in the War in Afghanistan.
+
+                <br><strong>Partnerships:</strong>
+                 NATO has developed partnerships with non-member countries and international organizations to promote security and stability beyond its immediate membership.
+
+                <br><strong>Crisis Management and Operations:</strong>
+                 NATO has been involved in various crisis management and military operations, including peacekeeping missions, humanitarian interventions, and counter-terrorism efforts.
+
+                <br><strong>Adaptation to Contemporary Threats:</strong>
+                 In recent years, NATO has focused on adapting to contemporary security threats, including cyber threats, hybrid warfare, and terrorism.
+
+                <br><br>
+                NATO is led by a Secretary General and operates on the basis of consensus among member states. It has a military command structure and various committees and forums for consultation and decision-making. The headquarters of NATO is in Brussels, Belgium. The alliance plays a crucial role in shaping the security environment in the Euro-Atlantic area and beyond.
+
+            </p>                   
+            
+            
         </section>
         </div>
+        <footer>
+            For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
+                <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
+                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
+                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
+            </footer>
             <script>
 
                  setInterval(myTimer, 1000);
@@ -292,11 +213,6 @@
                              
 
             </script>
-        <footer>
-            For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
-                <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
-                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
-                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
-            </footer>
+        
     </body>
 </html>

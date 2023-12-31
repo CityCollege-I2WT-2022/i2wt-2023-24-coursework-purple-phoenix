@@ -103,8 +103,9 @@ nav>ul>li>a{
 footer{
     
     text-align: center;
-    padding: 20px;
-    position: absolute;  /* i would change it for inherit like all the bid sections the poition should be inherit, so its fix with the size of anything that you put inside*/
+    padding: 20px; 
+    position: inherit;  /* i would change it for inherit like all the bid sections the poition should be inherit, so its fix with the size of anything that you put inside*/
+    display: block;
     bottom: 0px;
     left: 0px;
     right: 0px;

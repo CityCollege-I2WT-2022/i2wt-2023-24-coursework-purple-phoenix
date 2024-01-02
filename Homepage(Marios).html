@@ -25,11 +25,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
-            top: 0px;
+            top: 100px;
             right: 0px;
             left: 0px;
             bottom: 0px;
             opacity: 0.6;    
+        }
+        body{
+            margin: 0px;
         }
         .footImg{
             width: 30px;
@@ -217,7 +220,6 @@
                     row.style.backgroundImage = "url(" + images[i] + ")";
                     row.style.backgroundRepeat = 'no-repeat';
                     row.style.backgroundSize = "cover";
-                    row.style.height = "100%";
 
                     if (i < images.length - 1) {
                         i++;

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <section>
+        <h1></h1>
+        <div>
+            <button class="button" id="previous">&lt;</button>
+            <ul class="slideshow">
+                <li class="slideshowItem">
+                    <img class="apartimg"  name="w1" src="../Photos/Spain/">
+                    <p>AML MG4</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" name="w2"  src="../Photos/Spain/">
+                    <p>HECKLER & KOCH G 36E</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>Barrel Precision Rifle</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>40 SB-MI Grenade Launcher</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>LG 100 Alcotán</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>LG C-90</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>Milán 2K/2T (Anti-tank Guided Missile)</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>Spike missile</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>HK pistol</p>
+                </li>
+
+                <li class="slideshowItem">
+                    <img class="apartimg" src="../Photos/Spain/">
+                    <p>TOW (Anti-tank) LWL</p>
+                </li>
+            </ul>
+            <button class="button" id="next">&gt;</button>
+        </div>
+        </section>
+    </body>
+    <script>
+         var slideshowItem = document.getElementsByClassName("slideshowItem");
+                var showItem = 0;
+                for(var i=0; i < slideshowItem.length; i++){
+                    slideshowItem[i].style.display="none";
+                }
+
+                slideshowItem[showItem].style.display="block";
+
+                var nextButtonAction = function(){
+                    slideshowItem[showItem].style.display="none";
+                    showItem++;
+                    if(showItem >= slideshowItem.length){
+                        showItem=0;
+                    }
+                    slideshowItem[showItem].style.display="block";
+                }
+
+                var nextButton= document.getElementById("next");
+                nextButton.addEventListener("click", nextButtonAction);
+
+                var previousButtonAction = function(){
+                    slideshowItem[showItem].style.display="none";
+                    showItem--;
+                    if(showItem < 0){
+                        showItem=4;
+                    }
+                    slideshowItem[showItem].style.display="block";
+                }
+
+                var previousButton= document.getElementById("previous");
+                previousButton.addEventListener("click", previousButtonAction);          
+            
+                
+                
+    </script>
+</html>

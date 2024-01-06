@@ -21,11 +21,12 @@
         }
         body:before{
             /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg'); */
+            background-image: var(--bgphotos);
             content: "";
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
-            top: 100px;
+            top: 0px;
             right: 0px;
             left: 0px;
             bottom: 0px;
@@ -189,25 +190,25 @@
                 console.log();
                 }
 
-                // const row = document.querySelector('body');
-                // document.documentElement.style.setProperty('--foto', 'bgFlag');
-                // console.log(row)
+                const row = document.querySelector('body');
+                document.documentElement.style.setProperty('--foto', 'bgFlag');
+                console.log(row)
 
-                // setInterval(changefoto, 2000);
-                // function changefoto(){
-                //     var style = document.querySelector('body').style;
-                //     for(var i=0; i<images.lenght; i++){
-                //         i++;
-                //         fla.style.setProperty(--foto, images[i]);
-                //         if(i==4){
-                //             i=0;
-                //         }
-                //     }
-                // }
+                setInterval(changefoto, 2000);
+                function changefoto(){
+                    var style = document.querySelector('body').style;
+                    for(var i=0; i<images.lenght; i++){
+                        i++;
+                        fla.style.setProperty(--foto, images[i]);
+                        if(i==4){
+                            i=0;
+                        }
+                    }
+                }
             
                 var i = 0;
                 var images = [];
-                var slideTime = 2000; // 3 seconds
+                var slideTime = 2000;
 
                 images[0] = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg';
                 images[1] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/640px-Flag_of_Bulgaria.svg.png';

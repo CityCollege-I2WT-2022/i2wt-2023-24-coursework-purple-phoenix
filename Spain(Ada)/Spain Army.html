@@ -30,11 +30,17 @@
             list-style: none;
         }
 
+        .rankimg{
+            height: auto;
+            width: 50px;
+        }
+
         </style>
     </head>
 
     <body>
-        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+         <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="../Greece(Abraham)/Greek%20Homepage.html" class="nav">Greece</a>
@@ -90,17 +96,17 @@
         
         <p>
             <ol>
-                <li><img src="../Photos/Spain/1.jpg"></li>
-                <li><img src="../Photos/Spain/2.jpg"></li>
-                <li><img src="../Photos/Spain/3.jpg"></li>
-                <li><img src="../Photos/Spain/4.jpg"></li>
-                <li><img src="../Photos/Spain/5.jpg"></li>
-                <li><img src="../Photos/Spain/6.jpg"></li>
-                <li><img src="../Photos/Spain/7.jpg"></li>
-                <li><img src="../Photos/Spain/8.jpg"></li>
-                <li><img src="../Photos/Spain/9.jpg"></li>
-                <li><img src="../Photos/Spain/10.jpg"></li>
-                <li><img src="../Photos/Spain/11.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/1.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/2.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/3.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/4.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/5.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/6.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/7.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/8.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/9.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/10.jpg"></li>
+                <li><img class="rankimg" src="../Photos/Spain/11.jpg"></li>
             </ol>
         </p>
     
@@ -459,7 +465,7 @@
 
         <p>There are several ways to get into the Spanish army: <br>
         <ul class="howToGetIn"> <!--Esto es para cambiar el tipo de punto en la lista que estas viendo-->
-            <li onclick="clickForMoreInfo">>As an officer </li>
+            <li> <button onclick="clickForMoreInfo">>As an officer </button> </li>
               <p class="showMoreInfo">For joining the army as an Official:<br>   
                 <ul>
                     <li><a href="#NoTitulation">With no titulation</a></li>
@@ -508,7 +514,7 @@
                 </p></p>
            
             <li><button onclick="clickForMoreInfo"> a Subofficer</button></li>
-              <p class="showMoreInfo">
+              <p class="showMoreInfo">For joining the army as a Subofficer:<br>
                 <h3>Requirements</h3>
                 <ul>
                     <li>Have the Spanish nationality</li>
@@ -571,3 +577,11 @@
        </script>
     </body>
 </html>
+<!--Cosas a arreglar
+    -  darle otra forma a lo de los rangos pq queda demasiado cutre
+    -  Cambiar el tamaño de las fotos de los rangos militares
+    -  Mover la tabla de contenidos basicos al medio y darle mas color pq es una puta mierda y encima es super sosa
+    -  Quitar el lu de lo de titulacion o no titulacion en oficales
+    -  Quitar los headers en las listas de los años que tiene que hacer y ponerlo inline
+    -  Hacer que para ver mas informacion tenga que hacer click en la parte de oficiales suboficiales y tropa tienes que retocar practicamente todo ahí
+    -  -->

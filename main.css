@@ -1,8 +1,10 @@
 body{
-    background-color: antiquewhite
+    background-color: antiquewhite;
+    margin: 0px;
 }
 ::-webkit-scrollbar{
     width: 8px;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

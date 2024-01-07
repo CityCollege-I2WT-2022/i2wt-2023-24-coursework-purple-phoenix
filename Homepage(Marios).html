@@ -19,10 +19,12 @@
             left: -10px;
             z-index: 1;
         }
-        body:before{
-            /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg'); */
-            background-image: var(--bgphotos);
-            content: "";
+        .imgg{
+        border: 20px solid #0000004b;
+        border-radius: 5%;
+        }
+         /* body:before{
+            color: rgb(170, 255, 0);
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
@@ -31,7 +33,7 @@
             left: 0px;
             bottom: 0px;
             opacity: 0.6;    
-        }
+        } */
         body{
             margin: 0px;
         }
@@ -107,35 +109,35 @@
             <ul class="slideshow">  
                 <li class="slideshowItem">
                     <a href="Greece(Abraham)/Greek%20Homepage.html">
-                        <img src="Photos/Greek%20Flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <img class="imgg" src="Photos/Greek%20Flag.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Greece</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Bulgaria(Katrin)/Bulgarian%20Homepage.html">
-                        <img src="Photos/Bulgarian.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <img class="imgg" src="Photos/Bulgarian.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Bulgaria</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Romania(Iulia)/Romanian%20Homepage.html">
-                        <img src="Photos/Romanian.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <img class="imgg" src="Photos/Romanian.png" alt="greek flag" width="250px" height="150px" name="img">
                         <p>Romania</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="Spain(Ada)/Spain%20Homepage.html">
-                    <img src="Photos/spanish%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                    <img class="imgg" src="Photos/spanish%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
                     <p>Spain</p>
                     </a>
                 </li>
                 
                 <li class="slideshowItem">
                     <a href="NATO(Marios)/NATO(Marios).html">
-                    <img src="Photos/NATO%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                    <img class="imgg" src="Photos/NATO%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
                     <p>NATO</p>
                     </a>
                 </li>
@@ -189,22 +191,6 @@
                 document.getElementById("next").click();
                 console.log();
                 }
-
-                const row = document.querySelector('body');
-                document.documentElement.style.setProperty('--foto', 'bgFlag');
-                console.log(row)
-
-                setInterval(changefoto, 2000);
-                function changefoto(){
-                    var style = document.querySelector('body').style;
-                    for(var i=0; i<images.lenght; i++){
-                        i++;
-                        fla.style.setProperty(--foto, images[i]);
-                        if(i==4){
-                            i=0;
-                        }
-                    }
-                }
             
                 var i = 0;
                 var images = [];
@@ -221,7 +207,6 @@
                     row.style.backgroundImage = "url(" + images[i] + ")";
                     row.style.backgroundRepeat = 'no-repeat';
                     row.style.backgroundSize = "cover";
-
                     if (i < images.length - 1) {
                         i++;
                     } else {

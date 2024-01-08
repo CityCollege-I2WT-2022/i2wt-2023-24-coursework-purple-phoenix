@@ -4,11 +4,20 @@
         <title>Army</title>
         <link rel="stylesheet" type="text/css" href="../main.css">
         <style>
-            .snowfall{
+        body{
+                height: auto;
+    
+        }
+        section{
+            margin-top: 100px;
+            position: inherit;
+            width: 100%;
+        }
+        .snowfall{
             display: inline;
             position: absolute;
             top: -150px;
-            left: -10px;
+            left: opx;
         }
         .footImg{
             width: 30px;
@@ -26,13 +35,59 @@
             display: none;
         }
 
-        .hotToGetIn>ul>li{
+        #howToGetIn{
             list-style: none;
         }
 
         .rankimg{
             height: auto;
             width: 50px;
+        }
+
+        .RankLi{
+            display: inline;
+        }
+
+        #materials{
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+           border:4px solid black;
+           border-collapse: collapse;
+        }
+        
+        #materials td{
+            border: 1px solid black ;
+        
+        }
+
+        #materials tr{
+            border: 1px solid black;
+            
+        }
+        
+        #beginingImg{
+            position: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #beginingImg img{
+            width: 100%;
+            height: 120px;
+        }
+        #headText{
+            position: absolute;
+            color:white;
+            -webkit-text-stroke: 2px black;
+            background-color: white blur(20px);    
+            backdrop-filter: blur(20px); 
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+
         }
 
         </style>
@@ -84,7 +139,10 @@
         
         
        <section>
-         <h1>Army</h1>
+        <div id="beginingImg">
+            <img src="../Photos/Spain/bandera_espana.png" >
+            <h1 id="headText">Army</h1> 
+          </div>
 
          <h2>Budget</h2>
 
@@ -96,24 +154,24 @@
         
         <p>
             <ol>
-                <li><img class="rankimg" src="../Photos/Spain/1.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/2.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/3.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/4.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/5.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/6.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/7.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/8.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/9.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/10.jpg"></li>
-                <li><img class="rankimg" src="../Photos/Spain/11.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/1.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/2.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/3.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/4.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/5.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/6.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/7.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/8.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/9.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/10.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/Spain/11.jpg"></li>
             </ol>
         </p>
     
         <h2>Materials</h2>
-        <table>
+        <table id="materials">
         <tr>
-            <td>Transmisions</td>
+            <td><strong>Transmisions</td>
             <td>
                 <ul>
                     <li>
@@ -151,7 +209,7 @@
         </tr>
 
         <tr>
-            <td>Weapons</td>
+            <td><strong>Weapons</strong></td>
             <td>
             <ul>
                 <li>
@@ -208,7 +266,7 @@
         </tr>
         
         <tr>
-            <td>Combat vehicles</td>
+            <td><strong>Combat vehicles</strong></td>
             <td>
                 <ul>
                     <li>
@@ -281,7 +339,7 @@
         </tr>
 
         <tr>
-            <td>Vehicles</td>
+            <td><strong>Vehicles</strong></td>
             <td>
                 <ul>
                     <li>
@@ -339,7 +397,7 @@
         </tr>
 
         <tr>
-            <td>Engineering vehicles </td>
+            <td><strong>Engineering vehicles</strong> </td>
             <td>
                 <ul>
                     <li>
@@ -367,7 +425,7 @@
         </tr>
 
         <tr>
-            <td>Helicopters</td>
+            <td><strong>Helicopters</strong></td>
             <td>
                 <ul>
                     <li>
@@ -399,7 +457,7 @@
         </tr>
 
         <tr>
-            <td>Unmanned Aur Vehicles</td>
+            <td><strong>Unmanned Aur Vehicles</strong></td>
             <td>
                 <ul>
                     <li>
@@ -417,7 +475,7 @@
         </tr>
 
         <tr>
-            <td>Anti-Aricraft Artillery</td>
+            <td><strong>Anti-Aricraft Artillery</strong></td>
             <td>
                 <ul>
                     <li>
@@ -462,11 +520,11 @@
             </table>
 
          <h2>How to get in</h2>
-
         <p>There are several ways to get into the Spanish army: <br>
-        <ul class="howToGetIn"> <!--Esto es para cambiar el tipo de punto en la lista que estas viendo-->
-            <li> <button onclick="clickForMoreInfo">>As an officer </button> </li>
-              <p class="showMoreInfo">For joining the army as an Official:<br>   
+        <ul id="howToGetIn">
+            <li> <button  class="botonInfo">As an officer </button> </li>
+             <div class="showMoreInfo">
+              <p>For joining the army as an Official:<br>   
                 <ul>
                     <li><a href="#NoTitulation">With no titulation</a></li>
                     <li> <a href="#Titulation">With titulation</a></li>
@@ -512,9 +570,11 @@
                         <li>Lieutenant</li>
                     </ul>
                 </p></p>
+             </div>
            
-            <li><button onclick="clickForMoreInfo"> a Subofficer</button></li>
-              <p class="showMoreInfo">For joining the army as a Subofficer:<br>
+            <li><button class="botonInfo"> a Subofficer</button></li>
+             <div class="showMoreInfo">
+              <p>For joining the army as a Subofficer:<br>
                 <h3>Requirements</h3>
                 <ul>
                     <li>Have the Spanish nationality</li>
@@ -539,30 +599,42 @@
                     <li>3º AGBS AC ESFUN</li>
                     <li>Sergant + TTS</li>
                 </ul></p>
-
+            </div>
                
-            <li><button onclick="clickForMoreInfo">Trop </button></li>
-              <p class="showMoreInfo">Para entrar como tropa es muy sencillo</p>
+            <li><button class="botonInfo">Trop </button></li>
+             <div class="showMoreInfo">
+              <p>Para entrar como tropa es muy sencillo</p>
+            </div>  
         </ul>
     </p>
-
        </section>
 
        <footer>
         <p>
-            You can contact me:</p>
+            You can contact Ada by:</p>
        <p>
           <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
           <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
           <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
        </p>
+       <p>
+        If you want to know more about Ada Urbina please click <a href="ada.html">here</a>.
+       </p>
+       
 
             
        </footer>
        <script>
-       var clickForMoreInfo = function() {
-        document.getElementsByClassName("showMoreInfo").innerHTML.style.display="block";
-       }
+
+    var button = document.getElementsByClassName("botonInfo");
+    var info = document.getElementsByClassName("showMoreInfo");
+    button.addEventListener("click", function() {
+    if (info.style.display === "none" || info.style.display === "") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
+    });
 
        var word = document.getElementsByClassName("clicktoshow");
        word.addEventListener("click", function(){
@@ -572,7 +644,8 @@
         } else {
             img.style.display = "none";
         }
-       })
+       });
+
         
        </script>
     </body>
@@ -584,4 +657,5 @@
     -  Quitar el lu de lo de titulacion o no titulacion en oficales
     -  Quitar los headers en las listas de los años que tiene que hacer y ponerlo inline
     -  Hacer que para ver mas informacion tenga que hacer click en la parte de oficiales suboficiales y tropa tienes que retocar practicamente todo ahí
+    -  Ponerle un background de la bandera de España a los headers
     -  -->

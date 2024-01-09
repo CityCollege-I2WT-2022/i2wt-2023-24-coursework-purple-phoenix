@@ -34,6 +34,7 @@
          #pin{
                 position: absolute;
                 z-index: 1;
+                display: none;
         }
 
          #headText{
@@ -174,65 +175,65 @@
         
         <section>
             <div class="beginingImg">
-              <img src="../Photos/Spain/francotirador.jpg" >
+              <img src="../Photos/francotirador.jpg" >
               <h1 id="headText">Spanish Army</h1> 
             </div>
         </section>
 
         <article>
                 <h3>Where are the academys</h3>
-            <div id="academys">    
-            <ul>
+                <div>    
+                <ul>
+                    <li>
+                        <a href="#map" class="academys">
+                          Army
+                        </a>
+                        <span class="coordx">603</span>
+                        <span class="coordy">158</span>
+    
+                        <div class="imagenMove">
+                        <ul>
+                            <li><img src="../Photos/AGM1.jpg"></li>
+                            <li><img src="../Photos/AGM2.jpg"></li>
+                            <li><img src="../Photos/AGM3.jpg"></li>
+                        </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a href="#map" class="academys">
+                          Air force
+                        </a>
+                        <span class="coordx">590</span>
+                        <span class="coordy">430</span>
+    
+                        <div class="imagenMove">
+                        <ul>
+                            <li><img src="../Photos/AGA1.jpg"></li>
+                            <li><img src="../Photos/AGA2.jpg"></li>
+                            <li><img src="../Photos/AGA3.jpg"></li>
+                        </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <a href="#map" class="academys">
+                          Navy
+                        </a>
+                        <span class="coordx">230</span>
+                        <span class="coordy">120</span>
+    
+                        <div class="imagenMove">
+                        <ul>
+                            <li><img src="../Photos/ENM1.jpg"></li>
+                            <li><img src="../Photos/ENM2.jpg"></li>
+                            <li><img src="../Photos/ENM3.jpg"></li>
+                        </ul>
+                        </div>
+                    </li>
+                
                 <li>
-                    <a href="" class="academys">
-                      Army
-                    </a>
-                    <span class="coordx">603</span>
-                    <span class="coordy">158</span>
-
-                    <div class="imagenMove">
-                    <ul>
-                        <li><img src="../Photos/Spain/AGM1.jpg"></li>
-                        <li><img src="../Photos/Spain/AGM2.jpg"></li>
-                        <li><img src="../Photos/Spain/AGM3.jpg"></li>
-                    </ul>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="" class="academys">
-                      Air force
-                    </a>
-                    <span class="coordx">590</span>
-                    <span class="coordy">430</span>
-
-                    <div class="imagenMove">
-                    <ul>
-                        <li><img src="../Photos/Spain/AGA1.jpg"></li>
-                        <li><img src="../Photos/Spain/AGA2.jpg"></li>
-                        <li><img src="../Photos/Spain/AGA3.jpg"></li>
-                    </ul>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="" class="academys">
-                      Navy
-                    </a>
-                    <span class="coordx">230</span>
-                    <span class="coordy">120</span>
-
-                    <div class="imagenMove">
-                    <ul>
-                        <li><img src="../Photos/Spain/ENM1.jpg"></li>
-                        <li><img src="../Photos/Spain/ENM2.jpg"></li>
-                        <li><img src="../Photos/Spain/ENM3.jpg"></li>
-                    </ul>
-                    </div>
-                </li>
-
-                <li>
-                    <a href="" class="academys">
+                    <a href="#map" class="academys">
                       Special Forces (UME)
                     </a>
                     <span class="coordx"></span>
@@ -240,17 +241,17 @@
 
                     <div class="imagenMove">
                     <ul>
-                        <li><img src="../Photos/Spain/"></li>
-                        <li><img src="../Photos/Spain/"></li>
-                        <li><img src="../Photos/Spain/"></li>
+                        <li><img src="../Photos/"></li>
+                        <li><img src="../Photos/"></li>
+                        <li><img src="../Photos/"></li>
                     </ul>
                     </div>
                 </li>
             </ul>
             </div>
         
-        <div id="map">
-                <img src="../Photos/Spain/spainMap.jpg">
+            <div id="map">
+            <img src="../Photos/spainMap.jpg">
                 <img src="../Photos/pin.png" id="pin">
         </div> 
         
@@ -275,38 +276,26 @@
         </footer>
 
         <script>
-            var loc = document.getElementById("pin");
-            var academys = document.getElementsByClassName("academys");
+            document.addEventListener("DOMContentLoaded", function(){
+                var academys = document.getElementsByClassName("academys");
 
-            var showLoc = function(){
-                loc.style.visibility = "visible";
-                var x = this.getElementsByClassName("coordx")[0].innerHTML -10;
-                var y = this.getElementsByClassName("coordy")[0].innerHTML -35;
-                loc.style.top = y +"px";
-                loc.style.left = x + "px";
-            }
+                for(var i=0; i<academys.length; i++){
+                    academys[i].addEventListener("click", function(){
+                        var pin = document.getElementById("pin");
+                        var xcoord = document.getElementsByClassName(".coordx");
+                        var ycoord = document.getElementsByClassName(".coordy");
 
-
-
-            var placesEl = document.getElementsByClassName("place");
-            var pinEl = document.getElementById("pin");
-            var makVisible = function(){
-                pinEl.style.visibility= "visible";
-                var x = this.getElementsByClassName("xcor")[0].innerHTML -10;
-                var y = this.getElementsByClassName("ycor")[0].innerHTML -35;
-                pinEl.style.top = y + "px";
-                pinEl.style.left = x + "px";
-            }
-            for(var i=0; i<placesEl.length; i++){
-            placesEl[i].addEventListener("click", makVisible);
-            }
-        
-
-
-            for (var i=0; i<academys.length; i++){
-                academys[i].addEventListener("click", showLoc);
-            }
-
+                        if(xcoord && ycoord){
+                            pin.style.visibility = "visible";
+                            pin.style.top = (parseInt(ycoord)- 35) + "px";
+                            pin.style.left = (parseInt(xcoord) - 10) + "px";
+                        } else {
+                            console.error("coordinates not found");
+                        }
+                    });
+                }
+            });
+            
             setInterval(myTimer, 1000);
                 function myTimer() {
                 const d = new Date();

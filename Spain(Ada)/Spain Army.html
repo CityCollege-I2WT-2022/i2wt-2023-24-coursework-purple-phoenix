@@ -41,20 +41,41 @@
 
         .rankimg{
             height: auto;
-            width: 50px;
+            width: 20px;
         }
-
+        
+        
         .RankLi{
-            display: inline;
+            list-style-type: none;
+            text-align: center;
+            float:left;
+            width:120px;
+
+        }
+        #ranks{
+            list-style:inline;
         }
 
         #materials{
+            text-align: center;
+            width: 100%;
+        }
+        #naterials h2{
+            text-align: center;
+            width: 100%;
+            height: fit-content;
+
+        }
+
+        #materialstb{
             text-align: center;
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
            border:4px solid black;
            border-collapse: collapse;
+           position: inherit;
+    
         }
         
         #materials td{
@@ -150,10 +171,12 @@
         <p>
             Ensing => Lieutenant => Captain => Commander => Lieutenant Colonel => Colonel => General => 
             Brigadier General => Division General => Lieutenant General => Army General => Captain General.
+            The ranks are expresed from the least important rank to the most important.
+
         </p>
         
         <p>
-            <ol>
+            <ol id="ranks">
                 <li class="RankLi"><img class="rankimg" src="../Photos/Spain/1.jpg"></li>
                 <li class="RankLi"><img class="rankimg" src="../Photos/Spain/2.jpg"></li>
                 <li class="RankLi"><img class="rankimg" src="../Photos/Spain/3.jpg"></li>
@@ -167,9 +190,10 @@
                 <li class="RankLi"><img class="rankimg" src="../Photos/Spain/11.jpg"></li>
             </ol>
         </p>
-    
+        
+        <div id="materials">
         <h2>Materials</h2>
-        <table id="materials">
+        <table id="materialstb">
         <tr>
             <td><strong>Transmisions</td>
             <td>
@@ -518,6 +542,7 @@
         </tr>
         
             </table>
+        </div>
 
          <h2>How to get in</h2>
         <p>There are several ways to get into the Spanish army: <br>
@@ -619,11 +644,9 @@
        </p>
        <p>
         If you want to know more about Ada Urbina please click <a href="ada.html">here</a>.
-       </p>
-       
-
-            
+       </p> 
        </footer>
+
        <script>
 
     var button = document.getElementsByClassName("botonInfo");
@@ -637,8 +660,8 @@
     });
 
        var word = document.getElementsByClassName("clicktoshow");
-       word.addEventListener("click", function(){
-        var img = document.getElementsByClassName("showWhenClick");
+       var img = document.getElementsByClassName("showWhenClick");
+       word.addEventListener("click", function() {
         if (img.style.display === "none" || img.style.display === "") {
             img.style.display = "block"; 
         } else {

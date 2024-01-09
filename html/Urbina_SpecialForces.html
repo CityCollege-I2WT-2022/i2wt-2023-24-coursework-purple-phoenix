@@ -43,7 +43,7 @@
     </head>
 
     <body>
-        <img src="Photos\snowfall.gif" width="100%" height="1020px" class="snowfall">
+        <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
         <nav>
             <ul class="nav.list">
                 <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
@@ -81,7 +81,20 @@
                         <li><a href="../Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
                     </ul>
                 </li>
-                <li class="popup"><a href="../NATO(Marios)/NATO(Marios).html" class="nav">NATO</a></li>
+                <li class="popup"><a href="../NATO(Marios)/NATO(Marios).html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="../NATO(Marios)/NatoMembers.html">Nato Members</a></li>
+                    </ul>
+                <li class="popup"><a  class="nav" href="">Students</a></li>
+                <ul class="dropdown">
+                    <li><a href="../Students/Marios.html"></a>Marios</li>
+                    <li><a href="../Students/Marios.html"></a>Abraham</li>
+                    <li><a href="../Students/Marios.html"></a>Iulia</li>
+                    <li><a href="../Students/Marios.html"></a>Ada</li>
+                    <li><a href="../Students/Marios.html"></a>Katrin</li>
+
+                </ul>
+                <li class="popup" ><p class="time" id="timer"></p></li>
             </ul>
             
         </nav>
@@ -107,10 +120,18 @@
           <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
        </p>
        <p>
-        If you want to know more about Ada Urbina please click <a href="ada.html">here</a>.
+        If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
        </p>       
 
             
      </footer>
+
+     <script>
+        setInterval(myTimer, 1000);
+                function myTimer() {
+                const d = new Date();
+                document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+                }
+     </script>
     </body>
 </html>

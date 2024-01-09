@@ -16,6 +16,29 @@
             display: inline;
         }
 
+        #beginingImg{
+            position: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #beginingImg img{
+            width: 100%;
+            height: 120px;
+        }
+        #headText{
+            position: absolute;
+            color:white;
+            -webkit-text-stroke: 2px black;
+            background-color: white blur(20px);    
+            backdrop-filter: blur(20px); 
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+
+        }
+
         </style>
     </head>
 
@@ -65,7 +88,10 @@
         
         
      <section>  
-        <h1>Special Forces</h1>
+        <div id="beginingImg">
+            <img src="../Photos/Spain/bandera_espana.png" >
+            <h1 id="headText">Special Forces</h1> 
+          </div>
         <h2>Budget</h2>
         <h2>Positions</h2> 
         <h2>Vehicles</h2>
@@ -80,6 +106,9 @@
           <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
           <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
        </p>
+       <p>
+        If you want to know more about Ada Urbina please click <a href="ada.html">here</a>.
+       </p>       
 
             
      </footer>

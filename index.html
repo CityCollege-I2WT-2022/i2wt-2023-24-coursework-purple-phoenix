@@ -1,0 +1,241 @@
+<!doctype html>         <!--Marios-->
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>        
+         #timer{
+            padding: 0px;
+            color:darkgreen;
+            padding-left: auto;
+            padding-right: 20px;
+            position: relative;  
+            margin: 0px;          
+        }
+        .main{
+            z-index: 1;
+        }
+        .snowfall{
+            display: inline;
+            position: absolute;
+            top: -150px;
+            left: -10px;
+            z-index: 1;
+        }
+        .imgg{
+        border: 20px solid #0000004b;
+        border-radius: 5%;
+        }
+         /* body:before{
+            color: rgb(170, 255, 0);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0.6;    
+        } */
+        body{
+            margin: 0px;
+        }
+        .footImg{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            z-index: 2;
+        }
+        footer{
+            position: absolute;
+        }
+       
+    </style>
+    </head>
+    <body >
+        <div id="bef">
+        <img src="Photos\snowfall.gif" width="100%" height="115%" class="snowfall">
+        <nav>
+            <ul class="nav.list">
+                <li class="popup"><a href="Homepage(Marios).html">Homepage</a></li>
+                <li class="popup"><a href="Greece(Abraham)/Greek%20Homepage.html" class="nav">Greece</a>
+                    <ul class="dropdown">
+                        <li><a href="Greece(Abraham)/Greek%20AirForces.html">Airforce</a></li>
+                        <li><a href="Greece(Abraham)/Greek%20Army.html">Army</a></li>
+                        <li><a href="Greece(Abraham)/Greek%20Navy.html">Navy</a></li>
+                        <li><a href="Greece(Abraham)/Greek%20Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                    </li>
+                <li class="popup"><a href="Bulgaria(Katrin)/Bulgarian%20Homepage.html" class="nav">Bulgaria</a>
+                    <ul class="dropdown">
+                        <li><a href="Bulgaria(Katrin)/Bulgarian%20Airforce.html">Airforce</a></li>
+                        <li><a href="Bulgaria(Katrin)/Bulgarian%20Army.html">Army</a></li>
+                        <li><a href="Bulgaria(Katrin)/Bulgarian%20Navy.html">Navy</a></li>
+                        <li><a href="Bulgaria(Katrin)/Bulgarian%20Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li class="popup"><a href="Romania(Iulia)/Romanian%20Homepage.html" class="nav">Romania</a>
+                    <ul class="dropdown">
+                        <li><a href="Romania(Iulia)/Romanian%20Airforce.html">Airforce</a></li>
+                        <li><a href="Romania(Iulia)/Romanian%20Army.html">Army</a></li>
+                        <li><a href="Romania(Iulia)/Romanian%20Navy.html">Navy</a></li>
+                        <li><a href="Romania(Iulia)/Romanian%20Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Spain(Ada)/Spain%20Homepage.html" class="nav">Spain</a>
+                    <ul class="dropdown">
+                        <li><a href="Spain(Ada)/Spain%20AirForce.html">Airforce</a></li>
+                        <li><a href="Spain(Ada)/Spain%20Army.html">Army</a></li>
+                        <li><a href="Spain(Ada)/Spain%20Navy.html">Navy</a></li>
+                        <li><a href="Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="NATO(Marios)/NATO(Marios).html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="NATO(Marios)/NatoMembers.html">Nato Members</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a  class="nav" href="">Students</a>
+                <ul class="dropdown">
+                    <li><a href="Students/Marios.html">Marios</a></li>
+                    <li><a href="Students/Marios.html">Abraham</a></li>
+                    <li><a href="Students/Marios.html">Iulia</a></li>
+                    <li><a href="Students/Marios.html">Ada</a></li>
+                    <li><a href="Students/Marios.html">Katrin</a></li>
+                </ul>
+                </li>
+                <li class="popup" ><p class="time" id="timer"></p></li>
+            </ul>
+            
+        </nav>
+        
+       <section class="main" id="editor"> 
+            <h1 width="100%"><strong>Militaries around the world</strong></h1>
+            <div>
+             <button class="button" id="previous">&lt;</button>
+            <ul class="slideshow">  
+                <li class="slideshowItem">
+                    <a href="Greece(Abraham)/Greek%20Homepage.html">
+                        <img class="imgg" src="Photos/Greek%20Flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <p>Greece</p>
+                    </a>
+                </li>
+                
+                <li class="slideshowItem">
+                    <a href="Bulgaria(Katrin)/Bulgarian%20Homepage.html">
+                        <img class="imgg" src="Photos/Bulgarian.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <p>Bulgaria</p>
+                    </a>
+                </li>
+                
+                <li class="slideshowItem">
+                    <a href="Romania(Iulia)/Romanian%20Homepage.html">
+                        <img class="imgg" src="Photos/Romanian.png" alt="greek flag" width="250px" height="150px" name="img">
+                        <p>Romania</p>
+                    </a>
+                </li>
+                
+                <li class="slideshowItem">
+                    <a href="Spain(Ada)/Spain%20Homepage.html">
+                    <img class="imgg" src="Photos/spanish%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                    <p>Spain</p>
+                    </a>
+                </li>
+                
+                <li class="slideshowItem">
+                    <a href="NATO(Marios)/NATO(Marios).html">
+                    <img class="imgg" src="Photos/NATO%20flag.png" alt="greek flag" width="250px" height="150px" name="img">
+                    <p>NATO</p>
+                    </a>
+                </li>
+            </ul>
+            <button class="button" id="next">&gt;</button>
+            </div>
+        </section>
+        </div>
+            <script>
+
+                var slideshowItem = document.getElementsByClassName("slideshowItem");
+                var showItem = 0;
+                for(var i=0; i < slideshowItem.length; i++){
+                    slideshowItem[i].style.display="none";
+                }
+
+                slideshowItem[showItem].style.display="block";
+
+                var nextButtonAction = function(){
+                    slideshowItem[showItem].style.display="none";
+                    showItem++;
+                    if(showItem >= slideshowItem.length){
+                        showItem=0;
+                    }
+                    slideshowItem[showItem].style.display="block";
+                }
+
+                var nextButton= document.getElementById("next");
+                nextButton.addEventListener("click", nextButtonAction);
+
+                var previousButtonAction = function(){
+                    slideshowItem[showItem].style.display="none";
+                    showItem--;
+                    if(showItem < 0){
+                        showItem=4;
+                    }
+                    slideshowItem[showItem].style.display="block";
+                }
+
+                var previousButton= document.getElementById("previous");
+                previousButton.addEventListener("click", previousButtonAction);          
+            
+                setInterval(myTimer, 1000);
+                function myTimer() {
+                const d = new Date();
+                document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+                }
+
+                setInterval(slides, 2000);
+                function slides(){
+                document.getElementById("next").click();
+                console.log();
+                }
+            
+                var i = 0;
+                var images = [];
+                var slideTime = 2000;
+
+                images[0] = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg';
+                images[1] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/640px-Flag_of_Bulgaria.svg.png';
+                images[2] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Romania_Flag.svg/768px-Romania_Flag.svg.png?20161024231308';
+                images[3] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/640px-Flag_of_Spain.svg.png';
+                images[4] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/640px-Flag_of_NATO.svg.png';
+
+                function changePicture() {
+                    const row = document.querySelector('body');
+                    row.style.backgroundImage = "url(" + images[i] + ")";
+                    row.style.backgroundRepeat = 'no-repeat';
+                    row.style.backgroundSize = "cover";
+                    if (i < images.length - 1) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout(changePicture, slideTime);
+                }
+
+                window.onload = changePicture;
+            </script>
+        
+        
+        <footer>
+        For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>
+        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="Photos/Spain/mail.jpg"></a>
+                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="Photos/Spain/Insta.jpg"></a>   
+                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="Photos/Spain/facebook.jpg"></a>
+        </footer>
+    </body>
+</html>

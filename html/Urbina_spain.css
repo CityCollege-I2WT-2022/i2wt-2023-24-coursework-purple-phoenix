@@ -1,101 +1,127 @@
-body{
-    height: auto;
+
+.properpag{
+  font-style: none;
 }
-section{
-margin-top: 100px;
-position: inherit;
-width: 100%;
-text-align: justify;
-}
+
 .snowfall{
-display: inline;
-position: absolute;
-top: -150px;
-left: opx;
-width:100%;
-height:1020px;
-}
-.footImg{
-width: 30px;
-height: 30px;
-display: inline;
-}
-
-.showMoreInfo2{
-display: none;
-list-style: none;
-}
-
-#howToGetIn{
-list-style: none;
-text-align: center;
-}
-
-.rankimg{
-height: auto;
-width: 20px;
-}
-
-.RankLi{
-list-style-type: none;
-text-align: center;
-float:left;
-width:120px;
-
-}
-#ranks{
-list-style:inline;
-position: inherit;
-}
-
-#materials{
-text-align: center;
-width: 100%;
-position: inherit;
-}
-#materials>h2{
-text-align: center;
-width: 100%;
-height: fit-content;
-position: inherit;
-
-}
-#materialstb{
-text-align: center;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-border:4px solid black;
-border-collapse: collapse;
-position: inherit;
-
-}
-#materials td{
-border: 1px solid black ;
-
-}
-#materials tr{
-border: 1px solid black;
-
+  display: inline;
+  position: absolute;
+  top: -150px;
+  left: 0px;
+  width:100%;
+  height:1020px;
 }
 
 #beginingImg{
-position: inherit;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+    }
 #beginingImg img{
-width: 100%;
-height: 120px;
-}
+  width: 100%;
+  height: 120px;
+  margin-left: -15px;
+  margin-right: 0px;
+    }
 #headText{
-position: absolute;
-color:white;
--webkit-text-stroke: 2px black;   
-width: 100%;
-text-align: center;
-margin: 0px;
+  position: absolute;
+  color:white;
+  -webkit-text-stroke: 2px black;   
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+    }
+
+.rankimg{
+  height: auto;
+  width: 20px;
+}
+
+.RankLi{
+  list-style-type: none;
+  text-align: center;
+  float:left;
+  width:120px;
 
 }
+#ranks{
+  list-style:inline;
+  position: inherit;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#materials{
+  text-align: center;
+  width: 100%;
+  position: inherit;
+  margin-top: 60px;
+}
+#materials caption{
+  font-size: 30px;
+  text-decoration: solid;
+}
+#materialstb{
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border:4px solid black;
+  border-collapse: collapse;
+position: inherit;
+}
+#materials td{
+  border: 1px solid black ;
+}
+#materials tr{
+  border: 1px solid black;
+}
+
+.showMoreInfo2{
+  display: none;
+  list-style: none;
+}
+
+#howToGetIn{
+  list-style: none;
+  text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+.footImg{
+  width: 30px;
+  height: 30px;
+  display: inline;
+}
+
+body{
+    height: auto;
+  }
+section{
+    margin-top: 100px;
+    position: inherit;
+    width: 100%;
+    text-align: justify;
+    margin-left: 8px;
+  }
+footer{
+    text-align: center;
+    align-items: center;
+}
+  
+  h2{
+      text-align: center;
+  }
+  
+  p{
+      text-align: justify;
+      margin-left: 8px;
+  }
+  
+
+    

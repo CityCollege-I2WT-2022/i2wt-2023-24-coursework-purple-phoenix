@@ -1,0 +1,101 @@
+body{
+    height: auto;
+}
+section{
+margin-top: 100px;
+position: inherit;
+width: 100%;
+text-align: justify;
+}
+.snowfall{
+display: inline;
+position: absolute;
+top: -150px;
+left: opx;
+width:100%;
+height:1020px;
+}
+.footImg{
+width: 30px;
+height: 30px;
+display: inline;
+}
+
+.showMoreInfo2{
+display: none;
+list-style: none;
+}
+
+#howToGetIn{
+list-style: none;
+text-align: center;
+}
+
+.rankimg{
+height: auto;
+width: 20px;
+}
+
+.RankLi{
+list-style-type: none;
+text-align: center;
+float:left;
+width:120px;
+
+}
+#ranks{
+list-style:inline;
+position: inherit;
+}
+
+#materials{
+text-align: center;
+width: 100%;
+position: inherit;
+}
+#materials>h2{
+text-align: center;
+width: 100%;
+height: fit-content;
+position: inherit;
+
+}
+#materialstb{
+text-align: center;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+border:4px solid black;
+border-collapse: collapse;
+position: inherit;
+
+}
+#materials td{
+border: 1px solid black ;
+
+}
+#materials tr{
+border: 1px solid black;
+
+}
+
+#beginingImg{
+position: inherit;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+#beginingImg img{
+width: 100%;
+height: 120px;
+}
+#headText{
+position: absolute;
+color:white;
+-webkit-text-stroke: 2px black;   
+width: 100%;
+text-align: center;
+margin: 0px;
+
+}

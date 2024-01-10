@@ -1,14 +1,23 @@
 <!doctype html>
 <html>
     <head>
-        <title>Navy</title>
+        <title>Army</title>
         <link rel="stylesheet" type="text/css" href="../main.css">
         <style>
-            .snowfall{
+        body{
+                height: auto;
+        }
+        section{
+            margin-top: 100px;
+            position: inherit;
+            width: 100%;
+            text-align: justify;
+        }
+        .snowfall{
             display: inline;
             position: absolute;
             top: -150px;
-            left: -10px;
+            left: opx;
         }
         .footImg{
             width: 30px;
@@ -16,6 +25,64 @@
             display: inline;
         }
 
+        .showMoreInfo2{
+            display: none;
+            list-style: none;
+        }
+
+        #howToGetIn{
+            list-style: none;
+            text-align: center;
+        }
+
+        .rankimg{
+            height: auto;
+            width: 20px;
+        }
+           
+        .RankLi{
+            list-style-type: none;
+            text-align: center;
+            float:left;
+            width:120px;
+
+        }
+        #ranks{
+            list-style:inline;
+            position: inherit;
+        }
+
+        #materials{
+            text-align: center;
+            width: 100%;
+            position: inherit;
+        }
+        #materials>h2{
+            text-align: center;
+            width: 100%;
+            height: fit-content;
+            position: inherit;
+
+        }
+        #materialstb{
+            text-align: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+           border:4px solid black;
+           border-collapse: collapse;
+           position: inherit;
+    
+        }
+        #materials td{
+            border: 1px solid black ;
+        
+        }
+        #materials tr{
+            border: 1px solid black;
+            
+        }
+        
         #beginingImg{
             position: inherit;
             display: flex;
@@ -30,7 +97,7 @@
         #headText{
             position: absolute;
             color:white;
-            -webkit-text-stroke: 2px black;
+            -webkit-text-stroke: 2px black;   
             width: 100%;
             text-align: center;
             margin: 0px;
@@ -41,94 +108,606 @@
     </head>
 
     <body>
-        <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
-        <nav>
-            <ul class="nav.list">
-                <li class="popup"><a href="../Homepage(Marios).html">Homepage</a></li>
-                <li class="popup"><a href="../Greece(Abraham)/Greek%20Homepage.html" class="nav">Greece</a>
-                    <ul class="dropdown">
-                        <li><a href="../Greece(Abraham)/Greek%20AirForces.html">Airforce</a></li>
-                        <li><a href="../Greece(Abraham)/Greek%20Army.html">Army</a></li>
-                        <li><a href="../Greece(Abraham)/Greek%20Navy.html">Navy</a></li>
-                        <li><a href="../Greece(Abraham)/Greek%20Special%20Forces.html">Special Forces</a></li>
-                    </ul>
-                    </li>
-                <li class="popup"><a href="../Bulgaria(Katrin)/Bulgarian%20Homepage.html" class="nav">Bulgaria</a>
-                    <ul class="dropdown">
-                        <li><a href="../Bulgaria(Katrin)/Bulgarian%20Airforce.html">Airforce</a></li>
-                        <li><a href="../Bulgaria(Katrin)/Bulgarian%20Army.html">Army</a></li>
-                        <li><a href="../Bulgaria(Katrin)/Bulgarian%20Navy.html">Navy</a></li>
-                        <li><a href="../Bulgaria(Katrin)/Bulgarian%20Special%20Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                
-                
-                <li class="popup"><a href="../Romania(Iulia)/Romanian%20Homepage.html" class="nav">Romania</a>
-                    <ul class="dropdown">
-                        <li><a href="../Romania(Iulia)/Romanian%20Airforce.html">Airforce</a></li>
-                        <li><a href="../Romania(Iulia)/Romanian%20Army.html">Army</a></li>
-                        <li><a href="../Romania(Iulia)/Romanian%20Navy.html">Navy</a></li>
-                        <li><a href="../Romania(Iulia)/Romanian%20Special%20Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="../Spain(Ada)/Spain%20Homepage.html" class="nav">Spain</a>
-                    <ul class="dropdown">
-                        <li><a href="../Spain(Ada)/Spain%20AirForce.html">Airforce</a></li>
-                        <li><a href="../Spain(Ada)/Spain%20Army.html">Army</a></li>
-                        <li><a href="../Spain(Ada)/Spain%20Navy.html">Navy</a></li>
-                        <li><a href="../Spain(Ada)/Spain%20Special%20Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="../NATO(Marios)/NATO(Marios).html" class="nav">NATO</a>
-                    <ul class="dropdown">
-                        <li><a href="../NATO(Marios)/NatoMembers.html">Nato Members</a></li>
-                    </ul>
-                <li class="popup"><a  class="nav" href="">Students</a></li>
-                <ul class="dropdown">
-                    <li><a href="../Students/Marios.html"></a>Marios</li>
-                    <li><a href="../Students/Marios.html"></a>Abraham</li>
-                    <li><a href="../Students/Marios.html"></a>Iulia</li>
-                    <li><a href="../Students/Marios.html"></a>Ada</li>
-                    <li><a href="../Students/Marios.html"></a>Katrin</li>
+         <img src="../Photos/snowfall.gif" width="100%" height="1020px" class="snowfall">
 
-                </ul>
-                <li class="popup" ><p class="time" id="timer"></p></li>
+         <nav>
+            <ul class="nav.list">
+                <li class="popup"><a href="../index.html">Homepage</a></li>
+                <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
+                    <ul class="dropdown">
+                        <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                        <li><a href="Tsartsidis_Army.html">Army</a></li>
+                        <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                        <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
+                    <ul class="dropdown">
+                        <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                        <li><a href="Katrin_Army.html">Army</a></li>
+                        <li><a href="Katrin_Navy.html">Navy</a></li>
+                        <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+    
+    
+                <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
+                    <ul class="dropdown">
+                        <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                        <li><a href="Chindris_Army.html">Army</a></li>
+                        <li><a href="ChindrisNavy.html">Navy</a></li>
+                        <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
+                    <ul class="dropdown">
+                        <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                        <li><a href="Urbina_Army.html">Army</a></li>
+                        <li><a href="Urbina_Navy.html">Navy</a></li>
+                        <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a class="nav" href="">Students</a>
+                    <ul class="dropdown">
+                        <li><a href="Students/Marios.html">Marios</a></li>
+                        <li><a href="Students/Marios.html">Abraham</a></li>
+                        <li><a href="Students/Marios.html">Iulia</a></li>
+                        <li><a href="Students/ada.html">Ada</a></li>
+                        <li><a href="Students/Marios.html">Katrin</a></li>
+                    </ul>
+                </li>
+                <li class="popup">
+                    <p class="time" id="timer"></p>
+                </li>
             </ul>
-            
         </nav>
         
         
-        <section>
-            <div id="beginingImg">
-                <img src="../Photos/bandera_espana.png" >
-                <h1 id="headText">Navy</h1> 
-              </div>
-          <h2>Budget</h2>
-          <h2>Positions</h2> 
-          <h2>Vehicles</h2>
-          <h2>How to get in</h2>
-        </section>
+       <section>
+        <div id="beginingImg">
+            <img src="../Photos/spainFlag.jpg" >
+            <h1 id="headText">Army</h1> 
+          </div>
 
-        <footer>
-            <p>
-                You can contact me:</p>
-           <p>
-              <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
-              <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Insta.jpg"></a>   
-              <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/facebook.jpg"></a> 
-           </p>
-           <p>
-            If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
-           </p>           
+         <h2>Budget</h2>
 
-        </footer>
+         <h2>Ranks</h2> 
+        <p>
+            Ensing => Lieutenant => Captain => Commander => Lieutenant Colonel => Colonel => General => 
+            Brigadier General => Division General => Lieutenant General => Army General => Captain General.
+            The ranks are expresed from the least important rank to the most important.
 
-        <script>
-            setInterval(myTimer, 1000);
+        </p>
+        
+        <p>
+            <ol id="ranks">
+                <li class="RankLi"><img class="rankimg" src="../Photos/1.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/2.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/3.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/4.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/5.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/6.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/7.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/8.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/9.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/10.jpg"></li>
+                <li class="RankLi"><img class="rankimg" src="../Photos/11.jpg"></li>
+            </ol>
+        </p>
+        
+        <div id="materials">
+        <h2>Materials</h2>
+        <table id="materialstb">
+        <tr>
+            <td><strong>Transmisions</td>
+            <td>
+                <ul>
+                    <li>
+                        <p class="botonInfo"> HARRIS 117  </p>
+                        <img src="../Photos/facebook.jpg" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> HARRIS 5800 </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> PNR 500 </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> PR4G Radiotelephone </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> SpearNet </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Thales</p> 
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                 </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Weapons</strong></td>
+            <td>
+            <ul>
+                <li>
+                     <p class="botonInfo"> AML MG4</p> 
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> HECKLER & KOCH G 36E 
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                    <p class="botonInfo">  sBarrel Precision Rifle </p>
+                    <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> 40 SB-MI Grenade Launcher </p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> LG 100 Alcotán</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> LG C-90</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo">Milán 2K/2T (Anti-tank Guided Missile)</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> Spike missile</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> HK pistol</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                <li>
+                     <p class="botonInfo"> TOW (Anti-tank) LWL</p>
+                     <img src="../Photos/" class="showMoreInfo">
+                    
+                </li>
+                   </ul> 
+            </td>
+        </tr>
+        
+        <tr>
+            <td><strong>Combat vehicles</strong></td>
+            <td>
+                <ul>
+                    <li>
+                         <p class="botonInfo"> Centaur</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Leopard 2E</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Mounted mortar</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> 155/52 APU SBT-1 Howitzer</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> APU SBT SIAC</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> ATP M-109 A5E Howitzer</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> L118 Light Gun Howitzer</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> OTO Melara Mod 56 Towed Howitzer 105/14</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> ASCOD Pizzarro</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> RG-31 Mk5E</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> BMR (Personal transport Armoured vehicle 6x6)</p>
+                         <img src="../Photos/Spain/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> VEC (Cavalry Exploration Vehicle)</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Light multipurpose vehicule LMV</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Vehicles</strong></td>
+            <td>
+                <ul>
+                    <li>
+                        <p class="botonInfo"> Iveco M-250 Truck </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Up lifting Forklift  </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Luna Tow Truck </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Mechanical 'mule' 'Falcata' </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Mechanical Mule </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> URO MT-149-AT </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> GERV (Ground Exploration and Reconnaissance vehicle) </p> 
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Spanish HMTV (high Mobility Tactical Vehicle) </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Anibal light vehicle </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> light vehicle special forces Netón MK2</p> 
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Engineering vehicles</strong> </td>
+            <td>
+                <ul>
+                    <li>
+                        <p class="botonInfo"> Cz 10/25E Alcaran </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> DORNIER bridge</p>  
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Husky 2G VMMD (vehicle MOunted Mine Detector) </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                        <p class="botonInfo"> Bridge laying vehicle VLPD 26/70E </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Helicopters</strong></td>
+            <td>
+                <ul>
+                    <li>
+                         <p class="botonInfo"> Chinook HT-17 </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Eurocopter Tiger (HA.28) </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Eurocopter HE-26 </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Eurocopter HT-27 </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> Super Puma HU-21 </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> NH90 </p>
+                         <img src="../Photos/" class="showMoreInfo">                        
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Unmanned Aur Vehicles</strong></td>
+            <td>
+                <ul>
+                    <li>
+                         <p class="botonInfo"> PASI</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                    <li>
+                         <p class="botonInfo"> SIVA (Integrated Aerial Surveillance System)</p>
+                         <img src="../Photos/" class="showMoreInfo">
+                        
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Anti-Aricraft Artillery</strong></td>
+            <td>
+                <ul>
+                    <li>
+                      <p class="botonInfo"> 35/90 GDF-007 Anti-Aricraft Cannon </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                      <p class="botonInfo"> Skydor Fire-Control System </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                       <p class="botonInfo">Skyguard Fire-Control system </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                      <p class="botonInfo"> Advanced Anti-Aricraft missile system NASAMS</p> 
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                      <p class="botonInfo"> Patriot Missile System </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                      <p class="botonInfo"> Hawk SAM </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                    <li>
+                      <p class="botonInfo"> Mistral Anti-Aricraft Missile </p>
+                        <img src="../Photos/" class="showMoreInfo">
+                    
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        
+            </table>
+        </div>
+
+         <h2>How to get in</h2>
+        <p>There are several ways to get into the Spanish army: <br>
+        <ul id="howToGetIn">
+            <li> <button  class="botonInfo2">As an officer </button> </li>
+             <div class="showMoreInfo2">
+              <p>For joining the army as an Official:<br>   
+                <ul>
+                    <li><a href="#NoTitulation">With no titulation</a></li>
+                    <li> <a href="#Titulation">With titulation</a></li>
+                </ul>
+
+                <p id="NoTitulation"><h3>With no titulation</h3><br>
+                For join with out the titulation you need to pass present the overage of highschool and the overage of the EBAU Exams; the mark is calculated this way:<br>
+                O = B*0.6 + L*0.1 + E*0.1 + H*0.1 + M*0.3 + P*0.2<br>
+                O = overage over 14.<br>
+                B = Overage of highschool.<br>
+                L = EBAU exam of literature.<br>
+                E = EBAU exam of english.<br>
+                H = EBAU exam of history.<br>
+                M = EBAU exam of maths.<br>
+                P = EBAU exam of Physics.<br>
+                When you have your overage mark you present yourself to the first phase of the contest in wich all spain can take part of, so the overage mark for passing this phase is changing every year but on 2023 was a 12 over 14.<br>
+                The second phase consist of some physical fitness test where they are going to test your <a href="" >physical aptitud</a>, psychological test, and medical test.<br>
+                If you pass all those test you go to prepare yourself for 5 years in Zaragoza.</p>
+                <p>
+                    <ul>
+                        <li><h3>Enter with EBAU</h3></li>
+                        <li>1º course AGM</li>
+                        <li>2º course AGM</li>
+                        <li>3º course AGM</li>
+                        <li>4º course AGM</li>
+                        <li>5º AC ESPFUN course</li>
+                        <li>Lieutenant+ Carrear diplome</li>
+                    </ul>
+                </p>
+
+                <p id="Titulation">
+                    <h3>With titulation</h3>
+                    For join the army with titulation you need to have a degree in something related with the science and then with the mark you pass to the contest part in wich you are going to be calificated following the next formula:<br>
+                    CF = PI + PFC <br>
+                    CF = Final mark.<br>
+                    PI = English test. that you need to take.<br>
+                    PFC = Mark of the degree.<br>
+                    Then if you are selected after all the proces you go the the AGM for 3 years.<br>
+                    <ul>
+                        <li><h3>With titulation</h3></li>
+                        <li>1º course AGM</li>
+                        <li>2º AC ESFUN course</li>
+                        <li>Lieutenant</li>
+                    </ul>
+                </p></p>
+             </div>
+           
+            <li><button class="botonInfo2">Non comisioned officers</button></li>
+             <div class="showMoreInfo2">
+              <p><p>For joining the army as a Subofficer:<br>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Have the Spanish nationality</li>
+                    <li>Have 18-21 years old the 31 of december of the year of the convocatory</li>
+                    <li>Don't have tattos that might be agaisnt the constitucional values or attempt against the Army</li>
+                    <li>Have at least the highschool title</li>
+                    <li>Pass the contest</li>
+                </ul>
+
+                <p><h3>How to get in</h3>
+                First you need to choose the specialty, then you need to pass the selective phase, and then the final mark is based in this formula:<br>
+                PFC = NMB + FG + VMM<br>
+                PFC = Final grade.<br>
+                NNMB = Overage grade of highschool.<br>
+                FG = EBAU exams. <br>
+                VMM = Military merits<br>
+                </p>
+                <ul>
+                    <li><h3>Highschool</h3></li>
+                    <li>1º AGBS AC ESFUN</li>
+                    <li>2º AC ESFUN</li>
+                    <li>3º AGBS AC ESFUN</li>
+                    <li>Sergant + TTS</li>
+                </ul></p></p>
+            </div>
+               
+            <li><button class="botonInfo2">Enlisted </button></li>
+             <div class="showMoreInfo2">
+              <p><h3>Requirements</h3>
+              <ul>
+                <li>Have the spanish nationality or have the residence permit (temporal or permanent). For the foreigns only could apply if you are from Argentina, Bolivia, Costa Rica, Colombia, Chile, Ecuador, El Salvador, Guatemala, Guinea Ecuatorial, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Republica Dominicana, Uruguay and Venezuela.</li>
+                <li>Not be deprived of civil rights </li>
+                <li>Have between 18 and 29 years old</li>
+                <li>Don't have tattos that might be agaisnt the constitucional values or attempt against the Army</li>
+                <li>Have the middle school diplome</li>
+                <li>Pass the contest</li>
+              </ul>
+              <p><h3>How to get in</h3>
+                There are severeal convocatories along the year; this are publish in the <a href="https://www.boe.es/boe/dias/2023/01/19/pdfs/BOE-A-2023-1426.pdf">BOE</a>. Since the troop examinations are different, you must make an appointment to pass the tests.<br>
+                This proces as all the others ways to join the army your academic and Military merits will be evaluated and after that you will have to pass the physical test the medical test and the psychological test. In those test is not calificated with a number but with a pass or not pass.
+            </p>
+            <ul>
+                <li><h3>Middle school</h3></li>
+                <li>10 Weeks of FFGM</li>
+                <li>Flag oath</li>
+                <li>8 Weeks of FFE</li>
+                <li>Enlisted</li>
+            </ul></p></p>
+        </p>
+            </div>  
+        </ul>
+    </p>
+       </section>
+
+       <footer>
+        <p>
+            You can contact Ada by:</p>
+       <p>
+          <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
+          <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Insta.jpg"></a>   
+          <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/facebook.jpg"></a> 
+       </p>
+       <p>
+        If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
+       </p> 
+       </footer>
+
+       <script>
+
+    var bots = document.getElementsByClassName("botonInfo2");
+    var infos = document.getElementsByClassName("showMoreInfo2");
+    Array.from(bots).forEach(function(bot, index) {
+      bot.addEventListener("click", function(){
+        var info = infos[index];
+        if (info.style.display === "none" || info.style.display === ""){
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+      });
+        
+    });
+
+       setInterval(myTimer, 1000);
                 function myTimer() {
                 const d = new Date();
                 document.getElementById("timer").innerHTML = d.toLocaleTimeString();
                 }
-        </script>
+
+        
+       </script>
     </body>
 </html>
+<!--Cosas a arreglar
+    -  darle otra forma a lo de los rangos pq queda demasiado cutre
+    -  Cambiar el tamaño de las fotos de los rangos militares
+    -  Mover la tabla de contenidos basicos al medio y darle mas color pq es una puta mierda y encima es super sosa
+    -  Quitar el lu de lo de titulacion o no titulacion en oficales
+    -  Quitar los headers en las listas de los años que tiene que hacer y ponerlo inline
+    -  Hacer que para ver mas informacion tenga que hacer click en la parte de oficiales suboficiales y tropa tienes que retocar practicamente todo ahí
+    -  Ponerle un background de la bandera de España a los headers
+    -  -->

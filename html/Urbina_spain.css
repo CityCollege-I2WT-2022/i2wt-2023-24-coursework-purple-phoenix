@@ -2,15 +2,6 @@
   font-style: none;
 }
 
-.snowfall {
-  display: inline;
-  position: absolute;
-  top: -150px;
-  left: 0px;
-  width: 100%;
-  height: 1020px;
-}
-
 #beginingImg {
   position: inherit;
   display: flex;
@@ -19,6 +10,7 @@
   text-align: center;
   margin-left: 0px;
 }
+
 
 #beginingImg img {
   width: 100%;
@@ -34,27 +26,32 @@
   width: 100%;
   text-align: center;
   margin: 0px;
+  padding: 0px;
 }
 
-.rankimg {
+#ranks {
+  position: inherit;
+  list-style: inline;
+  position: block;
   height: auto;
-  width: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  padding:0px;
 }
-
 .RankLi {
+  position: inherit;
   list-style-type: none;
   text-align: center;
   float: left;
   width: 120px;
-
+  display: flex;
 }
-
-#ranks {
-  list-style: inline;
-  position: inherit;
+.rankimg {
   height: auto;
-  margin-bottom: 5px;
+  width: 30px;
 }
+
 
 #materials {
   text-align: center;
@@ -116,11 +113,14 @@ section {
   width: 100%;
   text-align: justify;
   margin-left: 8px;
-}
+  }
 
 footer {
   text-align: center;
   align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
 }
 
 h2 {

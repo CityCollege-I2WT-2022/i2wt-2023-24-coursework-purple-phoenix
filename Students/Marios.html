@@ -105,8 +105,15 @@
     <footer>
         For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>
         <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="/Photos/mail.jpg"></a>
-        <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="/Photos/Insta.jpg"></a>
-        <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="/photos/facebook.jpg"></a>
+        <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg" src="/Photos/Insta.jpg"></a>
+        <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg" src="/photos/facebook.jpg"></a>
     </footer>
+    <script>
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
 </body>
 </head>

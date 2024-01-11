@@ -1,255 +1,285 @@
-<!doctype html>             <!--Marios-->
+<!doctype html> <!--Marios-->
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../main.css">
-        <style>
-            
-            .snowfall{
-            z-index: 0;
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <style>
+        .snowfall {
+            z-index: 4;
             display: inline;
             position: absolute;
             height: 1200px;
             top: -150px;
             left: -10px;
             background-repeat: repeat-y;
-            }
-            body{
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-bottom: 0px;
-            }
-            section{
-                z-index: -3;
-            }
-            p{
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            section::before{
-                content: " ";
-                background-image: url("../Photos/NATO\ flag.png");
-                /* background-size: cover; */
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                left: 0px;
-                bottom: 0px;
-                opacity: 0.35;
-                z-index: -3;
-            }
-            .main{
-                text-align: justify;
-                font-size: large;
-                line-height: 22px;
-            }
-            #timer{
-            color:darkgreen;
-            padding-right: 50px;
-            margin-left: auto;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .buttoon{
+            z-index: 10;
+        }
+        section::before {
+            content: " ";
+            background-image: url("../Photos/NATO\ flag.png");
+            /* background-size: cover; */
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            opacity: 0.35;
+            z-index: -3;
+        }
+
+        .main {
+            text-align: justify;
+            font-size: large;
+            line-height: 22px;
+        }
+
+        #aspects {
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
             position: relative;
-            }
-            #aspects{
-                text-align: center;
-            }
-            section{
-                text-align: center;
-                position: relative;
-                margin: auto;
-            }
-            .footImg{
+            margin: auto;
+        }
+
+        .footImg {
             width: 30px;
             height: 30px;
             display: inline;
-            position:static;
+            position: static;
             bottom: 0px;
             margin-top: 10px;
+            padding-left: 10px;
+        }
+
+        footer {
+            display: block;
+        }
+
+        .popupp {
+            display: none;
+            z-index: 2;
+            margin: 0px;
             padding: 0px;
-            }
-            footer{
-                display: block;
-            }
-            .popupp{
-                display: none;
-                z-index: 2;
-                margin: 0px;
-                padding: 0px;
-            }
-            .hovver:hover>.popupp{
-                display: block;
-            }
-            footer{
-                position: relative;
-            }
-        </style>
-    </head>
-    <body>
-        <img src="..\Photos\snowfall.gif" width="100%" height="110%" class="snowfall">
-        <div id="backimg">
-            <nav>
-                <ul class="nav.list">
-                    <li class="popup"><a href="../index.html">Homepage</a></li>
-                    <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
-                        <ul class="dropdown">
-                            <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
-                            <li><a href="Tsartsidis_Army.html">Army</a></li>
-                            <li><a href="Tsartsidis_Navy.html">Navy</a></li>
-                            <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
-                        </ul>
-                    </li>
-                    <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
-                        <ul class="dropdown">
-                            <li><a href="Katrin_Airforce.html">Airforce</a></li>
-                            <li><a href="Katrin_Army.html">Army</a></li>
-                            <li><a href="Katrin_Navy.html">Navy</a></li>
-                            <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </li>
-        
-        
-                    <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
-                        <ul class="dropdown">
-                            <li><a href="Chindris_Airforce.html">Airforce</a></li>
-                            <li><a href="Chindris_Army.html">Army</a></li>
-                            <li><a href="ChindrisNavy.html">Navy</a></li>
-                            <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </li>
-                    <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
-                        <ul class="dropdown">
-                            <li><a href="Urbina_AirForce.html">Airforce</a></li>
-                            <li><a href="Urbina_Army.html">Army</a></li>
-                            <li><a href="Urbina_Navy.html">Navy</a></li>
-                            <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </li>
-                    <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
-                        <ul class="dropdown">
-                            <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
-                        </ul>
-                    </li>
-                    <li class="popup"><a class="nav" href="">Students</a>
-                        <ul class="dropdown">
-                            <li><a href="Students/Marios.html">Marios</a></li>
-                            <li><a href="Students/Marios.html">Abraham</a></li>
-                            <li><a href="Students/Marios.html">Iulia</a></li>
-                            <li><a href="Students/ada.html">Ada</a></li>
-                            <li><a href="Students/Marios.html">Katrin</a></li>
-                        </ul>
-                    </li>
-                    <li class="popup">
-                        <p class="time" id="timer"></p>
-                    </li>
-                </ul>
-            </nav>
+        }
+
+        .hovver:hover>.popupp {
+            display: block;
+        }
+
+        footer {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="..\Photos\snowfall.gif" width="100%" height="110%" class="snowfall">
+    <div id="gim">
+        <nav>
+            <ul class="nav.list">
+                <li class="popup"><a href="../index.html">Homepage</a></li>
+                <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
+                    <ul class="dropdown">
+                        <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                        <li><a href="Tsartsidis_Army.html">Army</a></li>
+                        <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                        <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
+                    <ul class="dropdown">
+                        <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                        <li><a href="Katrin_Army.html">Army</a></li>
+                        <li><a href="Katrin_Navy.html">Navy</a></li>
+                        <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
+                    <ul class="dropdown">
+                        <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                        <li><a href="Chindris_Army.html">Army</a></li>
+                        <li><a href="ChindrisNavy.html">Navy</a></li>
+                        <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
+                    <ul class="dropdown">
+                        <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                        <li><a href="Urbina_Army.html">Army</a></li>
+                        <li><a href="Urbina_Navy.html">Navy</a></li>
+                        <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
+                    <ul class="dropdown">
+                        <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
+                    </ul>
+                </li>
+                <li class="popup"><a class="nav" href="">Students</a>
+                    <ul class="dropdown">
+                        <li><a href="Students/Marios.html">Marios</a></li>
+                        <li><a href="Students/Marios.html">Abraham</a></li>
+                        <li><a href="Students/Marios.html">Iulia</a></li>
+                        <li><a href="Students/ada.html">Ada</a></li>
+                        <li><a href="Students/Marios.html">Katrin</a></li>
+                    </ul>
+                </li>
+                <li class="popup">
+                    <p class="time" id="timer"></p>
+                </li>
+            </ul>
+        </nav>
 
         <section>
-            <!-- <h1>What is NATO</h1>
-            <p>NATO stands for <strong id="NATO">North Atlantic Treaty Organization</strong></p>
 
-            <h3>Nato's purpose serves both Political and Military conflits.</h3>
-            <p>
-                <em>NATO promotes democratic values and enables members to consult and cooperate on defence and security-related issues to solve problems, 
-                        build trust and, in the long run, prevent conflict.</em>
-            </p> -->
-            
+
             <h1>What's the purpose of NATO?</h1>
 
-            <p class="main">The North Atlantic Treaty Organization (NATO) is a political and military alliance 
-                established to promote the security and defense of its member countries. 
-                NATO was founded on April 4, 1949, with the signing of the North Atlantic Treaty. 
-                The primary purpose of NATO is outlined in Article 5 of the treaty, 
+            <p class="main">The North Atlantic Treaty Organization (NATO) is a political and military alliance
+                established to promote the security and defense of its member countries.
+                NATO was founded on April 4, 1949, with the signing of the North Atlantic Treaty.
+                The primary purpose of NATO is outlined in Article 5 of the treaty,
                 which states that an armed attack against one or more of its members
-                is considered an attack against all members, and each member agrees 
-                to take action to restore and maintain the security of the North Atlantic area. <!--text generated by chatGPT. -->
+                is considered an attack against all members, and each member agrees
+                to take action to restore and maintain the security of the North Atlantic area.
+                <!--text generated by chatGPT. -->
             </p>
 
-           <h1>The history of NATO</h1>
+            <h1>The history of NATO</h1>
 
             <p class="main">
-                The North Atlantic Treaty Organization, commonly known as NATO, is a military and political alliance of countries that was established on April 4, 1949.
-                The organization was founded with the primary goal of ensuring the collective defense and security of its member states. 
-                The key principle of NATO is mutual defense: an attack against one or more members is considered an attack against all members,
-                and each member agrees to come to the aid of any other member if attacked.</p> <!--text generated by chatGPT. -->
+                The North Atlantic Treaty Organization, commonly known as NATO, is a military and political alliance of
+                countries that was established on April 4, 1949.
+                The organization was founded with the primary goal of ensuring the collective defense and security of
+                its member states.
+                The key principle of NATO is mutual defense: an attack against one or more members is considered an
+                attack against all members,
+                and each member agrees to come to the aid of any other member if attacked.</p>
+            <!--text generated by chatGPT. -->
 
-                <h2><strong> Here are some key aspects of NATO:</strong></h2> <br><br>
+            <h2><strong> Here are some key aspects of NATO:</strong></h2> <br><br>
 
-                <p class="main"><strong>Founding Members:</strong> NATO was initially formed by 12 founding member countries,
-                    including the United States, Canada, the United Kingdom, France, Italy, Belgium, the Netherlands,
-                    Luxembourg, Denmark, Norway, Iceland, and Portugal. <br> More info <a href="NatoMembers.html" class="links"> here</a>
+            <button class="buttoon" onclick="window.location.href='https://w3docs.com';" >here</button>
+
+            <p class="main"><strong>Founding Members:</strong> NATO was initially formed by 12 founding member
+                countries,
+                including the United States, Canada, the United Kingdom, France, Italy, Belgium, the Netherlands,
+                Luxembourg, Denmark, Norway, Iceland, and Portugal. <br> More info <a href="Ouzounis_natoMembers.html"
+                    class="links"> here</a> 
 
                 <br><strong>Collective Defense:</strong>
-                The cornerstone of NATO is Article 5 of the North Atlantic Treaty, which states that an armed attack against one or more members shall be considered an attack against them all. This commitment to collective defense is central to NATO's mission.
+                The cornerstone of NATO is Article 5 of the North Atlantic Treaty, which states that an armed attack
+                against one or more members shall be considered an attack against them all. This commitment to
+                collective defense is central to NATO's mission. <a href="Urbina_AirForce.html">Airforce</a>
 
-                <br><strong>Political and Military Alliance:</strong> 
-                NATO is both a political and military alliance. In addition to its military functions, NATO provides a forum for member countries to consult and cooperate on defense and security-related issues.
+                <br><strong>Political and Military Alliance:</strong>
+                NATO is both a political and military alliance. In addition to its military functions, NATO provides a
+                forum for member countries to consult and cooperate on defense and security-related issues.
 
-                <br><strong>Expansion:</strong> 
-                NATO has expanded over the years to include new member countries. Greece and Turkey joined in 1952, West Germany joined in 1955, and subsequent rounds of expansion included countries from Central and Eastern Europe, as well as the Baltic states.
+                <br><strong>Expansion:</strong>
+                NATO has expanded over the years to include new member countries. Greece and Turkey joined in 1952, West
+                Germany joined in 1955, and subsequent rounds of expansion included countries from Central and Eastern
+                Europe, as well as the Baltic states.
 
-                <br><strong>Post-Cold War Adaptation:</strong> 
-                With the end of the Cold War, NATO adapted its mission to address new security challenges. It engaged in peacekeeping operations in the Balkans and played a significant role in the War in Afghanistan.
+                <br><strong>Post-Cold War Adaptation:</strong>
+                With the end of the Cold War, NATO adapted its mission to address new security challenges. It engaged in
+                peacekeeping operations in the Balkans and played a significant role in the War in Afghanistan.
 
                 <br><strong>Partnerships:</strong>
-                 NATO has developed partnerships with non-member countries and international organizations to promote security and stability beyond its immediate membership.
+                NATO has developed partnerships with non-member countries and international organizations to promote
+                security and stability beyond its immediate membership.
 
                 <br><strong>Crisis Management and Operations:</strong>
-                 NATO has been involved in various crisis management and military operations, including peacekeeping missions, humanitarian interventions, and counter-terrorism efforts.
+                NATO has been involved in various crisis management and military operations, including peacekeeping
+                missions, humanitarian interventions, and counter-terrorism efforts.
 
                 <br><strong>Adaptation to Contemporary Threats:</strong>
-                 In recent years, NATO has focused on adapting to contemporary security threats, including cyber threats, hybrid warfare, and terrorism.
+                In recent years, NATO has focused on adapting to contemporary security threats, including cyber threats,
+                hybrid warfare, and terrorism.
 
                 <br><br>
-                NATO is led by a Secretary General and operates on the basis of consensus among member states. It has a military command structure and various committees and forums for consultation and decision-making. The headquarters of NATO is in Brussels, Belgium. The alliance plays a crucial role in shaping the security environment in the Euro-Atlantic area and beyond.
+                NATO is led by a Secretary General and operates on the basis of consensus among member states. It has a
+                military command structure and various committees and forums for consultation and decision-making. The
+                headquarters of NATO is in Brussels, Belgium. The alliance plays a crucial role in shaping the security
+                environment in the Euro-Atlantic area and beyond.
 
             </p>
-            
+
             <h1>Some NATO bases around Europe</h1>
 
             <h2>Greece</h2>
             <p class="main">
-            <br><strong>Aktio Naval Base:</strong> Located near the town of Preveza, it is a naval air station. <a>more info</a>
+                <br><strong>Aktio Naval Base:</strong> Located near the town of Preveza, it is a naval air station.
+                <a>more info</a>
 
-            <br><strong>Araxos Air Base:</strong> Situated near the town of Araxos, it serves as a Hellenic Air Force base but also hosts NATO activities. <a>more info</a>
+                <br><strong>Araxos Air Base:</strong> Situated near the town of Araxos, it serves as a Hellenic Air
+                Force base but also hosts NATO activities. <a href="">more info</a>
 
-            <br><strong>Souda Bay:</strong> It is a naval base on the island of Crete. While not exclusively a NATO base, it is used by NATO forces for various purposes. <a>more info</a>
+                <br><strong>Souda Bay:</strong> It is a naval base on the island of Crete. While not exclusively a NATO
+                base, it is used by NATO forces for various purposes. <a href="">more info</a>
             </p>
 
             <h2>Romania</h2>
             <p class="main">
-                <br><strong>Mihail Kogălniceanu Air Base:</strong> Situated near Constanța, it serves as a Romanian Air Force base but is also used for NATO activities.
-                <br><strong>Deveselu Aegis Ashore Missile Defense System:</strong> A NATO missile defense facility located in southern Romania.
+                <br><strong>Mihail Kogălniceanu Air Base:</strong> Situated near Constanța, it serves as a Romanian Air
+                Force base but is also used for NATO activities. <a href="">more info</a>
+                <br><strong>Deveselu Aegis Ashore Missile Defense System:</strong> A NATO missile defense facility
+                located in southern Romania. <a href="">more info</a>
             </p>
 
             <h2>Bulgaria</h2>
             <p class="main">
-                <br><strong>Bezmer Air Base:</strong> Located near the town of Bezmer, it has been used for joint NATO and Bulgarian military exercises.
+                <br><strong>Bezmer Air Base:</strong> Located near the town of Bezmer, it has been used for joint NATO
+                and Bulgarian military exercises. <a href="youtube.com">more info</a>
             </p>
 
             <h2>Spain</h2>
             <p class="main">
-                <br><strong> Rota Naval Station:</strong> Located in the province of Cádiz, it is a major naval base used by both the Spanish Navy and the United States Navy. It serves as a key support facility for NATO operations.
-                <br><strong>Morón Air Base:</strong> Near the town of Morón de la Frontera, it is a Spanish Air Force base that is also used by the United States as part of NATO agreements.
+                <br><strong> Rota Naval Station:</strong> Located in the province of Cádiz, it is a major naval base
+                used by both the Spanish Navy and the United States Navy. It serves as a key support facility for NATO
+                operations. <a href="">more info</a>
+                <br><strong>Morón Air Base:</strong> Near the town of Morón de la Frontera, it is a Spanish Air Force
+                base that is also used by the United States as part of NATO agreements. <a href="">more info</a>
             </p>
 
         </section>
-        </div>
-        <footer>
-            For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
-                <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
-                <a href="https://www.instagram.com/zouzounakis_/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
-                <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
-            </footer>
-            <script>
+    </div>
+    <footer>
+        For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
+        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
+        <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
+                src="../Photos/Insta.jpg"></a>
+        <a href="https://www.facebook.com/MariosToZouzouni/"> <img class="footImg" src="../Photos/facebook.jpg"
+                target="_blank"></a>
+    </footer>
+    <script>
 
-                 setInterval(myTimer, 1000);
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
 
-                 function myTimer() {
-                     const d = new Date();
-                     document.getElementById("timer").innerHTML = d.toLocaleTimeString();
-                 }
-                             
 
-            </script>
-        
-    </body>
+    </script>
+
+</body>
+
 </html>

@@ -1,311 +1,343 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Spain</title>
-     <link rel="stylesheet" type="text/css" href="../main.css"> 
-     <style>
-        nav{
-            position:inherit;
+
+<head>
+    <title>Spain</title>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <style>
+        nav {
+            position: inherit;
             margin-top: 0%;
             margin-bottom: 0%;
         }
 
-         section{
-            width:auto;
-            height:400px;  
-            position: inherit;   
-            text-align: center;               
+        section {
+            width: auto;
+            height: 400px;
+            position: inherit;
+            text-align: center;
         }
 
-        article{
-            position: inherit ;
+        article {
+            position: inherit;
             overflow: hidden;
         }
-        footer{
+
+        footer {
             position: inherit;
         }
 
-         #map{
+        #map {
             position: inherit;
             margin-left: auto;
             margin-right: auto;
-         }
-
-         #pin{
-                position: absolute;
-                z-index: 1;
-                display: none;
         }
 
-         #headText{
+        #pin {
             position: absolute;
-            color:white;
+            z-index: 1;
+            display: none;
+        }
+
+        #headText {
+            position: absolute;
+            color: white;
             -webkit-text-stroke: 2px black;
-            background-color: white blur(20px);    
-            backdrop-filter: blur(20px); 
+            background-color: white blur(20px);
+            backdrop-filter: blur(20px);
             width: 100%;
             text-align: center;
             margin: 0px;
 
         }
-         .beginingImg{
+
+        .beginingImg {
             position: inherit;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-    
-        }
-         .coordx, .coordy{
-                display: none;
+
         }
 
-        .footImg{
+        .coordx,
+        .coordy {
+            display: none;
+        }
+
+        .footImg {
             width: 30px;
             height: 30px;
             display: inline;
-        } 
+        }
 
-        .snowfall{
+        .snowfall {
             display: inline;
             position: absolute;
             top: -150px;
             left: -10px;
             z-index: -1;
-            width:100%;
-            height:1020px;
+            width: 100%;
+            height: 1020px;
         }
 
-        .imagenMove{
+        .imagenMove {
             width: 100%;
             margin: auto;
-            overflow:visible;
+            overflow: visible;
         }
-        .imagenMove ul{
+
+        .imagenMove ul {
             display: flex;
             padding: 0%;
             width: 1200px;
-            animation: cambio 6s infinite ;
-            animation-direction:alternate-reverse;
-                    }
-        .imagenMove li{
+            animation: cambio 6s infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .imagenMove li {
             width: 100%;
             list-style: none;
             align-content: center;
 
         }
-        .imagenMove img{
+
+        .imagenMove img {
             margin-left: 400px;
             margin-right: 400px;
             width: 400px;
             height: 200px;
         }
+
         @keyframes cambio {
-            0%{margin-left: 0px;}
-            35%{margin-left: 0px;}
+            0% {
+                margin-left: 0px;
+            }
 
-            40%{margin-left: -1200px;}
-            75%{margin-left: -1200px;}
+            35% {
+                margin-left: 0px;
+            }
 
-            80%{margin-left: -2400px;}
-            100%{margin-left: -2400px;}
+            40% {
+                margin-left: -1200px;
+            }
+
+            75% {
+                margin-left: -1200px;
+            }
+
+            80% {
+                margin-left: -2400px;
+            }
+
+            100% {
+                margin-left: -2400px;
+            }
 
 
         }
-        .noLine{
+
+        .noLine {
             text-decoration: none;
         }
+    </style>
+</head>
 
-         </style>
-    </head>
-    <body>
-        <img src="../Photos/snowfall.gif" class="snowfall">
-        <nav>
-            <ul class="nav.list">
-                <li class="popup"><a href="../index.html">Homepage</a></li>
-                <li class="popup"><a href="../html/Tsartsidis_Homepage.html" class="nav">Greece</a>
-                    <ul class="dropdown">
-                        <li><a href="../html/Tsartsidis_AirForces.html">Airforce</a></li>
-                        <li><a href="../html/Tsartsidis_Army.html">Army</a></li>
-                        <li><a href="../html/Tsartsidis_Navy.html">Navy</a></li>
-                        <li><a href="../html/Tsartsidis_Special%20Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="../html/Katrin_Homepage.html" class="nav">Bulgaria</a>
-                    <ul class="dropdown">
-                        <li><a href="../html/Katrin_Airforce.html">Airforce</a></li>
-                        <li><a href="../html/Katrin_Army.html">Army</a></li>
-                        <li><a href="../html/Katrin_Navy.html">Navy</a></li>
-                        <li><a href="../html/Katrin_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-    
-    
-                <li class="popup"><a href="../html/Chindris_Homepage.html" class="nav">Romania</a>
-                    <ul class="dropdown">
-                        <li><a href="../html/Chindris_Airforce.html">Airforce</a></li>
-                        <li><a href="../html/Chindris_Army.html">Army</a></li>
-                        <li><a href="../html/ChindrisNavy.html">Navy</a></li>
-                        <li><a href="../html/Chindris_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><em class="properpag" class="nav">Spain </em></a>
-                    <ul class="dropdown">
-                        <li><a href="../html/Urbina_AirForce.html">Airforce</a></li>
-                        <li><a href="../html/Urbina_Army.html">Army</a></li>
-                        <li><a href="../html/Urbina_Navy.html">Navy</a></li>
-                        <li><a href="../html/Urbina_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="../html/Ouzounis_nato.html" class="nav">NATO</a>
-                    <ul class="dropdown">
-                        <li><a href="../html/Ouzounis_natoMembers.html">Nato Members</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a class="nav" href="">Students</a>
-                    <ul class="dropdown">
-                        <li><a href="../Students/Marios.html">Marios</a></li>
-                        <li><a href="../Students/">Abraham</a></li>
-                        <li><a href="../Students/">Iulia</a></li>
-                        <li><a href="../Students/Students/ada.html">Ada</a></li>
-                        <li><a href="../Students/">Katrin</a></li>
-                    </ul>
-                </li>
-                <li class="popup">
-                    <p class="time" id="timer"></p>
-                </li>
-            </ul>
-        </nav>
-        
-        <section>
-            <div class="beginingImg">
-              <img src="../Photos/francotirador.jpg" >
-              <h1 id="headText">Spanish Army</h1> 
-            </div>
-        </section>
+<body>
+    <img src="../Photos/snowfall.gif" class="snowfall">
+    <nav>
+        <ul class="nav.list">
+            <li class="popup"><a href="../index.html">Homepage</a></li>
+            <li class="popup"><a href="../html/Tsartsidis_Homepage.html" class="nav">Greece</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="../html/Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="../html/Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="../html/Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="../html/Katrin_Homepage.html" class="nav">Bulgaria</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="../html/Katrin_Army.html">Army</a></li>
+                    <li><a href="../html/Katrin_Navy.html">Navy</a></li>
+                    <li><a href="../html/Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
 
-        <article>
-                <h3>Where are the academys</h3>
-                <div>    
-                <ul>
-                    <li>
-                        <a href="#map" class="academys">
-                          Army
-                        </a>
-                        <span class="coordx">603</span>
-                        <span class="coordy">158</span>
-    
-                        <div class="imagenMove">
+
+            <li class="popup"><a href="../html/Chindris_Homepage.html" class="nav">Romania</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="../html/Chindris_Army.html">Army</a></li>
+                    <li><a href="../html/ChindrisNavy.html">Navy</a></li>
+                    <li><a href="../html/Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><em class="properpag" class="nav">Spain </em></a>
+                <ul class="dropdown">
+                    <li><a href="../html/Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="../html/Urbina_Army.html">Army</a></li>
+                    <li><a href="../html/Urbina_Navy.html">Navy</a></li>
+                    <li><a href="../html/Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="../html/Ouzounis_nato.html" class="nav">NATO</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Ouzounis_natoMembers.html">Nato Members</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a class="nav" href="">Students</a>
+                <ul class="dropdown">
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/">Abraham</a></li>
+                    <li><a href="../Students/">Iulia</a></li>
+                    <li><a href="../Students/Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/">Katrin</a></li>
+                </ul>
+            </li>
+            <li class="popup">
+                <p class="time" id="timer"></p>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="beginingImg">
+            <img src="../Photos/francotirador.jpg">
+            <h1 id="headText">Spanish Army</h1>
+        </div>
+    </section>
+
+    <article>
+        <h3>Where are the academys</h3>
+        <div>
+            <ul>
+                <li>
+                    <a href="#map" class="academys">
+                        Army
+                    </a>
+                    <span class="coordx">603</span>
+                    <span class="coordy">158</span>
+
+                    <div class="imagenMove">
                         <ul>
                             <li><img src="../Photos/AGM1.jpg"></li>
                             <li><img src="../Photos/AGM2.jpg"></li>
                             <li><img src="../Photos/AGM3.jpg"></li>
                         </ul>
-                        </div>
-                    </li>
-    
-                    <li>
-                        <a href="#map" class="academys">
-                          Air force
-                        </a>
-                        <span class="coordx">590</span>
-                        <span class="coordy">430</span>
-    
-                        <div class="imagenMove">
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#map" class="academys">
+                        Air force
+                    </a>
+                    <span class="coordx">590</span>
+                    <span class="coordy">430</span>
+
+                    <div class="imagenMove">
                         <ul>
                             <li><img src="../Photos/AGA1.jpg"></li>
                             <li><img src="../Photos/AGA2.jpg"></li>
                             <li><img src="../Photos/AGA3.jpg"></li>
                         </ul>
-                        </div>
-                    </li>
-    
-                    <li>
-                        <a href="#map" class="academys">
-                          Navy
-                        </a>
-                        <span class="coordx">230</span>
-                        <span class="coordy">120</span>
-    
-                        <div class="imagenMove">
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#map" class="academys">
+                        Navy
+                    </a>
+                    <span class="coordx">230</span>
+                    <span class="coordy">120</span>
+
+                    <div class="imagenMove">
                         <ul>
                             <li><img src="../Photos/ENM1.jpg"></li>
                             <li><img src="../Photos/ENM2.jpg"></li>
                             <li><img src="../Photos/ENM3.jpg"></li>
                         </ul>
-                        </div>
-                    </li>
-                
+                    </div>
+                </li>
+
                 <li>
                     <a href="#map" class="academys">
-                      Special Forces (UME)
+                        Special Forces (UME)
                     </a>
                     <span class="coordx"></span>
                     <span class="coordy"></span>
 
                     <div class="imagenMove">
-                    <ul>
-                        <li><img src="../Photos/"></li>
-                        <li><img src="../Photos/"></li>
-                        <li><img src="../Photos/"></li>
-                    </ul>
+                        <ul>
+                            <li><img src="../Photos/"></li>
+                            <li><img src="../Photos/"></li>
+                            <li><img src="../Photos/"></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
-            </div>
-        
-            <div id="map">
+        </div>
+
+        <div id="map">
             <img src="../Photos/spainMap.jpg">
-                <img src="../Photos/pin.png" id="pin">
-        </div> 
-        
+            <img src="../Photos/pin.png" id="pin">
+        </div>
+
         <p>
-            If you want to learn about the Spanish Army plese click <button><a href="../Spain(Ada)/Spain Army.html" class="noLine">here</a></button>, for Navy <button><a href="../Spain(Ada)/Spain Navy.html" class="noLine">here</a></button>, for Air forces <button><a href="../Spain(Ada)/Spain AirForce.html" class="noLine">here</a></button>, and for the Special Forcers <button><a href="../Spain(Ada)/Spain Special Forces.html">here</a></button>         
+            If you want to learn about the Spanish Army plese click <button><a href="../Spain(Ada)/Spain Army.html"
+                    class="noLine">here</a></button>, for Navy <button><a href="../Spain(Ada)/Spain Navy.html"
+                    class="noLine">here</a></button>, for Air forces <button><a href="../Spain(Ada)/Spain AirForce.html"
+                    class="noLine">here</a></button>, and for the Special Forcers <button><a
+                    href="../Spain(Ada)/Spain Special Forces.html">here</a></button>
         </p>
-         <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
-        </article>
-        
-        <footer>
-            <p>
-                 You can contact me:
-            </p>
-            <p>
-               <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
-               <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>   
-               <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg" src="../Photos/Spain/facebook.jpg"></a> 
-            </p>
-            <p>
-                If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
-            </p>            
-        </footer>
+        <!-- La idea de esto es que cuando pinches en uno de los cuerpos del ejercito te salga un pin en el lugar en el que se encuentra cada uno y aparte que aparezcan fotos pero una detras de otra como sustitucion-->
+    </article>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function(){
-                var academys = document.getElementsByClassName("academys");
+    <footer>
+        <p>
+            You can contact me:
+        </p>
+        <p>
+            <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/Spain/mail.jpg"></a>
+            <a href="https://www.instagram.com/_adaa425/"> <img class="footImg" src="../Photos/Spain/Insta.jpg"></a>
+            <a href="https://www.facebook.com/profile.php?id=61552837576231"> <img class="footImg"
+                    src="../Photos/Spain/facebook.jpg"></a>
+        </p>
+        <p>
+            If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
+        </p>
+    </footer>
 
-                for(var i=0; i<academys.length; i++){
-                    academys[i].addEventListener("click", function(){
-                        var pin = document.getElementById("pin");
-                        var xcoord = document.getElementsByClassName(".coordx");
-                        var ycoord = document.getElementsByClassName(".coordy");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var academys = document.getElementsByClassName("academys");
 
-                        if(xcoord && ycoord){
-                            pin.style.visibility = "visible";
-                            pin.style.top = (parseInt(ycoord)- 35) + "px";
-                            pin.style.left = (parseInt(xcoord) - 10) + "px";
-                        } else {
-                            console.error("coordinates not found");
-                        }
-                    });
-                }
-            });
-            
-            setInterval(myTimer, 1000);
-                function myTimer() {
-                const d = new Date();
-                document.getElementById("timer").innerHTML = d.toLocaleTimeString();
-                }
+            for (var i = 0; i < academys.length; i++) {
+                academys[i].addEventListener("click", function () {
+                    var pin = document.getElementById("pin");
+                    var xcoord = document.getElementsByClassName(".coordx");
+                    var ycoord = document.getElementsByClassName(".coordy");
 
-        </script> <!-- Tienes que terminar de rellenar lo de las x y las y tambien tienes que poner las cosas en el CSS coso-->
-    </body>
+                    if (xcoord && ycoord) {
+                        pin.style.visibility = "visible";
+                        pin.style.top = (parseInt(ycoord) - 35) + "px";
+                        pin.style.left = (parseInt(xcoord) - 10) + "px";
+                    } else {
+                        console.error("coordinates not found");
+                    }
+                });
+            }
+        });
+
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+
+    </script>
+    <!-- Tienes que terminar de rellenar lo de las x y las y tambien tienes que poner las cosas en el CSS coso-->
+</body>
+
 </html>

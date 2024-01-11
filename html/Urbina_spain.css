@@ -1,127 +1,133 @@
-
-.properpag{
+.properpag {
   font-style: none;
 }
 
-.snowfall{
+.snowfall {
   display: inline;
   position: absolute;
   top: -150px;
   left: 0px;
-  width:100%;
-  height:1020px;
+  width: 100%;
+  height: 1020px;
 }
 
-#beginingImg{
+#beginingImg {
   position: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-left: 0px;
-    }
-#beginingImg img{
+}
+
+#beginingImg img {
   width: 100%;
   height: 120px;
   margin-left: -15px;
   margin-right: 0px;
-    }
-#headText{
+}
+
+#headText {
   position: absolute;
-  color:white;
-  -webkit-text-stroke: 2px black;   
+  color: white;
+  -webkit-text-stroke: 2px black;
   width: 100%;
   text-align: center;
   margin: 0px;
-    }
+}
 
-.rankimg{
+.rankimg {
   height: auto;
   width: 20px;
 }
 
-.RankLi{
+.RankLi {
   list-style-type: none;
   text-align: center;
-  float:left;
-  width:120px;
+  float: left;
+  width: 120px;
 
 }
-#ranks{
-  list-style:inline;
+
+#ranks {
+  list-style: inline;
   position: inherit;
   height: auto;
   margin-bottom: 5px;
 }
 
-#materials{
+#materials {
   text-align: center;
   width: 100%;
   position: inherit;
   margin-top: 60px;
 }
-#materials caption{
+
+#materials caption {
   font-size: 30px;
   text-decoration: solid;
 }
-#materialstb{
+
+#materialstb {
   text-align: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border:4px solid black;
+  border: 4px solid black;
   border-collapse: collapse;
-position: inherit;
+  position: inherit;
 }
-#materials td{
-  border: 1px solid black ;
-}
-#materials tr{
+
+#materials td {
   border: 1px solid black;
 }
 
-.showMoreInfo2{
+#materials tr {
+  border: 1px solid black;
+}
+
+.showMoreInfo2 {
   display: none;
   list-style: none;
 }
 
-#howToGetIn{
+#howToGetIn {
   list-style: none;
   text-align: center;
 }
 
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
-.footImg{
+
+.footImg {
   width: 30px;
   height: 30px;
   display: inline;
 }
 
-body{
-    height: auto;
-  }
-section{
-    margin-top: 100px;
-    position: inherit;
-    width: 100%;
-    text-align: justify;
-    margin-left: 8px;
-  }
-footer{
-    text-align: center;
-    align-items: center;
+body {
+  height: auto;
 }
-  
-  h2{
-      text-align: center;
-  }
-  
-  p{
-      text-align: justify;
-      margin-left: 8px;
-  }
-  
 
-    
+section {
+  margin-top: 100px;
+  position: inherit;
+  width: 100%;
+  text-align: justify;
+  margin-left: 8px;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin-left: 8px;
+}

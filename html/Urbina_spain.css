@@ -9,6 +9,7 @@
   align-items: center;
   text-align: center;
   margin-left: 0px;
+  padding: 0px;
 }
 
 
@@ -22,10 +23,11 @@
 #headText {
   position: absolute;
   color: white;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px black; /*Esto es para hacer lo de la linea de fuera de la palabra*/
   width: 100%;
+  height: auto;
   text-align: center;
-  margin: 0px;
+  margin:0px;
   padding: 0px;
 }
 
@@ -54,33 +56,37 @@
 
 
 #materials {
-  text-align: center;
-  width: 100%;
+  width: fit-content;
   position: inherit;
   margin-top: 60px;
+  align-content: center;
+  width: 100%;
 }
-
 #materials caption {
   font-size: 30px;
   text-decoration: solid;
-}
 
+}
 #materialstb {
   text-align: center;
-  width: 100%;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   border: 4px solid black;
   border-collapse: collapse;
   position: inherit;
+  align-content: center;
+  
 }
-
 #materials td {
   border: 1px solid black;
 }
-
 #materials tr {
   border: 1px solid black;
+}
+
+.showMoreInfo{
+  display: none;
 }
 
 .showMoreInfo2 {
@@ -91,6 +97,9 @@
 #howToGetIn {
   list-style: none;
   text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
 }
 
 .center {

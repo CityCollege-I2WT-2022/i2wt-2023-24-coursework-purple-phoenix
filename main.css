@@ -60,7 +60,8 @@ nav>ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav>ul>li>ul {
@@ -125,8 +126,6 @@ nav>ul>li>a {
     text-align: center;
     color: darkgreen;
     text-decoration: none;
-
-
 }
 
 footer {

@@ -81,6 +81,19 @@
          <!--As the previous div this is used to separate the diferent contents in this case is the rnks of the spanish army from th rest of the page-->
         <h2>Ranks</h2>
         <p>
+            <ol>
+                <li class="ranksWord">Ensing</li>
+                <li class="ranksWord">Lieutenant</li>
+                <li class="ranksWord">Captain</li>
+                <li class="ranksWord">Commander</li>
+                <li class="ranksWord">Lieutenant Colonel</li>
+                <li class="ranksWord">Colonel</li>
+                <li class="ranksWord">General</li>
+                <li class="ranksWord">Brigadier General</li>
+                <li class="ranksWord">Division General</li>
+                <li class="ranksWord">Lieutenant General</li>
+                <li class="ranksWord">Captain General</li>
+            </ol>
             Ensing => Lieutenant => Captain => Commander => Lieutenant Colonel => Colonel => General =>
             Brigadier General => Division General => Lieutenant General => Army General => Captain General.
             The ranks are expresed from the least important rank to the most important.
@@ -150,6 +163,7 @@
             <ul>
                 <li>
                      <p class="pass"> AML MG4</p> 
+                     <img src="../Photos/" class="showMoreInfo">
                     
                 </li>
                 <li>
@@ -284,7 +298,7 @@
                         
                     </li>
                     <li>
-                        <p class="botonInfo"> Up lifting Forklift  </p>
+                        <p class="pass"> Up lifting Forklift  </p>
                         <img src="../Photos/" class="showMoreInfo">
                         
                     </li>
@@ -577,21 +591,37 @@
        <p>
         If you want to know more about Ada Urbina please click <a href="../Students/ada.html">here</a>.
        </p> </p>
+       <div id="up"><a href="#beginingImg"><img src="../Photos/up.png"></a></div>
        </footer>
 
        <script>
-        var button = document.getElementsByClassName("pass");
+        var rankImg = document.getElementsByClassName("rankImg");
+        var rank = document.getElementsByClassName("ranksWord");
+        Array.from(rankImg).forEach(function(img, index){
+            img.addEventListener("mouseover", function(){
+                Array.from(rank).forEach(function(ranksWord){
+                    ranksWord.style.backgroundColor="";
+                });
+                rank[index].style.backgroundColor="yellow";
+            });
+        });
+
+        var passup = document.getElementsByClassName("pass");
         var photos = document.getElementsByClassName("showMoreInfo");
-        Array.from(button).forEach(function(butt, index){
-            butt.addEventListener("mouseover" , function(){
-                var photo = photos[index];
-            if (info.style.display === "none" || info.style.display === ""){
-                info.style.display = "block";
-            } else {
-                info.style.display = "none";
-        }           
+        Array.from(passup).forEach(function(pass, index){
+            pass.addEventListener("mouseover" , function(){
+                Array.from(photos).forEach(function(photo){
+                    photo.style.display="none";
+                });
+                photos[index].style.display="block";
         });
-        });
+        }); /*Esto nos ayuda a que cuando pasemos el raton por encima de una palabra de la tabla de materiales aparexca una foto de
+            eso que estas pasando el raton por encima, para ello creamos dos variables una llamada passup que significa que es la variable de la palabra
+            la otra variable se llama photos pq lo que estamos mostrando son fotografias (las llamamos mediante clases pq son varios y no podemos utilizr ID);
+            Despues declaramos que photos es un Array y que para cada funcion pass en la posicion index se va a aplicar lo siguiente
+            pass va a crear un evento que es pasar el raton por encima, y cuando creamos un evento tenemos que definir que es lo que va a pasar cuando este evento suceda
+            en este caso lo que sucede es que se crea un array the photos, en la que el estilo y el displat es none; despues cerramos esta funcion;
+            y le ponemos que photos en la posicion index sea vista; de esta forma nos aseguramos que el usuario pueda hacer uso de este fenomeno y que siempre le va a mostrar la foto que quiere*/
 
         
 
@@ -627,4 +657,5 @@
     -  Quitar los headers en las listas de los años que tiene que hacer y ponerlo inline
     -  Hacer que para ver mas informacion tenga que hacer click en la parte de oficiales suboficiales y tropa tienes que retocar practicamente todo ahí
     -  Ponerle un background de la bandera de España a los headers
+    -  Yo pondria que la barra de navegacion sea block para que no pueda tener nada detras, y ademas si la idea es que no se vea cuando vas navegando por ahi es mejor que sea blok
     -  -->

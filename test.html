@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Document</title>
+    <style>
+        body{ margin:0; font-family:'tahoma'}
+
+nav {
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  background:#37bc9b;
+}
+
+nav ul {
+  margin:0;padding:0;
+  list-style-type:none;
+  float:left;
+  display:inline-block;
+}
+
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+  float:left;
+  display:inline-block;
+}
+
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding:20px;
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  opacity:0.5;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:#37bc9b;
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+nav ul li:hover ul {
+  display:block;
+}
+        /* body {
+            background: rgb(0, 45, 60);
+        }
+
+        #div1 {
+            position: absolute;
+            left: calc(50% - 300px);
+            top: calc(50% - 150px);
+            width: 600px;
+            height: 100px;
+            border: 20px solid rgb(60, 60, 60);
+            border-radius: 100px;
+        }
+
+        #diva1 {
+            position: absolute;
+            width: 590px;
+            height: 90px;
+            border: 5px solid orange;
+            border-radius: 100px;
+            background: orange;
+            transition: .6s;
+        }
+
+        #img1 {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            width: 60px;
+        }
+
+        #img2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 60px;
+        }
+
+        #img3 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 60px;
+        }
+
+        #divaa1 {
+            position: absolute;
+            left: 150px;
+            width: 80px;
+            height: 80px;
+            border: 5px solid orange;
+            border-radius: 100px;
+            background: orange;
+            transition: .6s;
+        }
+
+        #divaa1:hover {
+            height: 250px;
+        }
+
+        #divaa1:hover>#divaaa1 {
+            height: 180px;
+            border: 5px solid orange;
+        }
+
+        #btna1 {
+            position: absolute;
+            top: 0px;
+            background: transparent;
+            width: 75px;
+            color: transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            border: 2.5px solid transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        #divaa1:hover>#btna1 {
+            top: 90px;
+            color: black;
+            background: dimgrey;
+            padding-bottom: 5px;
+        }
+
+        #btna2 {
+            position: absolute;
+            top: 0px;
+            background: transparent;
+            width: 75px;
+            color: transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            border: 2.5px solid transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        #divaa1:hover>#btna2 {
+            top: 140px;
+            color: black;
+            background: dimgrey;
+            padding-bottom: 5px;
+        }
+
+        #btna3 {
+            position: absolute;
+            top: 0px;
+            background: transparent;
+            width: 75px;
+            color: transparent;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            border: 2.5px solid transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        #divaa1:hover>#btna3 {
+            top: 190px;
+            color: black;
+            background: dimgrey;
+            padding-bottom: 5px;
+        }
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        nav {
+            position: absolute;
+            align-items: flex-start;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav.list">
+            <li class="popup"><a href="../index.html">Homepage</a></li>
+            <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
+                <ul class="dropdown">
+                    <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
+                <ul class="dropdown">
+                    <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="Katrin_Army.html">Army</a></li>
+                    <li><a href="Katrin_Navy.html">Navy</a></li>
+                    <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+
+
+            <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
+                <ul class="dropdown">
+                    <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="Chindris_Army.html">Army</a></li>
+                    <li><a href="ChindrisNavy.html">Navy</a></li>
+                    <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
+                <ul class="dropdown">
+                    <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="Urbina_Army.html">Army</a></li>
+                    <li><a href="Urbina_Navy.html">Navy</a></li>
+                    <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
+                <ul class="dropdown">
+                    <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a class="nav" href="">Students</a>
+                <ul class="dropdown">
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/Marios.html">Abraham</a></li>
+                    <li><a href="../Students/Marios.html">Iulia</a></li>
+                    <li><a href="../Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/Marios.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li class="popup">
+                <p class="time" id="timer"></p>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="div1">
+        <div id="diva1">
+            <img id="img1" src="https://image.flaticon.com/icons/png/512/78/78075.png">
+            <div id="divaa1">
+                <input id="btna1" type="button" value="Theme">
+                <input id="btna2" type="button" value="Profile">
+                <input id="btna3" type="button" value="More">
+                <img id="img2"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/768px-Windows_Settings_app_icon.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    <style>
+        p{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav.list">
+            <li class="popup"><a href="../index.html">Homepage</a></li>
+            <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
+                <ul class="dropdown">
+                    <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
+                <ul class="dropdown">
+                    <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="Katrin_Army.html">Army</a></li>
+                    <li><a href="Katrin_Navy.html">Navy</a></li>
+                    <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+
+
+            <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
+                <ul class="dropdown">
+                    <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="Chindris_Army.html">Army</a></li>
+                    <li><a href="ChindrisNavy.html">Navy</a></li>
+                    <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
+                <ul class="dropdown">
+                    <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="Urbina_Army.html">Army</a></li>
+                    <li><a href="Urbina_Navy.html">Navy</a></li>
+                    <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
+                <ul class="dropdown">
+                    <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a class="nav" href="">Students</a>
+                <ul class="dropdown">
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/Marios.html">Abraham</a></li>
+                    <li><a href="../Students/Marios.html">Iulia</a></li>
+                    <li><a href="../Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/Marios.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li class="popup">
+                <p class="time" id="timer"></p>
+            </li>
+        </ul>
+    </nav>
+    <p>This page is under construction</p>
+    
+    <footer class="footer">
+        For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a><br>
+        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
+        <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg" src="../Photos/Insta.jpg"></a>
+        <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg" src="../Photos/facebook.jpg"></a>
+    </footer>
+    <script>
+
+        setInterval(myTimer, 1000);
+        function myTimer() {
+        </script>
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+
+
+</body>
+</html>

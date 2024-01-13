@@ -1,6 +1,148 @@
-<!doctype html>
+<!doctype html> <!--Tsartsidis-->
 <html>
-    <head></head>
+    <head>
+    
+    
+    <title>Greece</title>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <style>
+        nav {
+            position: inherit;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        section {
+            width: auto;
+            height: 400px;
+            position: inherit;
+            text-align: center;
+        }
+
+        article {
+            position: inherit;
+            overflow: hidden;
+        }
+
+        footer {
+            position: inherit;
+        }
+
+        #map {
+            position: inherit;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #pin {
+            position: absolute;
+            z-index: 1;
+            display: none;
+        }
+
+        #headText {
+            position: absolute;
+            color: white;
+            -webkit-text-stroke: 2px black;
+            background-color: white blur(20px);
+            backdrop-filter: blur(20px);
+            width: 35%;
+            text-align: center;
+            margin: 0px;
+
+        }
+
+        .beginingImg {
+            position:inherit
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .coordx,
+        .coordy {
+            display: none;
+        }
+
+        .footImg {
+            width: 30px;
+            height: 30px;
+            display: inline;
+        }
+
+        .snowfall {
+            display: inline;
+            position: absolute;
+            top: -150px;
+            left: -10px;
+            z-index: -1;
+            width: 100%;
+            height: 1020px;
+        }
+
+        .imagenMove {
+            width: 100%;
+            margin: auto;
+            overflow: visible;
+        }
+
+        .imagenMove ul {
+            display: flex;
+            padding: 0%;
+            width: 1200px;
+            animation: cambio 6s infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        .imagenMove li {
+            width: 100%;
+            list-style: none;
+            align-content: center;
+
+        }
+
+        .imagenMove img {
+            margin-left: 400px;
+            margin-right: 400px;
+            width: 400px;
+            height: 200px;
+        }
+
+        @keyframes cambio {
+            0% {
+                margin-left: 0px;
+            }
+
+            35% {
+                margin-left: 0px;
+            }
+
+            40% {
+                margin-left: -1200px;
+            }
+
+            75% {
+                margin-left: -1200px;
+            }
+
+            80% {
+                margin-left: -2400px;
+            }
+
+            100% {
+                margin-left: -2400px;
+            }
+
+
+        }
+
+        .noLine {
+            text-decoration: none;
+        }
+    </style>
+    </head>
     <body>
     <nav>
             <ul class="nav.list">
@@ -10,7 +152,7 @@
                         <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
                         <li><a href="Tsartsidis_Army.html">Army</a></li>
                         <li><a href="Tsartsidis_Navy.html">Navy</a></li>
-                        <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                        <li><a href="Tsartsidis_SpecialForces.html">Special Forces</a></li>
                     </ul>
                 </li>
                 <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
@@ -47,7 +189,7 @@
                 <li class="popup"><a class="nav" href="">Students</a>
                     <ul class="dropdown">
                         <li><a href="../Students/Marios.html">Marios</a></li>
-                        <li><a href="../Students/Marios.html">Abraham</a></li>
+                        <li><a href="../Students/Tsartsidis.html">Abraham</a></li>
                         <li><a href="../Students/Marios.html">Iulia</a></li>
                         <li><a href="../Students/ada.html">Ada</a></li>
                         <li><a href="../Students/Marios.html">Katrin</a></li>
@@ -58,5 +200,33 @@
                 </li>
             </ul>
         </nav>
+        <section>
+                <div class="beginingImg">
+            <img src="../Photos/TsaAirforce/badge.png">
+            <h1 id="headText">Greek Air Force</h1>
+            
+           <video controls autoplay muted loop src="video.mp4" width="450">
+                    <source src="video.mp4">
+                    <source src="video.WebM">
+            </video>
+            <video controls autoplay muted loop src="airforce3.mp4" width="450">
+                    <source src="airforce3.mp4">
+                    <source src="airforce3.WebM">
+            </video>        
+            <video controls autoplay muted loop src="air%20force2.mp4" width="450">
+                    <source src="air%20force2.mp4">
+                    <source src="air%20force2.WebM">
+            </video>
+        </div>
+    </section>
+    
+    <script>
+
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
     </body>
 </html>

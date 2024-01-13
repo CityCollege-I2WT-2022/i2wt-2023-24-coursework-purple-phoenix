@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!--Tsartsidis-->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <style>
+
+        body {
+            margin: 0px;
+        }
+
+        h1 {
+            position: relative;
+            top: -30px;
+        }
+
+        .footImg {
+            width: 30px;
+            height: 30px;
+            display: inline;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            z-index: 2;
+        }
+
+        footer {
+            position: absolute;
+        }
+        nav{
+            position: relative;
+        }
+        
+    </style>
+
+<body>
+    <nav>
+        <ul class="nav.list">
+            <li class="popup"><a href="../index.html">Homepage</a></li>
+            <li class="popup"><a href="../html/Tsartsidis_Homepage.html" class="nav">Greece</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="../html/Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="../html/Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="../html/Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="../html/Katrin_Homepage.html" class="nav">Bulgaria</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="../html/Katrin_Army.html">Army</a></li>
+                    <li><a href="../html/Katrin_Navy.html">Navy</a></li>
+                    <li><a href="../html/Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+
+
+            <li class="popup"><a href="../html/Chindris_Homepage.html" class="nav">Romania</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="../html/Chindris_Army.html">Army</a></li>
+                    <li><a href="../html/ChindrisNavy.html">Navy</a></li>
+                    <li><a href="../html/Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="../html/Urbina_Homepage.html" class="nav">Spain</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="../html/Urbina_Army.html">Army</a></li>
+                    <li><a href="../html/Urbina_Navy.html">Navy</a></li>
+                    <li><a href="../html/Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a href="../html/Ouzounis_nato.html" class="nav">NATO</a>
+                <ul class="dropdown">
+                    <li><a href="../html/Ouzounis_natoMembers.html">Nato Members</a></li>
+                </ul>
+            </li>
+            <li class="popup"><a class="nav" href="">Students</a>
+                <ul class="dropdown">
+                    <li><a href="Students/Marios.html">Marios</a></li>
+                    <li><a href="Students/Abraham.html">Abraham</a></li>
+                    <li><a href="Students/Iulia.html">Iulia</a></li>
+                    <li><a href="Students/ada.html">Ada</a></li>
+                    <li><a href="Students/Katrin.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li class="popup">
+                <p class="time" id="timer"></p>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Avraam Tsartsidis</h1>
+        <p>
+            Hello everyone! My name is Avraam Tsartsidis and I am undergraduate student of Computer Science.
+            I always wanted to spend my time surrounded by computers and programms as I am a gamer myself a decade now an so on.
+        </p>
+    </section>
+    <footer>
+        For more information contact me <a href=mailto:atsartsidis@york.citycollege.eu> Here </a>
+        <a href=mailto:atsartsidis@york.citycollege.eu><img class="footImg" src="../Photos/gmail.png"></a>
+        <a href="https://www.instagram.com/alphataf999/" target="_blank"> <img class="footImg" src="../Photos/Insta.jpg"></a>
+        <a href="https://www.facebook.com/AvraamTsartsidis/" target="_blank"> <img class="footImg" src="../photos/facebook.jpg"></a>
+    </footer>
+    <script>
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+</body>
+</head>

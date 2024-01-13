@@ -12,23 +12,11 @@
             border: 20px solid #0000004b;
             border-radius: 5%;
         }
-
-        /* body:before{
-            color: rgb(170, 255, 0);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
-            bottom: 0px;
-            opacity: 0.6;    
-        } */
         body {
             margin: 0px;
             animation: showbody 2s;
         }
-
+        
         @keyframes showbody {
             from {
                 opacity: 0;
@@ -73,7 +61,7 @@
                             <li><a href="html/Tsartsidis_Navy.html">Navy</a></li>
                         </ul>
                         <ul class="forth-img">
-                            <li><a href="html/Tsartsidis_Special%20Forces.html">Special Forces</a>
+                            <li><a href="html/Tsartsidis_SpecialForces.html">Special Forces</a>
                             </li>
                         </ul>
                     </ul>
@@ -160,7 +148,7 @@
             </ul>
         </nav>
 
-        <section class="main" id="editor">
+        <section class="main">
             <h1 width="100%"><strong>Militaries around the world</strong></h1>
             <div>
                 <button class="button" id="previous">&lt;</button>
@@ -205,7 +193,7 @@
                         </a>
                     </li>
                 </ul>
-                <button class="button" id="next">&gt;</button>
+                <button class="button" id="next" onclick="urlchange">&gt;</button>
             </div>
         </section>
     </div>
@@ -270,6 +258,8 @@
             row.style.backgroundImage = "url(" + images[i] + ")";
             row.style.backgroundRepeat = 'no-repeat';
             row.style.backgroundSize = "cover";
+            row.style.width = "100vw";
+            row.style.height = "100vh";
             if (i < images.length - 1) {
                 i++;
             } else {

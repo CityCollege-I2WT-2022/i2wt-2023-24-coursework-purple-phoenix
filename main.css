@@ -4,6 +4,16 @@
 body {
     background-color: #c0c4a8d0;
     margin: 0px;
+    animation: showbody 2s;
+}
+@keyframes showbody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 ::-webkit-scrollbar {

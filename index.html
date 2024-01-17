@@ -3,282 +3,63 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <style>
-        .main {
-            z-index: 1;
-        }
-
-        .imgg {
-            border: 20px solid #0000004b;
-            border-radius: 5%;
-        }
-
-        body {
-            margin: 0px;
-            animation: showbody 2s;
-        }
-
-        @keyframes showbody {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .footImg {
-            width: 30px;
-            height: 30px;
-            display: inline;
-            position: relative;
-            bottom: 0px;
-            margin-top: 10px;
-            padding: 0px;
-            z-index: 2;
-        }
-
-        footer {
-            position: absolute;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
 </head>
 
 <body>
-    <div id="bef">
-        <nav>
-            <ul class="nav.list">
-                <li class="popup"><a href="../index.html">Homepage</a></li>
-                <li class="popup"><a href="html/Tsartsidis_Homepage.html" class="nav">Greece</a>
-                    <ul class="dropdown">
-                        <ul class="fir">
-                            <li><a href="html/Tsartsidis_AirForces.html">Airforce</a></li>
-                        </ul>
-                        <ul class="sec-img">
-                            <li><a href="html/Tsartsidis_Army.html">Army</a></li>
-                        </ul>
-                        <ul class="third-img">
-                            <li><a href="html/Tsartsidis_Navy.html">Navy</a></li>
-                        </ul>
-                        <ul class="forth-img">
-                            <li><a href="html/Tsartsidis_SpecialForces.html">Special Forces</a>
-                            </li>
-                        </ul>
-                    </ul>
-                </li>
-                <li class="popup"><a href="html/Katrin_Homepage.html" class="nav">Bulgaria</a>
-                    <ul class="dropdown" id="secc">
-                        <ul class="fir">
-                            <li><a href="html/Katrin_Airforce.html">Airforce</a></li>
-                        </ul>
-                        <ul class="sec-img">
-                            <li><a href="html/Katrin_Army.html">Army</a></li>
-                        </ul>
-                        <ul class="third-img">
-                            <li><a href="html/Katrin_Navy.html">Navy</a></li>
-                        </ul>
-                        <ul class="forth-img">
-                            <li><a href="html/Katrin_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </ul>
-                </li>
-
-
-                <li class="popup"><a href="html/Chindris_Homepage.html" class="nav">Romania</a>
-                    <ul class="dropdown">
-                        <ul class="fir">
-                            <li><a href="html/Chindris_Airforce.html">Airforce</a></li>
-                        </ul>
-                        <ul class="sec-img">
-                            <li><a href="html/Chindris_Army.html">Army</a></li>
-                        </ul>
-                        <ul class="third-img">
-                            <li><a href="html/ChindrisNavy.html">Navy</a></li>
-                        </ul>
-                        <ul class="forth-img">
-                            <li><a href="html/Chindris_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li class="popup"><a href="html/Urbina_Homepage.html" class="nav">Spain</a>
-                    <ul class="dropdown">
-                        <ul class="fir">
-                            <li><a href="html/Urbina_AirForce.html">Airforce</a></li>
-                        </ul>
-                        <ul class="sec-img">
-                            <li><a href="html/Urbina_Army.html">Army</a></li>
-                        </ul>
-                        <ul class="third-img">
-                            <li><a href="html/Urbina_Navy.html">Navy</a></li>
-                        </ul>
-                        <ul class="forth-img">
-                            <li><a href="html/Urbina_Special_Forces.html">Special Forces</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li class="popup"><a href="html/Ouzounis_nato.html" class="nav">NATO</a>
-                    <ul class="dropdown">
-                        <ul class="fir">
-                            <li><a href="html/Ouzounis_natoMembers.html">Nato Members</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li class="popup"><a class="nav" href="">Students</a>
-                    <ul class="dropdown">
-                        <ul class="fir">
-                            <li><a href="Students/Marios.html">Marios</a></li>
-                        </ul>
-                        <ul class="sec-img">
-                            <li><a href="Students/Marios.html">Abraham</a></li>
-                        </ul>
-                        <ul class="third-img">
-                            <li><a href="Students/Marios.html">Iulia</a></li>
-                        </ul>
-                        <ul class="forth-img">
-                            <li><a href="Students/ada.html">Ada</a></li>
-                        </ul>
-                        <ul class="fifth">
-                            <li><a href="Students/Marios.html">Katrin</a></li>
-                        </ul>
-                    </ul>
-                </li>
-                <li class="popup">
-                    <p class="time" id="timer"></p>
-                </li>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Photos/purple_phoenix.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="html/Tsartsidis_Homepage.html">Greece</a></li>
+                <li><a href="html/Katrin_Homepage.html">Bulgaria</a></li>
+                <li><a href="html/Chindris_Homepage.html">Romania</a></li>
+                <li><a href="html/Urbina_HomePage.html">Spain</a></li>
+                <li><a href="html/Ouzounis_nato.html">NATO</a></li>
             </ul>
-        </nav>
-
-        <section class="main">
-            <h1 width="100%"><strong>Militaries around the world</strong></h1>
-            <div>
-                <button class="button" id="previous">&lt;</button>
-                <ul class="slideshow">
-                    <li class="slideshowItem">
-                        <a href="Greece(Abraham)/Greek%20Homepage.html">
-                            <img class="imgg" src="Photos/Greek%20Flag.png" alt="greek flag" width="250px"
-                                height="150px" name="img">
-                            <p>Greece</p>
-                        </a>
-                    </li>
-
-                    <li class="slideshowItem">
-                        <a href="Bulgaria(Katrin)/Bulgarian%20Homepage.html">
-                            <img class="imgg" src="Photos/Bulgarian.png" alt="greek flag" width="250px" height="150px"
-                                name="img">
-                            <p>Bulgaria</p>
-                        </a>
-                    </li>
-
-                    <li class="slideshowItem">
-                        <a href="Romania(Iulia)/Romanian%20Homepage.html">
-                            <img class="imgg" src="Photos/Romanian.png" alt="greek flag" width="250px" height="150px"
-                                name="img">
-                            <p>Romania</p>
-                        </a>
-                    </li>
-
-                    <li class="slideshowItem">
-                        <a href="Spain(Ada)/Spain%20Homepage.html">
-                            <img class="imgg" src="Photos/spanish%20flag.png" alt="greek flag" width="250px"
-                                height="150px" name="img">
-                            <p>Spain</p>
-                        </a>
-                    </li>
-
-                    <li class="slideshowItem">
-                        <a href="NATO(Marios)/NATO(Marios).html">
-                            <img class="imgg" src="Photos/NATO%20flag.png" alt="greek flag" width="250px" height="150px"
-                                name="img">
-                            <p>NATO</p>
-                        </a>
-                    </li>
-                </ul>
-                <button class="button" id="next" onclick="urlchange">&gt;</button>
-            </div>
-        </section>
+        </div>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="Photos/greekFlag.jpg"></div>
+                  <div class="swiper-slide"><img src="Photos/bulgarianFlag.png"></div>
+                  <div class="swiper-slide"><img src="Photos/romanianFlag.jpg"></div>
+                  <div class="swiper-slide"><img src="Photos/spanishFlag.png"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </div>
     </div>
 
-    <footer>
-        For more information contact us <a href=mailto:mouzounis@york.citycollege.eu>Here</a>
-        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="Photos/mail.jpg"></a>
-        <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
-                src="Photos/Insta.jpg"></a>
-        <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg"
-                src="Photos/facebook.jpg"></a>
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-
-        var slideshowItem = document.getElementsByClassName("slideshowItem");
-        var showItem = 0;
-        for (var i = 0; i < slideshowItem.length; i++) {
-            slideshowItem[i].style.display = "none";
-        }
-
-        slideshowItem[showItem].style.display = "block";
-
-        var nextButtonAction = function () {
-            slideshowItem[showItem].style.display = "none";
-            showItem++;
-            if (showItem >= slideshowItem.length) {
-                showItem = 0;
-            }
-            slideshowItem[showItem].style.display = "block";
-        }
-
-        var nextButton = document.getElementById("next");
-        nextButton.addEventListener("click", nextButtonAction);
-
-        var previousButtonAction = function () {
-            slideshowItem[showItem].style.display = "none";
-            showItem--;
-            if (showItem < 0) {
-                showItem = 4;
-            }
-            slideshowItem[showItem].style.display = "block";
-        }
-
-        var previousButton = document.getElementById("previous");
-        previousButton.addEventListener("click", previousButtonAction);
-
-        setInterval(myTimer, 1000);
-        function myTimer() {
-            const d = new Date();
-            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
-        }
-
-        setInterval(slides, 2000);
-        function slides() {
-            document.getElementById("next").click();
-            console.log();
-        }
-
-        var i = 0;
-        var images = [];
-        var slideTime = 2000;
-
-        images[0] = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg';
-        images[1] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/640px-Flag_of_Bulgaria.svg.png';
-        images[2] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Romania_Flag.svg/768px-Romania_Flag.svg.png?20161024231308';
-        images[3] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/640px-Flag_of_Spain.svg.png';
-        images[4] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/640px-Flag_of_NATO.svg.png';
-
-        function changePicture() {
-            const row = document.querySelector('body');
-            row.style.backgroundImage = "url(" + images[i] + ")";
-            row.style.backgroundRepeat = 'no-repeat';
-            row.style.backgroundSize = "cover";
-            row.style.width = "100vw";
-            row.style.height = "100vh";
-            if (i < images.length - 1) {
-                i++;
-            } else {
-                i = 0;
-            }
-            setTimeout(changePicture, slideTime);
-        }
-
-        window.onload = changePicture;
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
     </script>
 </body>
 

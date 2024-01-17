@@ -1,254 +1,81 @@
-/*Marios*/
-
-
-body {
-    background-color: #c0c4a8d0;
-    margin: 0px;
-    animation: showbody 2s;
-}
-@keyframes showbody {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(109, 61, 139);
-    border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
-    font-family: monospace;
-    font-size: 60px;
-    margin-top: 150px;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-section {
-    text-align: center;
-    position: relative;
-    margin: auto;
-    z-index: 2;
-}
-
-#timer {
-    color: darkgreen;
-    padding-right: 20px;
-    padding-left: 10px;
-    position: relative;
-    margin: 0px;
-}
-
-nav {
-    position: fixed;
-    margin: 10px;
-    background-color: rgba(141, 141, 141, 0.83);
-    padding: 5px;
-    top: 0px;
-    font-family: sans-serif;
-    z-index: 5;
-    border-radius: 20px;
-}
-
-nav>ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 1px;
-
-}
-
-div {
-    display: flex;
-}
-
-.slideshow {
-    list-style-type: none;
-    margin: auto;
-    display: block;
-}
-
-.slideshow p {
-    text-align: center;
-    color: darkgreen;
-    font-weight: bold;
-}
-
-.button {
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 5;
+*{
+    margin: 0;
     padding: 0;
-    border: none;
-    background: none;
-
+    font-family: sans-serif;
 }
 
-.slideshow a {
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Photos/army_around_world.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
     text-decoration: none;
-    display: inline;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.popup:hover>.dropdown {
-    display: block;
-    animation: 1s slidedown;
-
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
 }
 
-body {
-    animation: load 2s
+.navbar ul li:hover::after{
+    width: 100%;
 }
 
-@keyframes load {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fir {
-    animation: first 2s;
+.swiper{
+    width: 30%;
+    height: fit-content;
 }
 
-@keyframes first {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+.swiper-slide img{
+    width: 100%;
 }
 
-.sec-img {
-    animation: sec 2s;
-    /* animation-delay: 2s; */
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
 }
 
-@keyframes sec {
-    from {
-        transform: translateY(-45px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-.third-img {
-    animation: third 2s;
-    /* animation-delay: 4s; */
-}
-
-@keyframes third {
-    from {
-        transform: translateY(-55px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-.forth-img {
-    animation: forth 2s;
-    /* animation-delay: 6s; */
-}
-
-@keyframes forth {
-    from {
-        transform: translateY(-65px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.fifth{
-    animation: fifth 2s;
-}
-@keyframes fifth {
-    from {
-        transform: translateY(-75px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.dropdown a {
-    text-decoration: none;
-    color: darkgreen;
-}
-
-.dropdown {
-    display: none;
-    transition: 1s;
-}
-
-nav a {
-    margin: 10px;
-    text-align: center;
-    color: darkgreen;
-    text-decoration: none;
-}
-
-footer {
-
-    text-align: center;
-    padding: 20px;
-    position: inherit;
-    /* i would change it for inherit like all the bid sections the poition should be inherit, so its fix with the size of anything that you put inside*/
-    display: block;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgb(165, 165, 165);
-
-}
-
-.footImg {
-    width: 30px;
-    height: 30px;
-    display: inline;
-    padding: 0%;
-    z-index: 2;
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
 }

@@ -3,8 +3,17 @@ body {
     margin: 0px;
 }
 
+.dark {
+    background-color: whitesmoke;
+    color: #222222;
+}
+
+section {
+    width: auto;
+}
 
 .bg {
+
     background-color: #6f6e6e22;
     padding: 30px 50px 0 50px;
     margin: 0px;
@@ -82,7 +91,8 @@ h1 {
 }
 
 footer {
-
+    width: 97.5vw;
+    overflow: hidden;
     text-align: center;
     padding: 15px;
     position: inherit;
@@ -143,7 +153,7 @@ iframe {
 }
 
 .find-us {
-    display:inline;
+    display: inline;
     /* margin-left: auto;
    margin-right: auto; */
 }
@@ -156,3 +166,29 @@ iframe {
     display: block;
     font-size: x-large;
 }
+
+/* .reveal {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */

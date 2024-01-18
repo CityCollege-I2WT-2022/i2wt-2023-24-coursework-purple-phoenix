@@ -6,41 +6,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #686868;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #515151;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
     </style>
 </head>
 
 <body>
+    <nav>
+        <img src="Photos/purple_phoenix.png" alt=""
+            style="display: flex; position: absolute; height: 70px; margin-left: 20px; z-index: 1; ">
+        <ul class="menu">
+            <li><a>Homepage</a>
+            </li>
+            <li><a>Greece</a>
+                <ul class="submenu">
+                    <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Bulgaria</a>
+                <ul class="submenu">
+                    <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="Katrin_Army.html">Army</a></li>
+                    <li><a href="Katrin_Navy.html">Navy</a></li>
+                    <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Romania</a>
+                <ul class="submenu">
+                    <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="Chindris_Army.html">Army</a></li>
+                    <li><a href="ChindrisNavy.html">Navy</a></li>
+                    <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Spain</a>
+                <ul class="submenu">
+                    <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="Urbina_Army.html">Army</a></li>
+                    <li><a href="Urbina_Navy.html">Navy</a></li>
+                    <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>NATO</a>
+                <ul class="submenu">
+                    <li><a>React</a></li>
+                    <li><a>Svelte</a></li>
+                    <li><a>VueJs</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>About Us</a>
+                <ul class="submenu">
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/Marios.html">Abraham</a></li>
+                    <li><a href="../Students/Marios.html">Iulia</a></li>
+                    <li><a href="../Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/Marios.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li><a href="" id="timer"></a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" onclick="darkmode()">
+            <span class="slider round"></span>
+        </label>
+    </nav>
     <section>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
-        <h1>vnid</h1>
-        <p>csvfdbtrbtsrbtgrnhysngyn</p>
+        <div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div><div class="text-container reveal fade-bottom">
+            <div class="text-box">
+                <h3>Section Text</h3>
+                <p>Random text</p>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="bg">
@@ -49,8 +285,8 @@
             <div class="container">
                 <div class="button">
                     <p class="sub">Subscribe to our Military Newsletter</p>
-                    <input type="text" class="input-field" placeholder="Your E-Mail"><button
-                        class="input-field-button">Subscribe</button>
+                    <input type="text" class="input-field" placeholder="Your E-Mail"><button class="input-field-button"
+                        onclick="subAlert()">Subscribe</button>
                 </div>
                 <div class="find-us">
                     <p class="contact">Contact Us:</p>
@@ -78,11 +314,45 @@
                     <h6 class="terms-and-contitions" style="padding-left: 20px;">Terms and Contitions</h6>
                 </a>
             </div>
-
-
-
         </div>
     </footer>
+    <script>
+        function subAlert() {
+            alert("Thanks for Subscribing to our Newsletter");
+        }
+        function darkmode() {
+
+            if (document.body.className.match('dark')) {
+                document.body.classList.remove("dark");
+
+            }
+            else {
+                document.body.classList.add("dark");
+            }
+        }
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+
+        // function revial() {
+        //     var reveals = document.querySelectorAll(".reveal");
+        //     for (var i = 0; i < reveals.length; i++) {
+        //         var windowHeight = window.innerHeight;
+        //         var elementTop = reveals[i].getBoundingClientRect().top;
+        //         var elementVisible = 150;
+        //         if (elementTop < windowHeight - elementVisible) {
+        //             reveals[i].classList.add("active");
+        //         } else {
+        //             reveals[i].classList.remove("active");
+        //         }
+        //     }
+        // }
+        // window.addEventListener("scroll", revial);
+
+        // reveal();
+    </script>
 </body>
 
 </html>

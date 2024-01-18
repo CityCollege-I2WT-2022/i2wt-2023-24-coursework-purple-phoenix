@@ -28,37 +28,45 @@
                 <div class="feature one">
                     <img src="../Photos/gun-icon.png" class="invert">
                     <div>
-                        <h3>Equipment</h3>
-                        <p>
-                            text
-                        </p>
+                        <h3 class="popup" onclick="myFunction1()">Equipment
+                            <span class="popuptext" id="myPopup1">
+                                The Romanian Air Force operates various aircraft, including F-16 Fighting Falcons, C-27J Spartan transport planes, and 
+                                IAR 330 Puma helicopters.
+                            </span>
+                        </h3>
                     </div>
                 </div>
                 <div class="feature two">
                     <img src="../Photos/international-icon.png" class="invert">
                     <div>
-                        <h3>International Operations</h3>
-                        <p>
-                            text
-                        </p>
+                        <h3 class="popup" onclick="myFunction2()">International Operations
+                            <span class="popuptext" id="myPopup2">
+                                The Romanian Air Force has been involved in international operations, contributing to missions such as air policing 
+                                in the Baltic region and participating in NATO and UN peacekeeping efforts.
+                            </span>
+                        </h3>
                     </div>
                 </div>
                 <div class="feature three">
                     <img src="../Photos/training-icon.png" class="invert">
                     <div>
-                        <h3>Training and exercises</h3>
-                        <p>
-                            text
-                        </p>
+                        <h3 class="popup" onclick="myFunction3()">Training and exercises
+                            <span class="popuptext" id="myPopup3">
+                                The Romanian Air Force conducts regular training and exercises to enhance operational readiness, airspace protection,
+                                 and interoperability with allied forces.
+                            </span>
+                        </h3>
                     </div>
                 </div>
                 <div class="feature four">
                     <img src="../Photos/modernization-icon.png" class="invert">
                     <div>
-                        <h3>Modernization Efforts</h3>
-                        <p>
-                            text
-                        </p>
+                        <h3 class="popup" onclick="myFunction4()">Modernization Efforts
+                            <span class="popuptext" id="myPopup4">
+                                The Romanian Air Force is actively modernizing its capabilities through the acquisition of advanced aircraft, 
+                                such as F-16s, and the ongoing upgrade of its fleet to ensure enhanced operational effectiveness.
+                            </span>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -91,6 +99,23 @@
             rotateSum = rotateValue + "rotate(90deg)";
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
+        }
+
+        function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+        }
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+        }
+        function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+        }
+        function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
         }
 
     </script>

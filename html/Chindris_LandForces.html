@@ -27,37 +27,45 @@
                     <div class="feature one">
                         <img src="../Photos/gun-icon.png" class="invert">
                         <div>
-                            <h3>Equipment</h3>
-                            <p>
-                                text
-                            </p>
+                            <h3 class="popup" onclick="myFunction1()">Equipment
+                                <span class="popuptext" id="myPopup1">
+                                    The Romanian Army's Land Forces equipment includes TR-85M1 main battle tanks, MLI-84 infantry fighting vehicles, and a mix of 
+                                    infantry weapons such as the PA md. 86 assault rifle.
+                                </span>
+                            </h3>
                         </div>
                     </div>
                     <div class="feature two">
                         <img src="../Photos/international-icon.png" class="invert">
                         <div>
-                            <h3>International Operations</h3>
-                            <p>
-                                text
-                            </p>
+                            <h3 class="popup" onclick="myFunction2()">International Operations
+                                <span class="popuptext" id="myPopup2">
+                                    The Romanian Army's Land Forces have participated in international operations, including missions in Afghanistan, Iraq, 
+                                    and various NATO and UN peacekeeping missions.
+                                </span>
+                            </h3>
                         </div>
                     </div>
                     <div class="feature three">
                         <img src="../Photos/training-icon.png" class="invert">
                         <div>
-                            <h3>Training and exercises</h3>
-                            <p>
-                                text
-                            </p>
+                            <h3 class="popup" onclick="myFunction3()">Training and exercises
+                                <span class="popuptext" id="myPopup3">
+                                    The Romanian Army's Land Forces conduct regular training and exercises, focusing on enhancing operational capabilities and
+                                     interoperability with allied forces.
+                                </span>
+                            </h3>
                         </div>
                     </div>
                     <div class="feature four">
                         <img src="../Photos/modernization-icon.png" class="invert">
                         <div>
-                            <h3>Modernization Efforts</h3>
-                            <p>
-                                text
-                            </p>
+                            <h3 class="popup" onclick="myFunction4()">Modernization Efforts
+                                <span class="popuptext" id="myPopup4">
+                                    The Romanian Army's Land Forces are actively involved in modernization efforts to upgrade equipment, enhance capabilities, and
+                                     align with NATO standards.
+                                </span>
+                            </h3>
                         </div>
                     </div>
                 </div>
@@ -90,6 +98,24 @@
                 rotateSum = rotateValue + "rotate(90deg)";
                 circle.style.transform = rotateSum;
                 rotateValue = rotateSum;
+            }
+
+
+            function myFunction1() {
+            var popup = document.getElementById("myPopup1");
+            popup.classList.toggle("show");
+            }
+            function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show");
+            }
+            function myFunction3() {
+            var popup = document.getElementById("myPopup3");
+            popup.classList.toggle("show");
+            }
+            function myFunction4() {
+            var popup = document.getElementById("myPopup4");
+            popup.classList.toggle("show");
             }
 
         </script>

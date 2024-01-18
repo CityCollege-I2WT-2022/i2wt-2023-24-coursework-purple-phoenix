@@ -19,6 +19,80 @@
             <li><a href="../html/Ouzounis_nato.html">NATO</a></li>
         </ul>
       </div>
+
+      <div class="information">
+        <div class="overlay2"></div>
+        <img src="../Photos/special-forces-icon.png" class="land-forces-icon">
+        <div id="circle">
+            <div class="feature one">
+                <img src="../Photos/gun-icon.png" class="invert">
+                <div>
+                    <h3>Equipment</h3>
+                    <p>
+                        text
+                    </p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="../Photos/international-icon.png" class="invert">
+                <div>
+                    <h3>International Operations</h3>
+                    <p>
+                        text
+                    </p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="../Photos/training-icon.png" class="invert">
+                <div>
+                    <h3>Training and exercises</h3>
+                    <p>
+                        text
+                    </p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="../Photos/modernization-icon.png" class="invert">
+                <div>
+                    <h3>Modernization Efforts</h3>
+                    <p>
+                        text
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <img src="../Photos/arrow-up.png" id="upBtn" class="invert">
+        <h4>Information</h4>
+        <img src="../Photos/arrow-up.png" id="downBtn" class="invert">
+    </div>
+</div>
+
+<script>
+    var circle = document.getElementById("circle");
+    var upBtn = document.getElementById("upBtn");
+    var downBtn = document.getElementById("downBtn");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+    downBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+</script>
     </div>
   </body>
 </html>

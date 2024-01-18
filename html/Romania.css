@@ -347,3 +347,12 @@ ul{
     left: 0;
     top: 0;
 }
+
+.plane-icon{
+    transform: rotate(180deg);
+    top: 420px;
+}
+
+.ship-icon{
+    top: 470px;
+}

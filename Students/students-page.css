@@ -66,3 +66,23 @@ a .army-description{
     bottom: 40%;
     opacity: 1;
 }
+
+#iulia-description-photo{
+    height: 500px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+.iulia-description{
+    color: #fff;
+}
+
+#pluto-photo{
+    height: 500px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+table{
+    width: 100%;
+}

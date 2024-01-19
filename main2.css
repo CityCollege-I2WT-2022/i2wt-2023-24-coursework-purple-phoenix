@@ -1,0 +1,148 @@
+body {
+    background-color: #c0c4a8d0;
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(109, 61, 139);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 60px;
+    margin-top: 150px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+section {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+}
+
+#timer {
+    color: darkgreen;
+    padding-right: 20px;
+    padding-left: 10px;
+    position: relative;
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    margin: 10px;
+    background-color: rgba(141, 141, 141, 0.83);
+    padding: 5px;
+    top: 0px;
+    font-family: sans-serif;
+    z-index: 5;
+    border-radius: 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav>ul>li>ul {
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+div {
+    display: flex;
+}
+
+.slideshow {
+    list-style-type: none;
+    margin: auto;
+    display: block;
+}
+
+.slideshow p {
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.button {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 5;
+    padding: 0;
+    border: none;
+    background: none;
+
+}
+
+.slideshow a {
+    text-decoration: none;
+    display: inline;
+}
+
+.popup:hover>.dropdown {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+
+}
+
+.dropdown>li>a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.dropdown {
+    display: none;
+    transition: 1s;
+}
+
+nav>ul>li>a {
+    margin: 10px;
+    text-align: center;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+footer {
+
+    text-align: center;
+    padding: 20px;
+    position: inherit;
+    /* i would change it for inherit like all the bid sections the poition should be inherit, so its fix with the size of anything that you put inside*/
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(165, 165, 165);
+
+}
+
+.footImg {
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding: 0%;
+    z-index: 2;
+}

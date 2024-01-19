@@ -2,67 +2,203 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css">
     
 </head>
 
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <a href="../i2wt-2023-24-coursework-purple-phoenix/Students/student-page.html">
-                <img src="Photos/purple_phoenix.png" class="logo">
-            </a>
-            
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="html/Tsartsidis_Homepage.html">Greece</a></li>
-                <li><a href="html/Katrin_Homepage.html">Bulgaria</a></li>
-                <li><a href="html/Chindris_Homepage.html">Romania</a></li>
-                <li><a href="html/Urbina_HomePage.html">Spain</a></li>
-                <li><a href="html/Ouzounis_nato.html">NATO</a></li>
+        <nav style="position:absolute; top: 10px;">
+            <img src="Photos/purple_phoenix.png" alt=""
+                style="display: flex; position: absolute; height: 70px; margin-left: 20px; z-index: 1; ">
+            <ul class="menu">
+                <li><a>Homepage</a>
+                </li>
+                <li><a>Greece</a>
+                    <ul class="submenu">
+                        <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                        <li><a href="Tsartsidis_Army.html">Army</a></li>
+                        <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                        <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Bulgaria</a>
+                    <ul class="submenu">
+                        <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                        <li><a href="Katrin_Army.html">Army</a></li>
+                        <li><a href="Katrin_Navy.html">Navy</a></li>
+                        <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Romania</a>
+                    <ul class="submenu">
+                        <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                        <li><a href="Chindris_Army.html">Army</a></li>
+                        <li><a href="ChindrisNavy.html">Navy</a></li>
+                        <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Spain</a>
+                    <ul class="submenu">
+                        <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                        <li><a href="Urbina_Army.html">Army</a></li>
+                        <li><a href="Urbina_Navy.html">Navy</a></li>
+                        <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>NATO</a>
+                    <ul class="submenu">
+                        <li><a>React</a></li>
+                        <li><a>Svelte</a></li>
+                        <li><a>VueJs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>About Us</a>
+                    <ul class="submenu">
+                        <li><a href="../Students/Marios.html">Marios</a></li>
+                        <li><a href="../Students/Marios.html">Abraham</a></li>
+                        <li><a href="../Students/Marios.html">Iulia</a></li>
+                        <li><a href="../Students/ada.html">Ada</a></li>
+                        <li><a href="../Students/Marios.html">Katrin</a></li>
+                    </ul>
+                </li>
+                <li><a href="" id="timer" style="text-decoration: none;"></a></li>
             </ul>
-        </div>
-        <div class="container">
+            <label class="switch" style="display: flex; position: absolute; right: 25px; top: 2  2px; z-index: 1;">
+                <input type="checkbox" onclick="darkmode()">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+        <!-- <div class="container">
             <div class="swiper">
-                <!-- Additional required wrapper -->
+                
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  >
                   <div class="swiper-slide"><a href="html/Tsartsidis_Homepage.html"><img src="Photos/greekFlag.jpg"></a></div>
                   <div class="swiper-slide"><a href="html/Katrin_Homepage.html"><img src="Photos/bulgarianFlag.png"></a></div>
                   <div class="swiper-slide"><a href="html/Chindris_Homepage.html"><img src="Photos/romanianFlag.jpg"></a></div>
                   <div class="swiper-slide"><a href="html/Urbina_HomePage.html"><img src="Photos/spanishFlag.png"></a></div>
                 </div>
-                <!-- If we need pagination -->
+                
                 <div class="swiper-pagination"></div>
               
-                <!-- If we need navigation buttons -->
+                
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
               
               </div>
-        </div>
-    </div>
+        </div> -->
 
-
+        <footer style="display: block; position:absolute; margin-bottom: 0%;">
+            <div class="bg" style="display: block; position:absolute; margin-bottom: 0%;">
+                <!-- <p style="text-align: left;">For more information contact us <a
+                        href=mailto:mouzounis@york.citycollege.eu>Here</a></p> -->
+                <div class="container">
+                    <div class="button">
+                        <p class="sub">Subscribe to our Military Newsletter</p>
+                        <input type="text" class="input-field" placeholder="Your E-Mail"><button class="input-field-button"
+                            onclick="subAlert()">Subscribe</button>
+                    </div>
+                    <div class="find-us">
+                        <p class="contact">Contact Us:</p>
+                        <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="Photos/mail.jpg"></a>
+                        <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
+                                src="Photos/Insta.jpg"></a>
+                        <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg"
+                                src="Photos/facebook.jpg"></a>
+                        <a href="tel:2310696969" class="phone-link">2310-696969</a>
+                    </div>
+                    <div class="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.4555226051352!2d22.935449339229237!3d40.637853069454515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839a74068237b%3A0x8cbda0f741adff70!2sCITY%20College%2C%20University%20of%20York%20Europe%20Campus!5e0!3m2!1sen!2sgr!4v1705257464549!5m2!1sen!2sgr"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="bott">
+                    <hr>
+                    <h6 class="h6" style="text-align: left; margin-top: 0px;">© 2024 Purple Phoinex. CITY College,
+                        University of York Europe Campus, Thessaoliki,
+                        Greece.
+                        All Rights Reserved</h6>
+                    <a href="html/terms-and-contitions.html">
+                        <h6 class="terms-and-contitions" style="padding-left: 20px;">Terms and Contitions</h6>
+                    </a>
+                </div>
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
+        // const swiper = new Swiper('.swiper', {
+        //     autoplay: {
+        //         delay: 3000,
+        //         disableOnInteraction: false,
+        //     },
+        //         loop: true,
+        //         pagination: {
+        //             el: '.swiper-pagination',
+        //             clickable: true,
+        //         },
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev',
+        //         },
+        //     });
+
+        var i = 0;
+        var images = [];
+        var slideTime = 2000;
+
+        images[0] = 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg';
+        images[1] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Bulgaria.svg/640px-Flag_of_Bulgaria.svg.png';
+        images[2] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Romania_Flag.svg/768px-Romania_Flag.svg.png?20161024231308';
+        images[3] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/640px-Flag_of_Spain.svg.png';
+        images[4] = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_NATO.svg/640px-Flag_of_NATO.svg.png';
+
+        function changePicture() {
+            const row = document.querySelector('body');
+            row.style.backgroundImage = "url(" + images[i] + ")";
+            row.style.backgroundRepeat = 'no-repeat';
+            row.style.backgroundSize = "100%";
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changePicture, slideTime);
+        }
+
+        window.onload = changePicture;
+
+        function subAlert() {
+            alert("Thanks for Subscribing to our Newsletter");
+        }
+        // function darkmode() {
+
+        //     if (document.body.className.match('dark')) {
+        //         document.body.classList.remove("dark");
+
+        //     }
+        //     else {
+        //         document.body.classList.add("dark");
+        //     }
+        // }
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
     </script>
 </body>
 

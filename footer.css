@@ -1,13 +1,3 @@
-body {
-    background-color: #222222;
-    margin: 0px;
-}
-
-.dark {
-    background-color: whitesmoke;
-    color: #222222;
-}
-
 section {
     width: auto;
 }
@@ -167,7 +157,7 @@ iframe {
     font-size: x-large;
 }
 
-/* .reveal {
+.reveal {
     position: relative;
     top: 100px;
     opacity: 0;
@@ -191,4 +181,4 @@ iframe {
         transform: translateY(0);
         opacity: 1;
     }
-} */
+}

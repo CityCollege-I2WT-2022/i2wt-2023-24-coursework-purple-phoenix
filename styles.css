@@ -6,8 +6,22 @@ body {
   place-items: center;
   height: 100vh;
   width: 100vw;
-  background: #221a25;
+  background: #1a1625;
   overflow-x: hidden;
+  color: #908d96;
+}
+
+#timer {
+  color: inherit;
+}
+
+#timer:hover {
+  color: #ba59ff;
+}
+
+.dark {
+  background-color: rgb(217, 217, 217);
+  color: #282828;
 }
 
 ::-webkit-scrollbar {
@@ -95,7 +109,7 @@ a {
 }
 
 .menu>li a {
-  color: #999;
+  /* color: #999; */
   display: flex;
   align-items: center;
   justify-content: center;

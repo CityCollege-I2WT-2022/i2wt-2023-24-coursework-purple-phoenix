@@ -39,17 +39,19 @@ list-style-type: lower-roman;
 list-style-position: inside;
 width: fit-content;
 height: auto;
+
 }
 #rank1 li{
   background-color: #f5d1a2;
   border: #eccaca 2px solid;
   float: left;
   margin-right: 40px;
-  padding: 0 4px;
+  padding: 4px;
   font-size: 20px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
   align-items: center;
   align-content: center;
+  
 }
 .ranksWord{
   width: fit-content;
@@ -64,6 +66,8 @@ height: auto;
   list-style: inline;
   height: auto;
   margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   padding:0px;
@@ -77,6 +81,9 @@ height: auto;
   float: left;
   width: 120px;
   display: flex;
+  align-items: center;
+  align-content: center;
+  
 }
 .rankimg {
   height: auto;
@@ -111,8 +118,8 @@ height: auto;
 }
 .materials caption{
   text-align: left;
-  text-decoration: underline color(rgb(131, 85, 15));
-  color:rgb(100, 65, 13);
+  text-decoration: underline color(#908d96);
+  color:#908d96;
 }
 
 .pass{
@@ -123,10 +130,13 @@ height: auto;
 
 .typesMaterial{
   font-size: 25px;
+  color:#908d96;
 }
 
 .showMoreInfo{
   display: none;
+margin-left: auto;
+margin-right: auto ;  
 }
 
 .showMoreInfo2 {
@@ -231,6 +241,7 @@ width: 320px;
 height: 250px;
 transition: all 500ms ease;
 border-radius: 5px;
+margin-top: 50px;
 }
 
 .imagenMove figure img {
@@ -247,7 +258,8 @@ transition: all 500ms ease;
 
 .noLine {
   text-decoration: none;
-  color:black;
+  color:#908d96;
+
 }
 #sectionHome {
   width: auto;
@@ -286,12 +298,16 @@ transition: all 500ms ease;
   position: absolute;
   text-align: center;
   width: 100%;
-  height: auto;
+  height: 100px;
   font-size: 25px;
-  color:rgb(100, 65, 13) ;
-  text-decoration: underline rgb(100, 65, 13);
   font-size: 25px;
 
+}
+
+.academys td{
+  width: auto;
+  height: fit-content;
+  margin-bottom:10px ;
 }
 #forces{
   width: fit-content;
@@ -299,6 +315,7 @@ transition: all 500ms ease;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  margin-bottom: 10px;
 }
 #forces caption{
   color: rgb(100, 65, 13);
@@ -353,11 +370,12 @@ transition: all 500ms ease;
   margin-top: 5px;
 }
 .newsImg{
-  margin-left: auto;
+  margin-left: 15px;
   margin-right: auto;
   width: 90%;
   height: auto;
   margin-bottom: 10px;
+
 }
 #afterMain{
   align-content: center;
@@ -418,14 +436,22 @@ float:right;
 #sports{
   justify-content: center;
   list-style-type: none;
-  width: 100%;
+  width: 80%;
+  height: auto;
+
+  
+}
+#sports li{
+  justify-content: center;
+  align-items: center;
 }
 #sports div{
   justify-content: center;
 }
 #sports img{
-  width: 1000px;
+  width: auto;  
   height: auto;
+
 }
 .videos{
   margin-top: 10px;
@@ -458,13 +484,16 @@ float:right;
   list-style-type: none;
   justify-content: center;
   width: 80%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
   .changeImg{
     display: block;
   }
   .scouts{
     width: 500px;
-    height: auto;
+    height: 1.200px;
   }
 
   .navyImgRank{
@@ -501,7 +530,7 @@ h2 {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  text-decoration: underline rgb(100, 65, 13);
+  text-decoration: underline #f5d1a2;
 }
 h3{
   text-align: center;

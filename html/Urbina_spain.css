@@ -20,7 +20,7 @@
 
 #headText {
   position: absolute;
-  color: #f5d1a2;
+  color: #9f9ca5;
   -webkit-text-stroke: 2px rgb(100, 65, 13); /*Esto es para hacer lo de la linea de fuera de la palabra*/
   width: 100%;
   height: auto;
@@ -389,7 +389,7 @@ margin-bottom: 10px;
 }
 
 #color1{
-background-color:  rgb(100, 65, 13);
+background-color:  #908d96;
 float: left;
 }
 #color2{
@@ -433,34 +433,35 @@ float:right;
   margin-right: 20px;
 }
 
+User
 #sports{
+  list-style-type: none;
+  align-items: center; 
+  justify-content: center;
+  width: fit-content;
+  display: flex;
+}
+#sports ul{
   justify-content: center;
   list-style-type: none;
-  width: 80%;
-  height: auto;
-
-  
-}
-#sports li{
-  justify-content: center;
-  align-items: center;
-}
-#sports div{
-  justify-content: center;
-}
-#sports img{
-  width: auto;  
-  height: auto;
-
-}
-.videos{
-  margin-top: 10px;
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
+  width: 100%;
+  }
+  #sports div{
+    justify-content: center;
+  }
+  #sports img{
+    width: 1000px;
+    height: auto;
+  }
+  .videos{
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 #previous{
   position: absolute;
   font-size: 50px;
@@ -469,6 +470,7 @@ float:right;
   float:left;
   width: 10%;  
   margin-top: 270px;
+  margin-left: 20px;
 }
 #next{
   position: inherit;
@@ -484,7 +486,7 @@ float:right;
   list-style-type: none;
   justify-content: center;
   width: 80%;
-  align-items: center;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -493,7 +495,7 @@ float:right;
   }
   .scouts{
     width: 500px;
-    height: 1.200px;
+    height: auto;
   }
 
   .navyImgRank{
@@ -545,8 +547,9 @@ h4{
 }
 p {
   text-align: justify;
-  margin-left: 8px;
+  margin-left: 10px;
   font-size: 20px;
+
 }
 button{
   background-color: #f5d1a2;

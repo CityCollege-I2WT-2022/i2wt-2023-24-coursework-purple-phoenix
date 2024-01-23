@@ -1,9 +1,13 @@
 body {
-    background-color: #c0c4a8d0;
-    margin: 0px;
-}
+    font-family: "Euclid Circ.menuar A", "Poppins";
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #1a1625;
+    color: #908d96;
+  }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 8px;
     background-color: transparent;
 }
@@ -11,7 +15,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background: rgb(109, 61, 139);
     border-radius: 10px;
-}
+} 
 
 h1 {
     text-align: center;
@@ -20,7 +24,7 @@ h1 {
     margin-top: 150px;
 }
 
-img {
+h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -42,32 +46,8 @@ section {
     margin: 0px;
 }
 
-nav {
-    position: fixed;
-    margin: 10px;
-    background-color: rgba(141, 141, 141, 0.83);
-    padding: 5px;
-    top: 0px;
-    font-family: sans-serif;
-    z-index: 5;
-    border-radius: 20px;
-}
 
-nav>ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-nav>ul>li>ul {
-    list-style-type: none;
-    padding: 5px;
-
-}
-
-div {
+  div {
     display: flex;
 }
 
@@ -101,48 +81,9 @@ div {
     display: inline;
 }
 
-.popup:hover>.dropdown {
-    display: block;
-    transition: all 0.3s ease-in-out;
-    transition-delay: 0.1s;
 
-}
 
-.dropdown>li>a {
-    text-decoration: none;
-    color: darkgreen;
-}
 
-.dropdown {
-    display: none;
-    transition: 1s;
-}
 
-nav>ul>li>a {
-    margin: 10px;
-    text-align: center;
-    color: darkgreen;
-    text-decoration: none;
-}
 
-footer {
 
-    text-align: center;
-    padding: 20px;
-    position: inherit;
-    /* i would change it for inherit like all the bid sections the poition should be inherit, so its fix with the size of anything that you put inside*/
-    display: block;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgb(165, 165, 165);
-
-}
-
-.footImg {
-    width: 30px;
-    height: 30px;
-    display: inline;
-    padding: 0%;
-    z-index: 2;
-}

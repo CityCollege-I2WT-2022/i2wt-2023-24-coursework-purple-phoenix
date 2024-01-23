@@ -1,10 +1,19 @@
 <!doctype html> <!--Tsartsidis-->
 <html>
-    <head>
-    
-    
+
+<head>
+
+
     <title>Greece</title>
-    <link rel="stylesheet" type="text/css" href="../main2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css">
+    <script src="../projecthtml.js"></script>
     <style>
         nav {
             position: inherit;
@@ -24,15 +33,10 @@
             overflow: hidden;
         }
 
-        
+
         #headText {
             position: absolute;
             color: white;
-            -webkit-text-stroke: 2px black;
-            background-color: white blur(20px);
-            backdrop-filter: blur(20px);
-            width: 30%;
-            text-align: center;
             margin: 0px;
 
         }
@@ -45,11 +49,7 @@
             text-align: center;
 
         }
-        .footImg {
-            width: 30px;
-            height: 30px;
-            display: inline;
-        }
+
         @keyframes cambio {
             0% {
                 margin-left: 0px;
@@ -82,93 +82,142 @@
             text-decoration: none;
         }
     </style>
-    </head>
-    <body>
+</head>
+
+<body>
     <nav>
-            <ul class="nav.list">
-                <li class="popup"><a href="../index.html">Homepage</a></li>
-                <li class="popup"><a href="Tsartsidis_Homepage.html" class="nav">Greece</a>
-                    <ul class="dropdown">
-                        <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
-                        <li><a href="Tsartsidis_Army.html">Army</a></li>
-                        <li><a href="Tsartsidis_Navy.html">Navy</a></li>
-                        <li><a href="Tsartsidis_SpecialForces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="Katrin_Homepage.html" class="nav">Bulgaria</a>
-                    <ul class="dropdown">
-                        <li><a href="Katrin_Airforce.html">Airforce</a></li>
-                        <li><a href="Katrin_Army.html">Army</a></li>
-                        <li><a href="Katrin_Navy.html">Navy</a></li>
-                        <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
+        <img src="../Photos/purple_phoenix.png" alt=""
+            style="display: flex; position: absolute; height: 70px; margin-left: 20px; z-index: 1; ">
+        <ul class="menu">
+            <li><a href="../index.html">Homepage</a>
+            </li>
+            <li><a>Greece</a>
+                <ul class="submenu">
+                    <li><a href="Tsartsidis_Homepage.html">Homepage</a></li>
+                    <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="Tsartsidis_SpecialForces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Bulgaria</a>
+                <ul class="submenu">
+                    <li><a href="Katrin_Homepage.html">Homepage</a></li>
+                    <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="Katrin_Army.html">Army</a></li>
+                    <li><a href="Katrin_Navy.html">Navy</a></li>
+                    <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Romania</a>
+                <ul class="submenu">
+                    <li><a href="Chindris_Homepage.html">Homepage</a></li>
+                    <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="Chindris_Army.html">Army</a></li>
+                    <li><a href="ChindrisNavy.html">Navy</a></li>
+                    <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Spain</a>
+                <ul class="submenu">
+                    <li><a href="Urbina_HomePage.html">Homepage</a></li>
+                    <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="Urbina_Army.html">Army</a></li>
+                    <li><a href="Urbina_Navy.html">Navy</a></li>
+                    <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>NATO</a>
+                <ul class="submenu">
+                    <li><a href="Ouzounis_nato.html">Nato</a></li>
+                    <li><a href="Ouzounis_natoMembers.html">NATO Members</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>About Us</a>
+                <ul class="submenu">
+                    <li><a href="../Students/student-page.html">Homepage</a></li>
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/Marios.html">Abraham</a></li>
+                    <li><a href="../Students/Marios.html">Iulia</a></li>
+                    <li><a href="../Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/Marios.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li><a href="" id="timer" style="text-decoration: none;"></a></li>
+        </ul>
+        <label class="switch" style="display: flex; position: absolute; right: 25px; top: 2  2px; z-index: 1;">
+            <input type="checkbox" onclick="darkmode()">
+            <span class="slider round"></span>
+        </label>
+    </nav>
 
+    <div class="beginingImg">
+        <img src="../Photos/TsaNavy/badge.png">
+        <img src="../Photos/TsaNavy/navy.jpg">
+        <h1 id="headText">Greek Navy</h1>
+    </div>
+    <section>
+        <h1>About War Navy</h1>
 
-                <li class="popup"><a href="Chindris_Homepage.html" class="nav">Romania</a>
-                    <ul class="dropdown">
-                        <li><a href="Chindris_Airforce.html">Airforce</a></li>
-                        <li><a href="Chindris_Army.html">Army</a></li>
-                        <li><a href="ChindrisNavy.html">Navy</a></li>
-                        <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="Urbina_Homepage.html" class="nav">Spain</a>
-                    <ul class="dropdown">
-                        <li><a href="Urbina_AirForce.html">Airforce</a></li>
-                        <li><a href="Urbina_Army.html">Army</a></li>
-                        <li><a href="Urbina_Navy.html">Navy</a></li>
-                        <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a href="Ouzounis_nato.html" class="nav">NATO</a>
-                    <ul class="dropdown">
-                        <li><a href="Ouzounis_natoMembers.html">Nato Members</a></li>
-                    </ul>
-                </li>
-                <li class="popup"><a class="nav" href="../Students/student-page.html">Students</a>
-                    <ul class="dropdown">
-                        <li><a href="../Students/Marios.html">Marios</a></li>
-                        <li><a href="../Students/Tsartsidis.html">Abraham</a></li>
-                        <li><a href="../Students/Marios.html">Iulia</a></li>
-                        <li><a href="../Students/ada.html">Ada</a></li>
-                        <li><a href="../Students/Marios.html">Katrin</a></li>
-                    </ul>
-                </li>
-                <li class="popup">
-                    <p class="time" id="timer"></p>
-                </li>
-            </ul>
-        </nav>
-        
-                <div class="beginingImg">
-            <img src="../Photos/TsaNavy/badge.png">
-            <img src="../Photos/TsaNavy/navy.jpg">
-            <h1 id="headText">Greek Navy</h1>
+        <p class="main">The Hellenic Navy (Greek: Πολεμικό Ναυτικό: meaning "War Navy") is the naval force of Greece,
+            part of the Hellenic Armed Forces. The modern Greek navy has its roots in the naval forces of various Aegean
+            Islands, which fought in the Greek War of Independence. During the periods of monarchy (1833–1924 and
+            1936–1973) it was known as the Royal Hellenic Navy. The total displacement of the fleet is approximately
+            150,000 tons and it is the 22nd largest Navy in the world by total number of vessels. The HN also operates a
+            number of naval aviation units. The motto of the Hellenic Navy is "Μέγα τὸ τῆς θαλάσσης κράτος" from
+            Thucydides' account of Pericles' oration on the eve of the Peloponnesian War. This has been translated as
+            "The rule of the sea is a great matter". The Hellenic Navy's emblem consists of an anchor in front of a
+            crossed Christian cross and trident, with the cross symbolizing Greek Orthodoxy, and the trident symbolizing
+            Poseidon, the god of the sea in Greek mythology.
+            <li> Pericles' words are written across the top of the emblem.</li>
+        </p>
+        <p><strong>"The Navy, as it represents a necessary weapon for Greece, should only be created for war and aim to
+                victory." — Greek Government (1866)</strong></p>
+    </section>
+
+    <footer>
+        <div class="bg">
+            <div class="container">
+                <div class="button">
+                    <p class="sub">Subscribe to our Military Newsletter</p>
+                    <input type="text" class="input-field" placeholder="Your E-Mail"><button class="input-field-button"
+                        onclick="subAlert()">Subscribe</button>
+                </div>
+                <div class="find-us">
+                    <p class="contact">Contact Us:</p>
+                    <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
+                    <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
+                            src="../Photos/Insta.jpg"></a>
+                    <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg"
+                            src="../Photos/facebook.jpg"></a>
+                    <a href="tel:2310696969" class="phone-link">2310-696969</a>
+                </div>
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.4555226051352!2d22.935449339229237!3d40.637853069454515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839a74068237b%3A0x8cbda0f741adff70!2sCITY%20College%2C%20University%20of%20York%20Europe%20Campus!5e0!3m2!1sen!2sgr!4v1705257464549!5m2!1sen!2sgr"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bott">
+                <hr>
+                <h6 class="h6" style="text-align: left; margin-top: 0px;">© 2024 Purple Phoinex. CITY College,
+                    University of York Europe Campus, Thessaoliki,
+                    Greece.
+                    All Rights Reserved</h6>
+                <a href="html/terms-and-contitions.html">
+                    <h6 class="terms-and-contitions" style="padding-left: 20px;">Terms and Contitions</h6>
+                </a>
+            </div>
         </div>
-        <section>
-            <h1>About War Navy</h1>
-
-            <p class="main">The Hellenic Navy (Greek: Πολεμικό Ναυτικό: meaning "War Navy") is the naval force of Greece, part of the Hellenic Armed Forces. The modern Greek navy has its roots in the naval forces of various Aegean Islands, which fought in the Greek War of Independence. During the periods of monarchy (1833–1924 and 1936–1973) it was known as the Royal Hellenic Navy. The total displacement of the fleet is approximately 150,000 tons and it is the 22nd largest Navy in the world by total number of vessels. The HN also operates a number of naval aviation units. The motto of the Hellenic Navy is "Μέγα τὸ τῆς θαλάσσης κράτος" from Thucydides' account of Pericles' oration on the eve of the Peloponnesian War. This has been translated as "The rule of the sea is a great matter". The Hellenic Navy's emblem consists of an anchor in front of a crossed Christian cross and trident, with the cross symbolizing Greek Orthodoxy, and the trident symbolizing Poseidon, the god of the sea in Greek mythology. 
-                <li>  Pericles' words are written across the top of the emblem.</li>
-                <strong>"The Navy, as it represents a necessary weapon for Greece, should only be created for war and aim to victory." — Greek Government (1866)</strong></p>
-        </section>
-          
-        <footer>
-        <p>
-            You can contact me: atsartsidis@york.citycollege.eu
-        </p>
-        <p>
-            <a href=https://mail.google.com><img class="footImg" src="../Photos/gmail.png"></a>
-            <a href="https://www.facebook.com/profile.php?id=100010442505473"> <img class="footImg" src="../Photos/facebook.jpg"></a>
-            <a href="https://www.instagram.com/alphataf999"> <img class="footImg" src="../Photos/Insta.jpg"></a>
-        </p>
-        <p>
-            If you want to know more about Avraam Tsartsidis please click <a href="../Students/Tsartsidis.html">here</a>.
-        </p>
     </footer>
-        
-        <script>
+
+    <script>
 
         setInterval(myTimer, 1000);
         function myTimer() {
@@ -176,5 +225,6 @@
             document.getElementById("timer").innerHTML = d.toLocaleTimeString();
         }
     </script>
-    </body>
+</body>
+
 </html>

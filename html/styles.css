@@ -10,14 +10,6 @@ body {
   color: #908d96;
 }
 
-#timer {
-  color: inherit;
-}
-
-#timer:hover {
-  color: #ba59ff;
-}
-
 .dark {
   background-color: rgb(217, 217, 217);
   color: #282828;

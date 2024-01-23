@@ -171,12 +171,7 @@ height: auto;
   align-content: center;
 }
 
-.footImg {
-  width: 30px;
-  height: 30px;
-  display: inline;
-  align-content: center;
-}
+
 #bucket{
   width: 100%;
   height: auto;
@@ -234,7 +229,6 @@ margin-left: 30px;
 .imagenMove figure {
 width: 320px;
 height: 250px;
-overflow: hidden;
 transition: all 500ms ease;
 border-radius: 5px;
 }
@@ -503,7 +497,6 @@ section {
 }
 h2 {
   text-align: center;
-  color:rgb(100, 65, 13);
   font-size: 30px;
   align-items: center;
   margin-left: auto;
@@ -513,7 +506,6 @@ h2 {
 h3{
   text-align: center;
   font-size: 25px;
-    color:rgb(100, 65, 13);
 }
 h5{
   text-align: center;

@@ -1,5 +1,15 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html> <!--Marios-->
 <html lang="en">
+=======
+<!doctype html>
+<html>
+    <head>
+      <title>About Ada Urbina</title>
+      <link rel="stylesheet" type="text/css" href="../main.css">
+      <link rel="stylesheet"  type="text/css" href="../html/Urbina_spain.css">
+    </head>
+>>>>>>> Stashed changes
 
 <head>
     <meta charset="UTF-8">
@@ -88,12 +98,89 @@
         </label>
     </nav>
     <section>
+<<<<<<< Updated upstream
         <h1>About Ada Urbina</h1>
         <p>My name is Ada Urbina and the aim of this web page is to help the user to know one of the developers of this
             web page.<br>
             I'm from Spain and i have been living in Madrid, Arroyomolinos for the past 12 years before moving to
             Grecce, Thessaloniki, to start the digree of Computer Science in the University of York. </p>
+=======
+      <h1 class="articleAboutMe">About Ada Urbina</h1>
+      <p>My name is Ada Urbina and the aim of this web page is to help the user to know one of the developers of this web page.<br>
+        <article class="articleAboutMe">
+        <h2>Story of my life</h2>
+      I was born the 30/06/2005. I'm from Spain; I was born in Madrid but I lived my first 6 years in Asturias, Gijon. Then because of the work of my father we moved to Madrid where the rest of my family lives. There we bought a house in a village called  Arroyomolinos where we stayed for 12 years.
+     before moving to Grecce Thessaloniki because of the work of my father again. In Thessaloniki I started the digree of Computer Science in the University of York. <br>
+    While living in Madrid my parents gave me the oportunity to have a little sister, called Noelia and born in 2011. Few years later my parents decided to have a puppy called Nymeria; she is a Belgan Sheperd. </p>
+    </article>
+>>>>>>> Stashed changes
 
+<article class="articleAboutMe">
+    <h2>Hobbies</h2>
+    <h3>Sports</h3>
+    <p>
+        I am a very active person, and since I was little I have been practicing sports. I started Karate when I was 3-4 until 6-5 years old, then in Madrid I could not find any karate School that had the same moral as the one in Asturias, so I swiched to
+        swimming and horse riding; swimming did not go very well and i just stayed for 3 years, but i keept doing horse riding for 12 years. In horse riding I did all the different disciplines. My last years riding horses were dedicated to <a href="https://youtu.be/ynoBpwhl2fQ?si=ijiRl0-Nvu_YR_68"> Horseball</a>; until my team ended wining the Horseball ChampionShip.
+        When I left Swimming i tried for one semester Climbing, but I did not like it; so i switched to Boxing the sport that now a days I actually keep doing.
+        Now a days apart from boxing; I also go to the gym
+    </p>
+    <div>
+    <ul style="list-style-type: none;">
+        <li>
+            <ul id="sports">
+                <li><img src="../Photos/horseball1.jpg" class="sportsImg"></li>
+                <li><div><video width="640" height="360" controls class="videos">
+                    <source src="../Photos/horseball3.mp4" type="video/mp4">
+                  </video></div></li>
+                <li><div><video width="auto" height="auto" controls class="videos"> 
+                    <source src="../Photos/boxeo.mp4" type="video/mp4">
+                  </video></div></li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+   <p>
+    My hobbies are mostly related with going to the mountain; I love it and also pass time there, with friends or alone. <br>
+    I love to go camping with a tent and sleep there even if its cold. My love for the mountain comes because I am Scout since I was 6 years old, and they took me to the mountains to live this types of experiences since then. <br>
+    Writting about scouts and camping I can't forget about the scouts Summer camps, all the year is a countdown to the 15 of july. <br>
+    </p>
+    <a id="previous">&lt;</a>
+    <a id="next">&gt;</a>
+    <ul class="passed">
+        <li class="changeImg"><img src="../Photos/scouts1.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts2.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts3.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts4.jpg" class="scouts"></li>
+    </ul>
+    
+
+</article>
+
+<article class="articleAboutMe">
+<h2>Contributions</h2>
+<p>For this project I was responsible of all the webpages related with Spain, that includes; Spanish army, Spanish navy, Spanish special Forces, Spanish Air Forces, and the Spanish homepage.
+    For all the pages I tried it to be interactive and mostly visual, that is why i chosse two main colors that are:
+</p>
+<div class="square" id="color1"></div>
+<div class="square" id="color2"></div>
+
+
+
+<h3>Home page</h3>
+<p>
+    The intention is mostly for the user to know the different academys through moving photos, and an interactive map that when you click in one of the pins it goes up to the name of the force.
+</p>
+
+<h3>Different Forces</h3>
+<p>
+    The idea is the same, is through visual content understand better the differnt forces; in this case we started with interactive list that matches the rank with it's correspondent distintive; its followed by 
+    several tables full fill with the name of the materials that each force uses, and when you pass the mouse over the word you can find how that material looks like.<br>
+    Aside this table I puted some news related witht the force that is being seen. <br>
+    Under all the material we can find the information about how to get in. It is explained for all the ranks that you can acced. I am using buttons to make the webpage shorter; so when you clik on the button the information popup. <br>
+    For the last part we have for links to the rest of he forces; and you can notice in wich one you are gettin in because it makes it blush when you pass the mouse over it.
+</p>
+</div>
+</article>
     </section>
     <footer>
         <div class="bg">
@@ -139,6 +226,7 @@
         }
         function darkmode() {
 
+<<<<<<< Updated upstream
             if (document.body.className.match('dark')) {
                 document.body.classList.remove("dark");
 
@@ -171,5 +259,45 @@
         // reveal();
     </script>
 </body>
+=======
+    <script>
+      var showImg = 0;
+var changeImg = document.getElementsByClassName("changeImg");
+
+for (var i = 0; i < changeImg.length; i++) {
+    console.log(changeImg[i].innerHTML);
+    changeImg[i].style.display = "none";
+}
+
+changeImg[showImg].style.display = "block";
+
+var previousImg = function () {
+    console.log("previous");
+    changeImg[showImg].style.display = "none";
+    showImg--;
+    if (showImg < 0) {
+        showImg = changeImg.length - 1;
+    }
+    changeImg[showImg].style.display = "block";
+}
+
+var previousImgImg = document.getElementById("previous");
+previousImgImg.addEventListener("click", previousImg);
+
+var nextImg = function () {
+    console.log("next");
+    changeImg[showImg].style.display = "none";
+    showImg++;
+    if (showImg == changeImg.length) {
+        showImg = 0;
+    }
+    changeImg[showImg].style.display = "block";
+}
+
+var nextImgImg = document.getElementById("next");
+nextImgImg.addEventListener("click", nextImg);
+    </script>
+   </body>
+>>>>>>> Stashed changes
 
 </html>
